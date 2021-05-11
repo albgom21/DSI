@@ -122,6 +122,12 @@
     <Compile Include="ColeccionCartas.xaml.cs">
       <DependentUpon>ColeccionCartas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GaleriaDeMazos.xaml.cs">
+      <DependentUpon>GaleriaDeMazos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InGame.xaml.cs">
+      <DependentUpon>InGame.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -136,6 +142,9 @@
       <DependentUpon>OpcionesMenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tienda.xaml.cs">
+      <DependentUpon>Tienda.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -155,15 +164,31 @@
     <Content Include="Assets\carta1.png" />
     <Content Include="Assets\carta2.png" />
     <Content Include="Assets\carta3.png" />
+    <Content Include="Assets\cartaInGame1.png" />
+    <Content Include="Assets\cartaInGame2.png" />
+    <Content Include="Assets\cartaInGame3.png" />
+    <Content Include="Assets\cartaTapada1.png" />
+    <Content Include="Assets\cartaTapada2.png" />
+    <Content Include="Assets\cartaTapada3.png" />
     <Content Include="Assets\coin.png" />
     <Content Include="Assets\fondo.png" />
     <Content Include="Assets\heroe.png" />
+    <Content Include="Assets\heroe1.png" />
+    <Content Include="Assets\heroe2.png" />
+    <Content Include="Assets\historial.png" />
+    <Content Include="Assets\mana.png" />
     <Content Include="Assets\mazo1.png" />
     <Content Include="Assets\mazo2.png" />
     <Content Include="Assets\mazo3.png" />
     <Content Include="Assets\mazo4.png" />
+    <Content Include="Assets\mazoMesa.png" />
+    <Content Include="Assets\mazoMesa2.png" />
+    <Content Include="Assets\oferta1.png" />
+    <Content Include="Assets\oferta2.png" />
+    <Content Include="Assets\pasarTurno.png" />
     <Content Include="Assets\settings.png" />
     <Content Include="Assets\shop.png" />
+    <Content Include="Assets\timer.png" />
     <Content Include="Assets\trophy.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -183,6 +208,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GaleriaDeMazos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="InGame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -196,6 +229,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="OpcionesMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tienda.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
