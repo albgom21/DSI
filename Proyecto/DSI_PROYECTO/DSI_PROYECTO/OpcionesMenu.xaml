@@ -21,7 +21,7 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="FontFamily" Value="Aldrich"/>
             <Setter Property="FontWeight" Value="Normal"/>
-            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontSize" Value="28"/>
             <Setter Property="UseSystemFocusVisuals" Value="True"/>
             <Setter Property="Template">
                 <Setter.Value>
@@ -114,6 +114,7 @@
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="FontSize" Value="30"/>
             <Setter Property="UseSystemFocusVisuals" Value="True"/>
+            <Setter Property="FontSize" Value="20"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -211,6 +212,7 @@
             <Setter Property="FontWeight" Value="Normal"/>
             <Setter Property="FontSize" Value="30"/>
             <Setter Property="UseSystemFocusVisuals" Value="True"/>
+            <Setter Property="FontSize" Value="18"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -304,7 +306,7 @@
             <Setter Property="BorderThickness" Value="5"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="FontFamily" Value="Aldrich"/>
+            <Setter Property="FontFamily" Value="Verdana"/>
             <Setter Property="FontWeight" Value="Normal"/>
             <Setter Property="FontSize" Value="30"/>
             <Setter Property="UseSystemFocusVisuals" Value="True"/>
@@ -341,25 +343,7 @@
                                             </ObjectAnimationUsingKeyFrames>
                                             <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
                                         </Storyboard>
-                                    </VisualState>
-                                    <!--<VisualState x:Name="Pressed">
-                                        <Storyboard>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="CornerRadius" Storyboard.TargetName="ContentPresenter">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="10"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="ContentPresenter">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#a30707"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#ffc9c9"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#ffe6e6"/>
-                                            </ObjectAnimationUsingKeyFrames>
-
-                                            <PointerDownThemeAnimation Storyboard.TargetName="RootGrid"/>
-                                        </Storyboard>
-                                    </VisualState>-->
+                                    </VisualState>                                                                   
                                     <VisualState x:Name="Disabled">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="CornerRadius" Storyboard.TargetName="ContentPresenter">
@@ -400,38 +384,62 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="3*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
 
         <Image Source="Assets/fondo.png" Grid.RowSpan="5" Grid.ColumnSpan="5" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
+        <!-- Barra de botones en la parte superior. -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="5">
+            <ToggleButton x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="B1_Checked">
+                <ToggleButton.RenderTransform>
+                    <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
+                </ToggleButton.RenderTransform>
+                <Image Source="/Assets/shop.png" Width="50" Height="40" Margin="-10,0,10,0" UseLayoutRounding="False" d:LayoutRounding="Auto" >
+                    <Image.RenderTransform>
+                        <CompositeTransform SkewX="-6.366" TranslateX="13.388"/>
+                    </Image.RenderTransform>
+                </Image>
+            </ToggleButton>
+            <ToggleButton x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" Checked="B2_Checked" >
+                <ToggleButton.RenderTransform>
+                    <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
+                </ToggleButton.RenderTransform>
+                <Image Source="/Assets/cards.png" Width="50" Height="40" Margin="-10,0,10,0" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Image.RenderTransform>
+                        <CompositeTransform SkewX="-7.416" TranslateX="15.62"/>
+                    </Image.RenderTransform>
+                </Image>
+            </ToggleButton>
+            <ToggleButton x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Checked="B3_Checked">
+                <Image Source="/Assets/brawl.png" Width="90" Height="60" UseLayoutRounding="False" VerticalAlignment="Top" Margin="0,-4,0,0"/>
+            </ToggleButton>
+            <ToggleButton x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Checked="B4_Checked">
+                <ToggleButton.RenderTransform>
+                    <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
+                </ToggleButton.RenderTransform>
+                <Image Source="/Assets/trophy.png" Width="50" Height="40" Margin="18,0,-18,0" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Image.RenderTransform>
+                        <CompositeTransform SkewX="9.501" TranslateX="-20.083"/>
+                    </Image.RenderTransform>
+                </Image>
+            </ToggleButton>
+            <ToggleButton x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Checked="B5_Checked">
+                <ToggleButton.RenderTransform>
+                    <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
+                </ToggleButton.RenderTransform>
+                <Image Source="/Assets/settings.png" Width="50" Height="40" Margin="18,0,-18,0" UseLayoutRounding="False" d:LayoutRounding="Auto" >
+                    <Image.RenderTransform>
+                        <CompositeTransform SkewX="10.534" TranslateX="-22.314"/>
+                    </Image.RenderTransform>
+                </Image>
+            </ToggleButton>
+        </StackPanel>
 
-
-        <!--<Button x:Name="SalirB"  Height="105" Width="325"
-        VerticalAlignment ="Bottom" HorizontalAlignment="Center"  Padding="0,0,0,0" 
-        Foreground="#FF892020"
-                CornerRadius="10"  BorderThickness="5" FontWeight="Bold"  Content="SALIR" FontFamily="Verdana" FontSize="30" Margin="0,0,0,56.6" BorderBrush="#FFD85A24" >
-            <Button.Background>
-                <AcrylicBrush TintColor="#FFFFB253"/>
-            </Button.Background>
-            <Button.Resources>
-                <ResourceDictionary>
-                    <ResourceDictionary.ThemeDictionaries>
-                        
-                        <ResourceDictionary x:Key="Light">
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FF3C0000"/>                           
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE22525" Opacity="0.8"/>
-                        </ResourceDictionary>
-                    </ResourceDictionary.ThemeDictionaries>
-                </ResourceDictionary>
-            </Button.Resources>
-            
-        </Button>-->
-
-        <Button Content="SALIR" Style="{StaticResource ExitStyle}" Grid.Row="5" Grid.Column="2"  Height="75" Width="205" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="75" Width="75" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,100,0"/>
+        <Button Content="SALIR" Style="{StaticResource ExitStyle}" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"  Height="60" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
 
         <StackPanel Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center">
             <Grid Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center">
@@ -444,87 +452,40 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Image x:Name="vg" Grid.Row="0"  Grid.Column="1" HorizontalAlignment="Center" Height="50"  VerticalAlignment="Center" Width="50" Source="Assets/altavoz1.png"/>
-                <Image x:Name="vm" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Height="50"  VerticalAlignment="Center" Width="50" Source="Assets/altavoz1.png"/>
-                <Image x:Name="vs" Grid.Row="2"  Grid.Column="1" HorizontalAlignment="Center" Height="50"  VerticalAlignment="Center" Width="50" Source="Assets/altavoz1.png"/>
-                <TextBlock  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center" Height="65" Width="331" FontFamily="Aldrich" Foreground="White" FontSize="36"  TextAlignment="Center" Margin="35,0,0,0"><Run Text="V"/><Run Text="olumen general"/></TextBlock>
-                <TextBlock  Grid.Row="1"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Height="65" Width="331" FontFamily="Aldrich" Foreground="White" FontSize="36" TextAlignment="Center" Margin="35,0,0,0"><Run Text="V"/><Run Text="olumen "/><Run Text="música"/></TextBlock>
-                <TextBlock  Grid.Row="2"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center" Height="65" Width="331" FontFamily="Aldrich" Foreground="White" FontSize="36"  TextAlignment="Center" Margin="35,0,0,0"><Run Text="V"/><Run Text="olumen "/><Run Text="SFX"/></TextBlock>
+                <Image x:Name="vg" Grid.Row="0"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
+                <Image x:Name="vm" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
+                <Image x:Name="vs" Grid.Row="2"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
+                <TextBlock  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16" FontFamily="Aldrich"  TextAlignment="Center"><Run Text="V"/><Run Text="olumen general"/></TextBlock>
+                <TextBlock  Grid.Row="1"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16" FontFamily="Aldrich" TextAlignment="Center"><Run Text="V"/><Run Text="olumen "/><Run Text="música"/></TextBlock>
+                <TextBlock  Grid.Row="2"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16"  FontFamily="Aldrich" TextAlignment="Center"><Run Text="V"/><Run Text="olumen "/><Run Text="SFX"/></TextBlock>
 
             </Grid>
         </StackPanel>
 
-        <TextBlock   Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="56" Width="285" Foreground="White" FontSize="48"  TextAlignment="Center" FontFamily="Aldrich" Text="IDIOMA"/>
+        <TextBlock  FontFamily="Aldrich"  Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White" FontSize="36"  TextAlignment="Center" Text="IDIOMA"/>
 
 
-        <StackPanel Grid.Row="2"  Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" Margin="0,10,0,0">
-            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White" ValueChanged="Slider_ValueChanged_g"  Value="80" Height="65" />
-            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White"  ValueChanged="Slider_ValueChanged_m" Value="80"  Height="65"/>
-            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF"  Background="White"  ValueChanged="Slider_ValueChanged_s" Value="80"  Height="45"/>
+        <StackPanel Grid.Row="2"  Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" >
+            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White" ValueChanged="Slider_ValueChanged_g"  Value="80" Height="40" />
+            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White"  ValueChanged="Slider_ValueChanged_m" Value="80"  Height="40"/>
+            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF"  Background="White"  ValueChanged="Slider_ValueChanged_s" Value="80"  Height="35"/>
 
         </StackPanel>
 
-        <ToggleButton x:Name="besp" Height="135" Width="210" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="ToggleButton_Checked_esp" IsChecked="True">
-            <Image Source="/Assets/besp.png" AutomationProperties.Name="Slice"/>
+        <ToggleButton x:Name="besp" Height="75" Width="110" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Checked="ToggleButton_Checked_esp" IsChecked="True">
+            <Image Source="/Assets/besp.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </ToggleButton>
 
-        <ToggleButton x:Name="bcat" Height="135" Width="210" Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="ToggleButton_Checked_cat">
-            <Image Source="/Assets/bcat.png" AutomationProperties.Name="Slice"/>
+        <ToggleButton x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="ToggleButton_Checked_cat">
+            <Image Source="/Assets/bcat.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </ToggleButton>
 
-        <ToggleButton x:Name="buk"  Height="135" Width="210" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="ToggleButton_Checked_uk">
-            <Image Source="/Assets/buk.png" AutomationProperties.Name="Slice"/>
+        <ToggleButton x:Name="buk" Height="75" Width="110" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="ToggleButton_Checked_uk">
+            <Image Source="/Assets/buk.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </ToggleButton>
 
-        <ToggleSwitch OnContent="Paso de turnos automático" OffContent="Paso de turnos automático" FontFamily="Aldrich" Grid.Row="3"  Foreground="White" RequestedTheme="Dark" FontSize="26" Margin="474,27,199,27" VerticalAlignment="Stretch" Grid.ColumnSpan="3" HorizontalAlignment="Stretch"/>
-        <ToggleSwitch OnContent="Permitir espectar" OffContent="Permitir espectar"  FontFamily="Aldrich" Grid.Row="3"  Grid.Column="2" Foreground="White" RequestedTheme="Dark" Width="346" FontSize="26" Margin="239,27,0,27" VerticalAlignment="Stretch" Grid.ColumnSpan="3"/>
-
-
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="5">
-            <ToggleButton x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="B1_Checked">
-                <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
-                </ToggleButton.RenderTransform>
-                <Image Source="/Assets/shop.png" Width="225" Height="175" AutomationProperties.Name="Slice" RenderTransformOrigin="0.5,0.5" Margin="-24,0,24,0" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                    <Image.RenderTransform>
-                        <CompositeTransform SkewX="-6.366" TranslateX="13.388"/>
-                    </Image.RenderTransform>
-                </Image>
-            </ToggleButton>
-            <ToggleButton x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="B2_Checked">
-                <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
-                </ToggleButton.RenderTransform>
-                <Image Source="/Assets/cards.png" Width="225" Height="175" AutomationProperties.Name="Slice" RenderTransformOrigin="0.5,0.5" Margin="-10,-8,10,8" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                    <Image.RenderTransform>
-                        <CompositeTransform SkewX="-7.416" TranslateX="15.62"/>
-                    </Image.RenderTransform>
-                </Image>
-            </ToggleButton>
-            <ToggleButton x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="B3_Checked">
-                <Image Source="/Assets/brawl.png" Width="400" Height="250" UseLayoutRounding="False" VerticalAlignment="Bottom"/>
-            </ToggleButton>
-            <ToggleButton x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="B4_Checked">
-                <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
-                </ToggleButton.RenderTransform>
-                <Image Source="/Assets/trophy.png" Width="225" Height="175" AutomationProperties.Name="Slice" RenderTransformOrigin="0.5,0.5" Margin="22,0,-22,0" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                    <Image.RenderTransform>
-                        <CompositeTransform SkewX="9.501" TranslateX="-20.083"/>
-                    </Image.RenderTransform>
-                </Image>
-            </ToggleButton>
-            <ToggleButton x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="B5_Checked">
-                <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
-                </ToggleButton.RenderTransform>
-                <Image Source="/Assets/settings.png" Width="225" Height="175" AutomationProperties.Name="Slice" RenderTransformOrigin="0.5,0.5" Margin="24,0,-24,0" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                    <Image.RenderTransform>
-                        <CompositeTransform SkewX="10.534" TranslateX="-22.314"/>
-                    </Image.RenderTransform>
-                </Image>
-            </ToggleButton>
-        </StackPanel>
+        <ToggleSwitch FontFamily="Aldrich" OnContent="Paso de turnos automático" OffContent="Paso de turnos automático" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Foreground="White" RequestedTheme="Dark" FontSize="14" HorizontalAlignment="Center" Margin="75,0,0,0" />
+        <ToggleSwitch FontFamily="Aldrich" OnContent="Permitir espectar" OffContent="Permitir espectar"  Grid.Row="3"  Grid.Column="3"  Grid.ColumnSpan="5" Foreground="White" RequestedTheme="Dark" FontSize="14"  HorizontalAlignment="Left"  Margin="-25,0,0,0"/>
 
 
     </Grid>

@@ -10,7 +10,7 @@
 
     <Page.Resources>
         <Style x:Key="ExitStyle" TargetType="Button">
-            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="CornerRadius" Value="10"/>       
             <Setter Property="Background" Value="{x:Null}"/>
             <Setter Property="BackgroundSizing" Value="InnerBorderEdge"/>
             <Setter Property="Foreground" Value="#FF892020"/>
@@ -21,7 +21,7 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="FontFamily" Value="Aldrich"/>
             <Setter Property="FontWeight" Value="Normal"/>
-            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontSize" Value="28"/>
             <Setter Property="UseSystemFocusVisuals" Value="True"/>
             <Setter Property="Template">
                 <Setter.Value>
@@ -114,6 +114,7 @@
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="FontSize" Value="30"/>
             <Setter Property="UseSystemFocusVisuals" Value="True"/>
+            <Setter Property="FontSize" Value="20"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -211,6 +212,7 @@
             <Setter Property="FontWeight" Value="Normal"/>
             <Setter Property="FontSize" Value="30"/>
             <Setter Property="UseSystemFocusVisuals" Value="True"/>
+            <Setter Property="FontSize" Value="18"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -315,33 +317,11 @@
 
 
         <Image Source="Assets/fondo.png" Grid.RowSpan="5" Grid.ColumnSpan="5" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+      
 
-
-
-        <!--<Button x:Name="SalirB"  Height="105" Width="325"
-        VerticalAlignment ="Bottom" HorizontalAlignment="Center"  Padding="0,0,0,0" 
-        Foreground="#FF892020"
-                CornerRadius="10"  BorderThickness="5" FontWeight="Bold"  Content="SALIR" FontFamily="Verdana" FontSize="30" Margin="0,0,0,56.6" BorderBrush="#FFD85A24" >
-            <Button.Background>
-                <AcrylicBrush TintColor="#FFFFB253"/>
-            </Button.Background>
-            <Button.Resources>
-                <ResourceDictionary>
-                    <ResourceDictionary.ThemeDictionaries>
-                        
-                        <ResourceDictionary x:Key="Light">
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FF3C0000"/>                           
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE22525" Opacity="0.8"/>
-                        </ResourceDictionary>
-                    </ResourceDictionary.ThemeDictionaries>
-                </ResourceDictionary>
-            </Button.Resources>
-            
-        </Button>-->
-
-        <Button Content="SALIR" Style="{StaticResource ExitStyle}" Grid.Row="5" Grid.Column="3"  Height="75" Width="205" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <Button Content="RENDIRSE" Style="{StaticResource SurrenderStyle}"  Grid.Row="5" Grid.Column="1" Height="75" Width="205" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="75" Width="75" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,100,0"/>
+        <Button Content="SALIR" Style="{StaticResource ExitStyle}" Grid.Row="4" Grid.Column="3"  Height="60" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button Content="RENDIRSE" Style="{StaticResource SurrenderStyle}"  Grid.Row="5" Grid.Column="1" Height="60" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
 
         <StackPanel Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center">
             <Grid Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center">
@@ -354,40 +334,40 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Image x:Name="vg" Grid.Row="0"  Grid.Column="1" HorizontalAlignment="Center" Height="50"  VerticalAlignment="Center" Width="50" Source="Assets/altavoz1.png"/>
-                <Image x:Name="vm" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Height="50"  VerticalAlignment="Center" Width="50" Source="Assets/altavoz1.png"/>
-                <Image x:Name="vs" Grid.Row="2"  Grid.Column="1" HorizontalAlignment="Center" Height="50"  VerticalAlignment="Center" Width="50" Source="Assets/altavoz1.png"/>
-                <TextBlock  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center" Height="65" Width="315" Foreground="White" FontSize="36" FontFamily="Aldrich"  TextAlignment="Center" Margin="51,0,0,0"><Run Text="V"/><Run Text="olumen general"/></TextBlock>
-                <TextBlock  Grid.Row="1"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Height="65" Width="315" Foreground="White" FontSize="36" FontFamily="Aldrich" TextAlignment="Center" Margin="51,0,0,0"><Run Text="V"/><Run Text="olumen "/><Run Text="música"/></TextBlock>
-                <TextBlock  Grid.Row="2"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center" Height="65" Width="315" Foreground="White" FontSize="36"  FontFamily="Aldrich" TextAlignment="Center" Margin="51,0,0,0"><Run Text="V"/><Run Text="olumen "/><Run Text="SFX"/></TextBlock>
+                <Image x:Name="vg" Grid.Row="0"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
+                <Image x:Name="vm" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
+                <Image x:Name="vs" Grid.Row="2"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
+                <TextBlock  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16" FontFamily="Aldrich"  TextAlignment="Center"><Run Text="V"/><Run Text="olumen general"/></TextBlock>
+                <TextBlock  Grid.Row="1"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16" FontFamily="Aldrich" TextAlignment="Center"><Run Text="V"/><Run Text="olumen "/><Run Text="música"/></TextBlock>
+                <TextBlock  Grid.Row="2"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16"  FontFamily="Aldrich" TextAlignment="Center"><Run Text="V"/><Run Text="olumen "/><Run Text="SFX"/></TextBlock>
 
             </Grid>
         </StackPanel>
 
-        <TextBlock  FontFamily="Aldrich"  Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="56" Width="285" Foreground="White" FontSize="48"  TextAlignment="Center" Text="IDIOMA"/>
+        <TextBlock  FontFamily="Aldrich"  Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White" FontSize="36"  TextAlignment="Center" Text="IDIOMA"/>
 
 
-        <StackPanel Grid.Row="2"  Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" Margin="0,10,0,0">
-            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White" ValueChanged="Slider_ValueChanged_g"  Value="80" Height="65" />
-            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White"  ValueChanged="Slider_ValueChanged_m" Value="80"  Height="65"/>
-            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF"  Background="White"  ValueChanged="Slider_ValueChanged_s" Value="80"  Height="45"/>
+        <StackPanel Grid.Row="2"  Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" >
+            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White" ValueChanged="Slider_ValueChanged_g"  Value="80" Height="40" />
+            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White"  ValueChanged="Slider_ValueChanged_m" Value="80"  Height="40"/>
+            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF"  Background="White"  ValueChanged="Slider_ValueChanged_s" Value="80"  Height="35"/>
 
         </StackPanel>
 
-        <ToggleButton x:Name="besp" Height="135" Width="210" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="ToggleButton_Checked_esp" IsChecked="True">
-            <Image Source="/Assets/besp.png" AutomationProperties.Name="Slice"/>
+        <ToggleButton x:Name="besp" Height="75" Width="110" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Checked="ToggleButton_Checked_esp" IsChecked="True">
+            <Image Source="/Assets/besp.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </ToggleButton>
 
-        <ToggleButton x:Name="bcat" Height="135" Width="210" Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="ToggleButton_Checked_cat">
-            <Image Source="/Assets/bcat.png" AutomationProperties.Name="Slice"/>
+        <ToggleButton x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="ToggleButton_Checked_cat">
+            <Image Source="/Assets/bcat.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </ToggleButton>
 
-        <ToggleButton x:Name="buk"  Height="135" Width="210" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="ToggleButton_Checked_uk">
-            <Image Source="/Assets/buk.png" AutomationProperties.Name="Slice"/>
+        <ToggleButton x:Name="buk" Height="75" Width="110" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="ToggleButton_Checked_uk">
+            <Image Source="/Assets/buk.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </ToggleButton>
 
-        <ToggleSwitch FontFamily="Aldrich" OnContent="Paso de turnos automático" OffContent="Paso de turnos automático" Grid.Row="3" Foreground="White" RequestedTheme="Dark" Height="36" FontSize="26" HorizontalAlignment="Stretch" Grid.ColumnSpan="3" Margin="474,0,0,0"/>
-        <ToggleSwitch FontFamily="Aldrich" OnContent="Permitir espectar" OffContent="Permitir espectar"  Grid.Row="3"  Grid.Column="2" Foreground="White" RequestedTheme="Dark" Height="36" Width="314" FontSize="26" Grid.ColumnSpan="3" Margin="255,0,0,0"/>
+        <ToggleSwitch FontFamily="Aldrich" OnContent="Paso de turnos automático" OffContent="Paso de turnos automático" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Foreground="White" RequestedTheme="Dark" FontSize="14" HorizontalAlignment="Center" Margin="75,0,0,0" />
+        <ToggleSwitch FontFamily="Aldrich" OnContent="Permitir espectar" OffContent="Permitir espectar"  Grid.Row="3"  Grid.Column="3"  Grid.ColumnSpan="5" Foreground="White" RequestedTheme="Dark" FontSize="14"  HorizontalAlignment="Left"  Margin="-25,0,0,0"/>
 
 
     </Grid>
