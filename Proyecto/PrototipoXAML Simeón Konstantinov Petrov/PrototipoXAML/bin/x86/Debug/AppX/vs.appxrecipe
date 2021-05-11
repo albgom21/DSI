@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-E4BHA2K</Machine>
+    <WindowsUser>skoon</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>c68d0771-a8e8-488a-b486-8f3513ed37a8</PackageIdentityName>
+    <PackageIdentityPublisher>CN=skoon</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>B64B448F115E81E275493E894AEA8363F42F8B0F46D46753031206D3324EE79F</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>c68d0771-a8e8-488a-b486-8f3513ed37a8_1.0.0.0_x86__eb5sd27vm56fc</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>c68d0771-a8e8-488a-b486-8f3513ed37a8_eb5sd27vm56fc!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>c68d0771-a8e8-488a-b486-8f3513ed37a8</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=skoon</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-05-11T12:12:23.604</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\bin\x86\Debug\PrototipoXAML.exe">
+      <PackagePath>entrypoint\PrototipoXAML.exe</PackagePath>
+      <Modified>2021-05-11T12:12:23.080</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.11\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+      <Modified>2020-11-20T08:09:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+      <Modified>2020-12-02T02:52:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\avatar.png">
+      <PackagePath>Assets\avatar.png</PackagePath>
+      <Modified>2021-05-10T14:52:14.633</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\brawl.png">
+      <PackagePath>Assets\brawl.png</PackagePath>
+      <Modified>2021-05-10T14:45:38.466</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\cards.png">
+      <PackagePath>Assets\cards.png</PackagePath>
+      <Modified>2021-05-10T14:39:41.255</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\cards2.png">
+      <PackagePath>Assets\cards2.png</PackagePath>
+      <Modified>2021-05-10T14:28:55.074</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\coins.png">
+      <PackagePath>Assets\coins.png</PackagePath>
+      <Modified>2021-05-10T22:18:10.135</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\eye.png">
+      <PackagePath>Assets\eye.png</PackagePath>
+      <Modified>2021-05-11T11:27:59.317</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\fondo.png">
+      <PackagePath>Assets\fondo.png</PackagePath>
+      <Modified>2021-05-10T14:57:35.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\hero.png">
+      <PackagePath>Assets\hero.png</PackagePath>
+      <Modified>2021-05-10T16:39:05.048</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\lock.png">
+      <PackagePath>Assets\lock.png</PackagePath>
+      <Modified>2021-05-10T22:11:28.333</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\mazo.png">
+      <PackagePath>Assets\mazo.png</PackagePath>
+      <Modified>2021-05-11T11:35:18.548</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\offline.png">
+      <PackagePath>Assets\offline.png</PackagePath>
+      <Modified>2021-05-10T22:37:17.664</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\online.png">
+      <PackagePath>Assets\online.png</PackagePath>
+      <Modified>2021-05-10T22:36:21.878</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\settings.png">
+      <PackagePath>Assets\settings.png</PackagePath>
+      <Modified>2021-05-10T14:34:43.696</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\settings2.png">
+      <PackagePath>Assets\settings2.png</PackagePath>
+      <Modified>2021-05-10T14:33:40.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\shop.png">
+      <PackagePath>Assets\shop.png</PackagePath>
+      <Modified>2021-05-10T14:49:03.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\silver.png">
+      <PackagePath>Assets\silver.png</PackagePath>
+      <Modified>2021-05-10T15:08:10.094</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\star.png">
+      <PackagePath>Assets\star.png</PackagePath>
+      <Modified>2021-05-10T21:20:09.679</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\trophy.png">
+      <PackagePath>Assets\trophy.png</PackagePath>
+      <Modified>2021-05-10T14:32:16.820</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\xbutton.png">
+      <PackagePath>Assets\xbutton.png</PackagePath>
+      <Modified>2021-05-10T16:43:54.778</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2021-05-10T03:01:40.847</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-05-10T03:01:40.849</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-05-10T03:01:40.849</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-05-10T03:01:40.849</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-05-10T03:01:40.850</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-05-10T03:01:40.850</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-05-10T03:01:40.851</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2021-05-10T13:14:57.862</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\bin\x86\Debug\PrototipoXAML.xr.xml">
+      <PackagePath>PrototipoXAML.xr.xml</PackagePath>
+      <Modified>2021-05-11T12:04:08.420</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2021-05-11T12:07:51.235</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\bin\x86\Debug\PantallaRanking.xbf">
+      <PackagePath>PantallaRanking.xbf</PackagePath>
+      <Modified>2021-05-11T12:07:51.217</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\bin\x86\Debug\PantallaLogros.xbf">
+      <PackagePath>PantallaLogros.xbf</PackagePath>
+      <Modified>2021-05-11T12:12:23.007</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\bin\x86\Debug\PantallaPrincipal.xbf">
+      <PackagePath>PantallaPrincipal.xbf</PackagePath>
+      <Modified>2021-05-11T12:07:51.235</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+      <Modified>2020-12-02T00:52:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2021-05-11T11:43:10.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\DSI\PrototipoXAML\PrototipoXAML\bin\x86\Debug\Core\PrototipoXAML.exe">
+      <PackagePath>PrototipoXAML.exe</PackagePath>
+      <Modified>2021-05-11T12:12:23.600</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\skoon\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\skoon\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\skoon\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\skoon\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\skoon\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\skoon\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\skoon\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.29301.2</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\skoon\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\skoon\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.29301.2</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\skoon\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\skoon\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.29301.2</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.29301.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\skoon\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.11\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.29231.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.29231.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.29231.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.29231.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.29231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
