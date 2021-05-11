@@ -142,3 +142,33 @@ C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\Tien
 C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\Tienda.g.cs
 C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\Tienda.xaml
 C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\Tienda.xbf
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\GaleriaDeMazos.xbf
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\InGame.xbf
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Tienda.xbf
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\GaleriaDeMazos.g.i.cs
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\GaleriaDeMazos.g.cs
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\InGame.g.i.cs
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\InGame.g.cs
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\Tienda.g.i.cs
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\Tienda.g.cs
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\GaleriaDeMazos.xaml
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\InGame.xaml
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\Tienda.xaml
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\GaleriaDeMazos.xbf
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\InGame.xbf
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\Tienda.xbf
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\PantallaLogros.g.i.cs
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\PantallaLogros.g.cs
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\PantallaPrincipal.g.i.cs
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\PantallaPrincipal.g.cs
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\PantallaRanking.g.i.cs
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\PantallaRanking.g.cs
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\PantallaLogros.xaml
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\PantallaPrincipal.xaml
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\PantallaRanking.xaml
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\PantallaLogros.xbf
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\PantallaPrincipal.xbf
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\PantallaRanking.xbf
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaLogros.xbf
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaPrincipal.xbf
+C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaRanking.xbf

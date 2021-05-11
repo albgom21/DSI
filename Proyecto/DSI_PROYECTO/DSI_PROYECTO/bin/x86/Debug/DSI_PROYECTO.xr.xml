@@ -22,6 +22,11 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="CornerRadius" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontFamily" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="CornerRadius" />
@@ -56,6 +61,7 @@
       <RootProperty Name="RenderTransform" />
       <RootProperty Name="IsChecked" />
       <RootEvent Name="Checked" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
@@ -159,6 +165,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="Inlines" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="TextDecorations" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
@@ -263,6 +270,10 @@
     </RootType>
     <RootType FullName="DSI_PROYECTO.Opciones" />
     <RootType FullName="DSI_PROYECTO.OpcionesMenu" />
+    <RootType FullName="DSI_PROYECTO.PantallaLogros" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox" />
+    <RootType FullName="DSI_PROYECTO.PantallaPrincipal" />
+    <RootType FullName="DSI_PROYECTO.PantallaRanking" />
     <RootType FullName="DSI_PROYECTO.Tienda" />
   </Roots.RootTypes>
 </Roots>
