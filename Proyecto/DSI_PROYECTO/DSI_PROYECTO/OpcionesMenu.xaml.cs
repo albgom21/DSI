@@ -153,5 +153,36 @@ namespace DSI_PROYECTO
             B4.IsChecked = false;
             B5.IsChecked = false;
         }
+
+
+        private void besp_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (!(!(bool)besp.IsChecked && ((bool)bcat.IsChecked || (bool)buk.IsChecked)))
+            {
+                besp.IsChecked = true;
+            }
+        }
+
+        private void bcat_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (!(!(bool)bcat.IsChecked && ((bool)besp.IsChecked || (bool)buk.IsChecked)))
+            {
+                bcat.IsChecked = true;
+            }
+        }
+
+        private void buk_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (!(!(bool)buk.IsChecked && ((bool)bcat.IsChecked || (bool)besp.IsChecked)))
+            {
+                buk.IsChecked = true;
+            }
+        }
+
+        private void X_Click(object sender, RoutedEventArgs e)
+        {            
+            if (this.Frame.CanGoBack)
+                this.Frame.GoBack();            
+        }
     }
 }

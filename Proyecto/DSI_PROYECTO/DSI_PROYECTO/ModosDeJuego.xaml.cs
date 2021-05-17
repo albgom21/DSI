@@ -51,7 +51,7 @@ namespace DSI_PROYECTO
                 sbutton.IsChecked = false;
                 obutton.IsChecked = false;
 
-                descripcion.Text = "NORMAL: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor";
+                descripcion.Text = "NORMAL: máximo de 20 cartas en el mazo, pudiendo tener 3 copias de la misma carta.";
             }
         }
 
@@ -60,7 +60,7 @@ namespace DSI_PROYECTO
             nbutton.IsChecked = false;           
             sbutton.IsChecked = false;
             obutton.IsChecked = false;
-            descripcion.Text = "RANKED: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor";
+            descripcion.Text = "RANKED: partida igualadas respecto a tu rango con máximo de 20 cartas en el mazo, pudiendo tener 3 copias de la misma carta.";
         }
 
         private void sbutton_Checked(object sender, RoutedEventArgs e)
@@ -68,7 +68,7 @@ namespace DSI_PROYECTO
             nbutton.IsChecked = false;
             rbutton.IsChecked = false;
             obutton.IsChecked = false;
-            descripcion.Text = "SPELLBREAK: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor";
+            descripcion.Text = "SPELLBREAK: mazos de 20 cartas de hechizos, al jugar un hechizo se invoca una unidad aleatoria del mismo coste del hechizo y se activa este";
         }
 
         private void obutton_Checked(object sender, RoutedEventArgs e)
@@ -76,7 +76,7 @@ namespace DSI_PROYECTO
             nbutton.IsChecked = false;
             sbutton.IsChecked = false;
             rbutton.IsChecked = false;
-            descripcion.Text = "ORDER: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor";
+            descripcion.Text = "ORDER: el mazo se construye con 20 tipos de cartas diferentes";
         }
 
         private void B5_Checked(object sender, RoutedEventArgs e)
@@ -117,6 +117,22 @@ namespace DSI_PROYECTO
             B3.IsChecked = false;
             B4.IsChecked = false;
             B5.IsChecked = false;
+        }
+
+        private void X_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+                this.Frame.GoBack();
+        }
+
+        private void mazosGrid_ItemClick(object sender, ItemClickEventArgs e)
+        {
+           
+            VMMazos_Grid mazo = e.ClickedItem as VMMazos_Grid;
+            string s = System.IO.Directory.GetCurrentDirectory() + "\\" + mazo.Imagen;
+ 
+            MazoSel.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
+            
         }
     }
 }

@@ -40,7 +40,9 @@ namespace DSI_PROYECTO
     };
 
     public class VMCartas : Cartas
-    {      
+    {
+        public VMCartas() { }
+                
         public VMCartas(Cartas cart)
         {
             cantidad = cart.cantidad;
@@ -53,6 +55,7 @@ namespace DSI_PROYECTO
         public Image Img;
         public VMCartas_Grid(Cartas_Grid cart)
         {
+            Tipo = cart.Tipo;
             Name = cart.Name;
             Img = new Image();
             string s = System.IO.Directory.GetCurrentDirectory() + "\\" + cart.Imagen;
@@ -66,6 +69,7 @@ namespace DSI_PROYECTO
         public VMMazos_Grid(Mazos_Grid cart)
         {
             Name = cart.Name;
+            Imagen = cart.Imagen;
             Img = new Image();
             string s = System.IO.Directory.GetCurrentDirectory() + "\\" + cart.Imagen;
             Img.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));            

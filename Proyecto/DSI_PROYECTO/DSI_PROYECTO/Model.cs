@@ -18,6 +18,7 @@ namespace DSI_PROYECTO
     { 
         public string Name { get; set; }
         public string Imagen { get; set; }
+        public char Tipo { get; set; }
             
         public Cartas_Grid() { }
     }
@@ -32,201 +33,228 @@ namespace DSI_PROYECTO
     {
         public static List<Cartas> cartas_ = new List<Cartas>()
         {
-            new Cartas()
-            {
-                cantidad = 1,
-                Nombre = "Carta_1",                
-            },
-            new Cartas()
-            {
-                cantidad = 1,
-                Nombre = "Carta_2",                
-            },
-            new Cartas()
-            {
-                cantidad = 2,
-                Nombre = "Carta_3",
+           // new Cartas()
+           // {
+           //     cantidad = 1,
+           //     Nombre = "Carta_1",                
+           // },
+           // new Cartas()
+           // {
+           //     cantidad = 1,
+           //     Nombre = "Carta_2",                
+           // },
+           // new Cartas()
+           // {
+           //     cantidad = 2,
+           //     Nombre = "Carta_3",
                
-            },
-            new Cartas()
-            {
-                cantidad = 3,
-                Nombre = "Carta_4",
+           // },
+           // new Cartas()
+           // {
+           //     cantidad = 3,
+           //     Nombre = "Carta_4",
                
-            },
-            new Cartas()
-            {
-                cantidad = 1,
-                Nombre = "Carta_5",
+           // },
+           // new Cartas()
+           // {
+           //     cantidad = 1,
+           //     Nombre = "Carta_5",
                 
-            },
-            new Cartas()
-            {
-                cantidad = 1,
-                Nombre = "Carta_6",
+           // },
+           // new Cartas()
+           // {
+           //     cantidad = 1,
+           //     Nombre = "Carta_6",
                
-            },
-            new Cartas()
-            {
-                cantidad = 2,
-                Nombre = "Carta_7",
+           // },
+           // new Cartas()
+           // {
+           //     cantidad = 2,
+           //     Nombre = "Carta_7",
                
-           },
-            new Cartas()
-            {
-                cantidad = 3,
-                Nombre = "Carta_8",
+           //},
+           // new Cartas()
+           // {
+           //     cantidad = 3,
+           //     Nombre = "Carta_8",
                
-            },
-            new Cartas()
-            {
-                cantidad = 1,
-                Nombre = "Carta_9",
+           // },
+           // new Cartas()
+           // {
+           //     cantidad = 1,
+           //     Nombre = "Carta_9",
                 
-            },
-            new Cartas()
-            {
-                cantidad = 2,
-                Nombre = "Carta_10",               
-            },
-            new Cartas()
-            {
-                cantidad = 1,
-                Nombre = "Carta_11",               
-            },
-            new Cartas()
-            {
-                cantidad = 1,
-                Nombre = "Carta_12",              
-            },
-            new Cartas()
-            {
-                cantidad = 2,
-                Nombre = "Carta_13",                
-            }
+           // },
+           // new Cartas()
+           // {
+           //     cantidad = 2,
+           //     Nombre = "Carta_10",               
+           // },
+           // new Cartas()
+           // {
+           //     cantidad = 1,
+           //     Nombre = "Carta_11",               
+           // },
+           // new Cartas()
+           // {
+           //     cantidad = 1,
+           //     Nombre = "Carta_12",              
+           // },
+           // new Cartas()
+           // {
+           //     cantidad = 2,
+           //     Nombre = "Carta_13",                
+           // }
         };
 
         public static List<Cartas_Grid> cartas_grid_ = new List<Cartas_Grid>()
         {
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta1.png"
+                Name = "ESQUELETO",
+                Imagen = "Assets\\carta2.png",
+                Tipo = 's'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta2.png"
+                Name = "ZAP",
+                Imagen = "Assets\\carta1.png",
+                Tipo = 'h'
+            },          
+
+            new Cartas_Grid()
+            {
+                Name = "TANQUE",
+                Imagen = "Assets\\carta3.png",
+                Tipo = 'c'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta3.png"
-            },
-             new Cartas_Grid()
-            {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta1.png"
+                Name = "DUENDE",
+                Imagen = "Assets\\carta2.png",
+                Tipo = 's'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta2.png"
+                Name = "FLECHAS",
+                Imagen = "Assets\\carta1.png",
+                Tipo = 'h'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta3.png"
-            },
-             new Cartas_Grid()
-            {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta1.png"
+                Name = "ESBIRRO",
+                Imagen = "Assets\\carta3.png",
+                Tipo = 'c'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta2.png"
+                Name = "BOMBER",
+                Imagen = "Assets\\carta2.png",
+                Tipo = 's'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta3.png"
-            },
-             new Cartas_Grid()
-            {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta1.png"
+                Name = "TERREMOTO",
+                Imagen = "Assets\\carta1.png",
+                Tipo = 'h'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta2.png"
+                Name = "CABALLERO",
+                Imagen = "Assets\\carta3.png",
+                Tipo = 'c'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta3.png"
-            },
-             new Cartas_Grid()
-            {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta1.png"
+                Name = "GÓLEM",
+                Imagen = "Assets\\carta2.png",
+                Tipo = 's'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta2.png"
+                Name = "FUEGO",
+                Imagen = "Assets\\carta1.png",
+                Tipo = 'h'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta3.png"
-            },
-             new Cartas_Grid()
-            {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta1.png"
+                Name = "ARIETE",
+                Imagen = "Assets\\carta3.png",
+                Tipo = 'c'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta2.png"
+                Name = "COHETE",
+                Imagen = "Assets\\carta2.png",
+                Tipo = 's'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta3.png"
-            },
-             new Cartas_Grid()
-            {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta1.png"
+                Name = "HIELO",
+                Imagen = "Assets\\carta1.png",
+                Tipo = 'h'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta2.png"
+                Name = "DRAGÓN",
+                Imagen = "Assets\\carta3.png",
+                Tipo = 'c'
             },
 
             new Cartas_Grid()
             {
-                Name = "NOMBRE_CARTA",
-                Imagen = "Assets\\carta3.png"
+                Name = "ARQUERA",
+                Imagen = "Assets\\carta2.png",
+                Tipo = 's'
             },
+
+            new Cartas_Grid()
+            {
+                Name = "FURIA",
+                Imagen = "Assets\\carta1.png",
+                Tipo = 'h'
+            },
+
+            new Cartas_Grid()
+            {
+                Name = "CAZADOR",
+                Imagen = "Assets\\carta3.png",
+                Tipo = 'c'
+            },
+
+            new Cartas_Grid()
+            {
+                Name = "BRUJA",
+                Imagen = "Assets\\carta2.png",
+                Tipo = 's'
+            },
+
+            new Cartas_Grid()
+            {
+                Name = "VENENO",
+                Imagen = "Assets\\carta1.png",
+                Tipo = 'h'
+            },
+
+            new Cartas_Grid()
+            {
+                Name = "MAGO",
+                Imagen = "Assets\\carta3.png",
+                Tipo = 'c'
+            }
         };
 
         public static List<Mazos_Grid> mazos_grid_ = new List<Mazos_Grid>()

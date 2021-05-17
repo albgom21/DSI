@@ -12,8 +12,8 @@
         <DataTemplate x:Key="Mazos_Grid_Template"
                       x:DataType="local:VMMazos_Grid">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
-                <Image Source="{x:Bind Img.Source}" Width="100" Height="100"/>
-                <TextBlock Text="{x:Bind Name}" FontSize="16" Padding="10" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Image Source="{x:Bind Img.Source}" Width="90" Height="90"/>
+                <TextBlock Text="{x:Bind Name}" FontSize="16" Padding="7" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
 
@@ -710,7 +710,7 @@
 
         <Image Source="Assets/fondo.png" Grid.RowSpan="6" Grid.ColumnSpan="6"  Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
-        <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="5" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20"/>
+        <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="5" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Click="X_Click"/>
 
         <Button Content="JUGAR" Style="{StaticResource JugarStyle}"  Grid.Row="4" Grid.Column="5"  Height="50" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
 
@@ -770,18 +770,19 @@
         </StackPanel>
 
 
-        <GridView x:Name="mazosGrid" 
-                  Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="2"                    
-                  HorizontalAlignment="Center"               
+        <GridView x:Name="mazosGrid" Margin="60,0,0,0"
+                  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="3"                    
+                  HorizontalAlignment="Center"   
                   VerticalAlignment="Center"          
                   ItemsSource= "{x:Bind GridMazos}"
-                  ItemTemplate="{StaticResource Mazos_Grid_Template}"             
+                  ItemTemplate="{StaticResource Mazos_Grid_Template}"        
+                  ItemClick="mazosGrid_ItemClick" IsItemClickEnabled="True"
                  >
         </GridView>
         <Border Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="4" Background="Red" CornerRadius="5" Height="90" Width="80" />
 
         <TextBlock Text="NOMBRE_MAZO" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="4" TextWrapping="WrapWholeWords" FontSize="20" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Normal"/>
-        <Image Source="/Assets/Mazo1.png" Stretch="Uniform" Grid.Column="5" Grid.Row="2" Margin="20"/>
+        <Image x:Name="MazoSel" Source="/Assets/Mazo1.png" Stretch="Uniform" Grid.Column="5" Grid.Row="2" Margin="20"/>
         <Image Source="/Assets/Heroe.png" Stretch="Uniform" Grid.Column="5" Grid.Row="3" Margin="0,20,0,40" VerticalAlignment="Top"/>
         <TextBlock Text="HÉROE" FontFamily="Aldrich" Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="4" TextWrapping="WrapWholeWords" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="3" Foreground="Aquamarine"/>
 

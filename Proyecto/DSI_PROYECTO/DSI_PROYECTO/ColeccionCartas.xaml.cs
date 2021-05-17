@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -52,20 +53,223 @@ namespace DSI_PROYECTO
 
         private void sbutton_Checked(object sender, RoutedEventArgs e)
         {
-            hbutton.IsChecked = false;
-            cbutton.IsChecked = false;
+            if (GridCartas != null)
+            {              
+                GridCartas.Clear();
+                foreach (Cartas_Grid cartas in Model.GetAllCartas_Grid())
+                {
+                    VMCartas_Grid VMitem = new VMCartas_Grid(cartas);
+                    if (VMitem.Tipo == 's')
+                        GridCartas.Add(VMitem);
+                    else if ((bool)hbutton.IsChecked && VMitem.Tipo == 'h')
+                        GridCartas.Add(VMitem);
+                    else if ((bool)cbutton.IsChecked && VMitem.Tipo == 'c')
+                        GridCartas.Add(VMitem);
+                }
+            }                      
+        }
+
+        private void sbutton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (GridCartas != null)
+            {
+                GridCartas.Clear();
+                if (!(bool)hbutton.IsChecked && !(bool)cbutton.IsChecked){
+                    foreach (Cartas_Grid cartas in Model.GetAllCartas_Grid())
+                    {
+                        VMCartas_Grid VMitem = new VMCartas_Grid(cartas);                       
+                        GridCartas.Add(VMitem);                    
+                    }
+                }
+                else
+                {
+                    foreach (Cartas_Grid cartas in Model.GetAllCartas_Grid())
+                    {
+                        VMCartas_Grid VMitem = new VMCartas_Grid(cartas);
+                        if ((bool)hbutton.IsChecked && VMitem.Tipo == 'h')
+                            GridCartas.Add(VMitem);
+                        else if ((bool)cbutton.IsChecked && VMitem.Tipo == 'c')
+                            GridCartas.Add(VMitem);
+                    }
+                }               
+            }
         }
 
         private void hbutton_Checked(object sender, RoutedEventArgs e)
         {
-            sbutton.IsChecked = false;
-            cbutton.IsChecked = false;
-        }      
+            if (GridCartas != null)
+            {
+                GridCartas.Clear();
+                foreach (Cartas_Grid cartas in Model.GetAllCartas_Grid())
+                {
+                    VMCartas_Grid VMitem = new VMCartas_Grid(cartas);
+                    if (VMitem.Tipo == 'h')
+                        GridCartas.Add(VMitem);
+                    else if ((bool)sbutton.IsChecked && VMitem.Tipo == 's')
+                        GridCartas.Add(VMitem);
+                    else if ((bool)cbutton.IsChecked && VMitem.Tipo == 'c')
+                        GridCartas.Add(VMitem);
+                }
+            }            
+        }
+
+        private void hbutton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (GridCartas != null)
+            {
+                GridCartas.Clear();
+                GridCartas.Clear();
+                if (!(bool)sbutton.IsChecked && !(bool)cbutton.IsChecked)
+                {
+                    foreach (Cartas_Grid cartas in Model.GetAllCartas_Grid())
+                    {
+                        VMCartas_Grid VMitem = new VMCartas_Grid(cartas);
+                        GridCartas.Add(VMitem);
+                    }
+                }
+                else
+                {
+                    foreach (Cartas_Grid cartas in Model.GetAllCartas_Grid())
+                    {
+                        VMCartas_Grid VMitem = new VMCartas_Grid(cartas);
+                        if ((bool)sbutton.IsChecked && VMitem.Tipo == 's')
+                            GridCartas.Add(VMitem);
+                        else if ((bool)cbutton.IsChecked && VMitem.Tipo == 'c')
+                            GridCartas.Add(VMitem);
+                    }
+                }
+            }
+        }
 
         private void cbutton_Checked(object sender, RoutedEventArgs e)
         {
-            hbutton.IsChecked = false;
-            sbutton.IsChecked = false;
+            if (GridCartas != null)
+            {
+                GridCartas.Clear();
+                foreach (Cartas_Grid cartas in Model.GetAllCartas_Grid())
+                {
+                    VMCartas_Grid VMitem = new VMCartas_Grid(cartas);
+                    if (VMitem.Tipo == 'c')
+                        GridCartas.Add(VMitem);
+                    else if ((bool)hbutton.IsChecked && VMitem.Tipo == 'h')
+                        GridCartas.Add(VMitem);
+                    else if ((bool)sbutton.IsChecked && VMitem.Tipo == 's')
+                        GridCartas.Add(VMitem);
+                }
+            }            
+        }
+
+        private void cbutton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (GridCartas != null)
+            {
+                GridCartas.Clear();
+                GridCartas.Clear();
+                if (!(bool)hbutton.IsChecked && !(bool)sbutton.IsChecked)
+                {
+                    foreach (Cartas_Grid cartas in Model.GetAllCartas_Grid())
+                    {
+                        VMCartas_Grid VMitem = new VMCartas_Grid(cartas);
+                        GridCartas.Add(VMitem);
+                    }
+                }
+                else
+                {
+                    foreach (Cartas_Grid cartas in Model.GetAllCartas_Grid())
+                    {
+                        VMCartas_Grid VMitem = new VMCartas_Grid(cartas);
+                        if ((bool)hbutton.IsChecked && VMitem.Tipo == 'h')
+                            GridCartas.Add(VMitem);
+                        else if ((bool)sbutton.IsChecked && VMitem.Tipo == 's')
+                            GridCartas.Add(VMitem);
+                    }
+                }
+            }
+        }
+
+        private void cartasGrid_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            VMCartas_Grid item = e.ClickedItem as VMCartas_Grid;
+            VMCartas cart = new VMCartas();
+            cart.Nombre = item.Name;      
+            cart.cantidad = 1;
+            bool encontrada = false;
+            int i = 0;
+            int borrar = -1;
+            int nTotalCartas = 0;
+
+            if(item.Tipo != 'c') //Si la carta no es crafteable se puede añadir al mazo
+            {
+                foreach (VMCartas cartas in ListaCartas)
+                {
+                    VMCartas VMitem = new VMCartas(cartas);
+                    nTotalCartas += VMitem.cantidad;
+                    if (VMitem.Nombre == item.Name)
+                    {
+                        cart.cantidad = VMitem.cantidad;
+                        cart.cantidad += 1;
+
+                        borrar = i;
+
+                        //ListaCartas[i].cantidad += 1;                
+                        encontrada = true;
+                    }
+                    i++;
+                }
+                if (!encontrada && nTotalCartas < 20)
+                {
+                    cart.cantidad = 1;
+                    ListaCartas.Insert(0, cart);
+                }
+                else if (nTotalCartas < 20)
+                {
+                    ListaCartas.RemoveAt(borrar);
+                    ListaCartas.Insert(0, cart);
+                }
+            }                                     
+        }
+
+        private void cartasList_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            VMCartas item = e.ClickedItem as VMCartas;
+            VMCartas cart = new VMCartas();
+            cart.Nombre = item.Nombre;
+            cart.cantidad = 1;
+            bool encontrada = false;
+            int i = 0;
+            int borrar = -1;
+
+            foreach (VMCartas cartas in ListaCartas)
+            {
+                VMCartas VMitem = new VMCartas(cartas);
+                if (VMitem.Nombre == item.Nombre)
+                {
+                    cart.cantidad = VMitem.cantidad;
+                    cart.cantidad -= 1;
+
+                    borrar = i;
+
+                    //ListaCartas[i].cantidad += 1;                
+                    encontrada = true;
+                }
+                i++;
+            }
+            if (encontrada)
+            {
+                if(cart.cantidad == 0)
+                    ListaCartas.RemoveAt(borrar);                
+                else
+                {
+                    ListaCartas.RemoveAt(borrar);
+                    ListaCartas.Insert(0, cart);
+                }               
+            }                        
+        }
+
+        private void X_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+                this.Frame.GoBack();
         }
     }
 }
