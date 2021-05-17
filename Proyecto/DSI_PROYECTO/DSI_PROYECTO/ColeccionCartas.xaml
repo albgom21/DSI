@@ -507,9 +507,9 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <Button Content="GUARDAR MAZO" Style="{StaticResource SaveStyle}"  Grid.Row="3" Grid.Column="0" Height="40" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button Content="GUARDAR MAZO" Style="{StaticResource SaveStyle}"  Grid.Row="3" Grid.Column="0" Height="40" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click"/>
 
-        <TextBox Text="NOMBRE_MAZO" FontFamily="Aldrich" FontSize="20" Foreground="#FFCB9056" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Center"  SelectionHighlightColor="#FFBF7100" Width="220" Height="35"/>
+        <TextBox x:Name="MazoName" FontFamily="Aldrich" FontSize="20" Foreground="#FFCB9056" TextChanged="MazoName_TextChanged" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Center"  SelectionHighlightColor="#FFBF7100" Width="220" Height="35"/>
         <TextBlock Text="Número de cartas" Grid.Row="1" Grid.Column="0"  TextWrapping="WrapWholeWords" FontSize="16" FontFamily="Aldrich" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="#FFCB9056" Margin="0,0,10,0" SelectionHighlightColor="#FFBF7100"/>
 
         <ListView x:Name="cartasList" 

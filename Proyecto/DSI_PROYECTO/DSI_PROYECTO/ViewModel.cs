@@ -70,6 +70,7 @@ namespace DSI_PROYECTO
         {
             Name = cart.Name;
             Imagen = cart.Imagen;
+            Cartas = cart.Cartas;
             Img = new Image();
             string s = System.IO.Directory.GetCurrentDirectory() + "\\" + cart.Imagen;
             Img.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));            
