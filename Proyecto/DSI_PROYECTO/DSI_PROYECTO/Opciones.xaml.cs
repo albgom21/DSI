@@ -26,6 +26,7 @@ namespace DSI_PROYECTO
         public Opciones()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled; //Required si se quieren ignorar los límites de CacheSize
         }
 
         private void Slider_ValueChanged_g(object sender, RangeBaseValueChangedEventArgs e)

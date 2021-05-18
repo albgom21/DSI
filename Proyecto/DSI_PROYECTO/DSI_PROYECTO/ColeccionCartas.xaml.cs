@@ -32,6 +32,8 @@ namespace DSI_PROYECTO
         public ColeccionCartas()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled; //Required si se quieren ignorar los límites de CacheSize
+
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -132,8 +134,7 @@ namespace DSI_PROYECTO
         private void hbutton_Unchecked(object sender, RoutedEventArgs e)
         {
             if (GridCartas != null)
-            {
-                GridCartas.Clear();
+            {           
                 GridCartas.Clear();
                 if (!(bool)sbutton.IsChecked && !(bool)cbutton.IsChecked)
                 {

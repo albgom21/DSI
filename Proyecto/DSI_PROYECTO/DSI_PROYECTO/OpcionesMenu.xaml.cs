@@ -25,6 +25,7 @@ namespace DSI_PROYECTO
         public OpcionesMenu()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled; //Required si se quieren ignorar los límites de CacheSize
         }
 
         private void Slider_ValueChanged_g(object sender, RangeBaseValueChangedEventArgs e)
@@ -114,46 +115,31 @@ namespace DSI_PROYECTO
             bcat.IsChecked = false;
         }
 
-        private void B5_Checked(object sender, RoutedEventArgs e)
+
+        private void Tienda(object sender, RoutedEventArgs e)
         {
-            B2.IsChecked = false;
-            B3.IsChecked = false;
-            B4.IsChecked = false;
+            this.Frame.Navigate(typeof(Tienda));
             B1.IsChecked = false;
         }
-
-        private void B4_Checked(object sender, RoutedEventArgs e)
+        private void Galeria_Mazos(object sender, RoutedEventArgs e)
         {
+            this.Frame.Navigate(typeof(GaleriaDeMazos));
             B2.IsChecked = false;
-            B3.IsChecked = false;
-            B1.IsChecked = false;
-            B5.IsChecked = false;
         }
-
-        private void B3_Checked(object sender, RoutedEventArgs e)
+        private void Ranking(object sender, RoutedEventArgs e)
         {
-            B2.IsChecked = false;
-            B1.IsChecked = false;
+            this.Frame.Navigate(typeof(PantallaRanking));
             B4.IsChecked = false;
-            B5.IsChecked = false;
         }
-
-        private void B2_Checked(object sender, RoutedEventArgs e)
+        private void Principal(object sender, RoutedEventArgs e)
         {
-            B1.IsChecked = false;
+            this.Frame.Navigate(typeof(PantallaPrincipal));
             B3.IsChecked = false;
-            B4.IsChecked = false;
-            B5.IsChecked = false;
         }
-
-        private void B1_Checked(object sender, RoutedEventArgs e)
+        private void B5_Unchecked(object sender, RoutedEventArgs e)
         {
-            B2.IsChecked = false;
-            B3.IsChecked = false;
-            B4.IsChecked = false;
-            B5.IsChecked = false;
+            B5.IsChecked = true;
         }
-
 
         private void besp_Unchecked(object sender, RoutedEventArgs e)
         {
@@ -183,6 +169,6 @@ namespace DSI_PROYECTO
         {            
             if (this.Frame.CanGoBack)
                 this.Frame.GoBack();            
-        }
+        }       
     }
 }

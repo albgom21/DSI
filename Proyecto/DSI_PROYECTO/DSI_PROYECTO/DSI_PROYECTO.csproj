@@ -188,10 +188,15 @@
     <Content Include="Assets\heroe.png" />
     <Content Include="Assets\heroe1.png" />
     <Content Include="Assets\heroe2.png" />
+    <Content Include="Assets\heroe3.png" />
+    <Content Include="Assets\heroe4.png" />
+    <Content Include="Assets\heroe5.png" />
+    <Content Include="Assets\heroe6.png" />
     <Content Include="Assets\historial.png" />
     <Content Include="Assets\lock.png" />
     <Content Include="Assets\mana.png" />
     <Content Include="Assets\mazo.png" />
+    <Content Include="Assets\mazo0.png" />
     <Content Include="Assets\mazo1.png" />
     <Content Include="Assets\mazo2.png" />
     <Content Include="Assets\mazo3.png" />

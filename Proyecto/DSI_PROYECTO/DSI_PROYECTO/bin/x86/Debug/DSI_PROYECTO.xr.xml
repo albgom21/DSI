@@ -263,6 +263,11 @@
     </RootType>
     <RootType FullName="DSI_PROYECTO.InGame" />
     <RootType FullName="DSI_PROYECTO.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.FlipView">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Items" />
+    </RootType>
     <RootType FullName="DSI_PROYECTO.ModosDeJuego" />
     <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
       <RootProperty Name="FontFamily" />

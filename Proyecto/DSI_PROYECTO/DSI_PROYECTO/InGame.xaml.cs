@@ -24,7 +24,13 @@ namespace DSI_PROYECTO
     {
         public InGame()
         {
-            this.InitializeComponent();
+            this.InitializeComponent();            
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            Image mazo = e.Parameter as Image;
+            string s = System.IO.Directory.GetCurrentDirectory() + "\\" + mazo.Source;
+            h.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
         }
     }
 }
