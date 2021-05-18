@@ -712,15 +712,15 @@
 
         <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="5" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Click="X_Click"/>
 
-        <Button Content="JUGAR" Style="{StaticResource JugarStyle}"  Grid.Row="4" Grid.Column="5"  Height="50" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="Jugar_Click"/>
+        <Button  x:Uid="MDJ_Jugar" Content="JUGAR" Style="{StaticResource JugarStyle}"  Grid.Row="4" Grid.Column="5"  Height="50" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="Jugar_Click"/>
 
         <Border Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" Background="#FF91E4FB" CornerRadius="10" Height="45"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <TextBlock x:Name="descripcion" Text="ELIGE UN MODO DE JUEGO" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" TextWrapping="WrapWholeWords" FontSize="14" FontFamily="Aldrich" Padding="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="descripcion" x:Uid="descripciont" Text="ELIGE UN MODO DE JUEGO" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" TextWrapping="WrapWholeWords" FontSize="14" FontFamily="Aldrich" Padding="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         <ToggleButton x:Name="nbutton" Content="NORMAL"  Style="{StaticResource NormalStyle}"  Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Height="45" Width="100" Checked="nbutton_Checked" Unchecked="restartMazos"/>
         <ToggleButton x:Name="rbutton" Content="RANKED"  Style="{StaticResource RankedStyle}" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center" Checked="rbutton_Checked" Unchecked="restartMazos" />
         <ToggleButton x:Name="sbutton" Content="SPELLBREAK"  Style="{StaticResource SpellStyle}"  Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center" Checked="sbutton_Checked" Unchecked="restartMazos"/>
-        <ToggleButton x:Name="obutton" Content="ORDER"  Style="{StaticResource OrderStyle}"  Grid.Row="4" Grid.Column="4" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center" Checked="obutton_Checked" Unchecked="restartMazos"/>
+        <ToggleButton x:Name="obutton"  Content="ORDER"  Style="{StaticResource OrderStyle}"  Grid.Row="4" Grid.Column="4" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center" Checked="obutton_Checked" Unchecked="restartMazos"/>
 
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="6">
@@ -783,7 +783,7 @@
 
         <TextBlock x:Name="mazoName" Text="" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="4" TextWrapping="WrapWholeWords" FontSize="20" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Normal"/>
         <Image x:Name="MazoSel" Source="/Assets/Mazo0.png" Stretch="Uniform" Grid.Column="5" Grid.Row="2" Margin="20"/>
-        <TextBlock Text="HÉROE" FontFamily="Aldrich" Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="4"  TextWrapping="WrapWholeWords" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Foreground="Aquamarine"/>
+        <TextBlock x:Uid="Heroe" Text="HÉROE" FontFamily="Aldrich" Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="4"  TextWrapping="WrapWholeWords" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Foreground="Aquamarine"/>
 
         <FlipView x:Name="a" Grid.Column="5" Grid.Row="3" Margin="15,0,15,30" VerticalAlignment="Top">         
             <Image Source="/Assets/Heroe.png"/>

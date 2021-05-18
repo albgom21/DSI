@@ -617,7 +617,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='67' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" >
+            <ToggleButton x:ConnectionId='67' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>

@@ -62,8 +62,11 @@ namespace DSI_PROYECTO
                     rbutton.IsChecked = false;
                     sbutton.IsChecked = false;
                     obutton.IsChecked = false;
-                }       
-                descripcion.Text = "NORMAL: mazos de 20 cartas máximo, pudiendo tener 3 copias de la misma carta.";
+                }               
+                if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
+                    descripcion.Text = "NORMAL: mazos de 20 cartas máximo, pudiendo tener 3 copias de la misma carta.";
+                else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
+                    descripcion.Text = "NORMAL: decks of 20 cards maximum, being able to have 3 copies of the same card.";
             }
         }
 
@@ -84,8 +87,11 @@ namespace DSI_PROYECTO
                 nbutton.IsChecked = false;
                 obutton.IsChecked = false;
             }
-         
-            descripcion.Text = "RANKED: partida igualadas respecto a tu rango con mazos de 20 cartas máximo, pudiendo tener 3 copias de la misma carta.";
+
+            if(Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
+                descripcion.Text = "RANKED: partida igualadas respecto a tu rango con mazos de 20 cartas máximo, pudiendo tener 3 copias de la misma carta.";
+            else if(Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
+                descripcion.Text = "RANKED: matched games with respect to your rank with decks of 20 cards maximum, being able to have 3 copies of the same card.";
         }
 
         private void sbutton_Checked(object sender, RoutedEventArgs e)
@@ -104,8 +110,12 @@ namespace DSI_PROYECTO
                 rbutton.IsChecked = false;
                 nbutton.IsChecked = false;
                 obutton.IsChecked = false;
-            }         
-            descripcion.Text = "SPELLBREAK: mazos de 20 cartas de hechizos, al jugar un hechizo también se invoca una unidad aleatoria,";
+            }
+
+            if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
+                descripcion.Text = "SPELLBREAK: mazos de 20 cartas de hechizos, al jugar un hechizo también se invoca una unidad aleatoria";
+            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
+                descripcion.Text = "SPELLBREAK: 20 spell card decks, playing a spell also summons a random unit.";
         }
 
         private void obutton_Checked(object sender, RoutedEventArgs e)
@@ -125,8 +135,11 @@ namespace DSI_PROYECTO
                 nbutton.IsChecked = false;
                 rbutton.IsChecked = false;
             }
-       
-            descripcion.Text = "ORDER: el mazo se construye con 20 tipos de cartas diferentes.";
+
+            if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
+                descripcion.Text = "ORDER: el mazo se construye con 20 tipos de cartas diferentes.";
+            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
+                descripcion.Text = "ORDER: the deck is built with 20 different types of cards.";
         }
 
         private void X_Click(object sender, RoutedEventArgs e)

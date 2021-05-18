@@ -25,7 +25,7 @@ namespace DSI_PROYECTO
         public OpcionesMenu()
         {
             this.InitializeComponent();
-            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled; //Required si se quieren ignorar los límites de CacheSize
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled; //Required si se quieren ignorar los límites de CacheSize           
         }
 
         private void Slider_ValueChanged_g(object sender, RangeBaseValueChangedEventArgs e)
@@ -95,26 +95,50 @@ namespace DSI_PROYECTO
         }
 
         private void ToggleButton_Checked_esp(object sender, RoutedEventArgs e)
-        {
-            if (bcat != null && buk != null)
+        {          
+            if ((sender as Button)?.Tag is string tag)
             {
-                bcat.IsChecked = false;
-                buk.IsChecked = false;
-            }
+                // Change the app language
+                Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
+
+                // Clear the back-navigation stack, and send the user to MainPage
+                // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
+                // will stay in the previous language until reloaded.
+                Frame.BackStack.Clear();
+                Frame.Navigate(typeof(OpcionesMenu)); Frame.CacheSize = 0;
+            }            
         }
 
         private void ToggleButton_Checked_cat(object sender, RoutedEventArgs e)
         {
-            besp.IsChecked = false;
-            buk.IsChecked = false;
+            if ((sender as Button)?.Tag is string tag)
+            {
+                // Change the app language
+                Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
+
+                // Clear the back-navigation stack, and send the user to MainPage
+                // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
+                // will stay in the previous language until reloaded.
+                Frame.BackStack.Clear();
+                Frame.Navigate(typeof(OpcionesMenu)); Frame.CacheSize = 0;
+            }
         }
 
         private void ToggleButton_Checked_uk(object sender, RoutedEventArgs e)
         {
-            besp.IsChecked = false;
-            bcat.IsChecked = false;
-        }
+           
+            if ((sender as Button)?.Tag is string tag)
+            {
+                // Change the app language
+                Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
 
+                // Clear the back-navigation stack, and send the user to MainPage
+                // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
+                // will stay in the previous language until reloaded.
+                Frame.BackStack.Clear();
+                Frame.Navigate(typeof(OpcionesMenu)); Frame.CacheSize = 0;
+            }
+        }
 
         private void Tienda(object sender, RoutedEventArgs e)
         {
@@ -140,35 +164,11 @@ namespace DSI_PROYECTO
         {
             B5.IsChecked = true;
         }
-
-        private void besp_Unchecked(object sender, RoutedEventArgs e)
-        {
-            if (!(!(bool)besp.IsChecked && ((bool)bcat.IsChecked || (bool)buk.IsChecked)))
-            {
-                besp.IsChecked = true;
-            }
-        }
-
-        private void bcat_Unchecked(object sender, RoutedEventArgs e)
-        {
-            if (!(!(bool)bcat.IsChecked && ((bool)besp.IsChecked || (bool)buk.IsChecked)))
-            {
-                bcat.IsChecked = true;
-            }
-        }
-
-        private void buk_Unchecked(object sender, RoutedEventArgs e)
-        {
-            if (!(!(bool)buk.IsChecked && ((bool)bcat.IsChecked || (bool)besp.IsChecked)))
-            {
-                buk.IsChecked = true;
-            }
-        }
-
+        
         private void X_Click(object sender, RoutedEventArgs e)
-        {            
+        {
             if (this.Frame.CanGoBack)
-                this.Frame.GoBack();            
-        }       
+                this.Frame.GoBack();
+        }                
     }
 }

@@ -391,7 +391,7 @@
 
         <Image Source="Assets/fondo.png" Grid.RowSpan="5" Grid.ColumnSpan="5" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
-        <!-- Barra de botones en la parte superior. -->
+         <!--Barra de botones en la parte superior.--> 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="5">
             <ToggleButton x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="Tienda">
                 <ToggleButton.RenderTransform>
@@ -438,7 +438,7 @@
             </ToggleButton>
         </StackPanel>
 
-        <Button Content="SALIR" Style="{StaticResource ExitStyle}" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"  Height="50" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="35,0,0,0" Click="Principal"/>
+        <Button x:Uid="salirOpcM" Content="SALIR" Style="{StaticResource ExitStyle}" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"  Height="50" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="35,0,0,0" Click="Principal"/>
         <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="X_Click"/>
 
         <StackPanel Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center">
@@ -455,14 +455,14 @@
                 <Image x:Name="vg" Grid.Row="0"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
                 <Image x:Name="vm" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
                 <Image x:Name="vs" Grid.Row="2"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
-                <TextBlock  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16" FontFamily="Aldrich"  TextAlignment="Center"><Run Text="V"/><Run Text="olumen general"/></TextBlock>
-                <TextBlock  Grid.Row="1"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16" FontFamily="Aldrich" TextAlignment="Center"><Run Text="V"/><Run Text="olumen "/><Run Text="música"/></TextBlock>
-                <TextBlock  Grid.Row="2"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16"  FontFamily="Aldrich" TextAlignment="Center"><Run Text="V"/><Run Text="olumen "/><Run Text="SFX"/></TextBlock>
+                <TextBlock  x:Uid="volG" Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16" FontFamily="Aldrich"  TextAlignment="Center"><Run Text="V"/><Run Text="olumen general"/></TextBlock>
+                <TextBlock  x:Uid="volM" Grid.Row="1"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16" FontFamily="Aldrich" TextAlignment="Center"><Run Text="V"/><Run Text="olumen "/><Run Text="música"/></TextBlock>
+                <TextBlock  x:Uid="volS" Grid.Row="2"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16"  FontFamily="Aldrich" TextAlignment="Center"><Run Text="V"/><Run Text="olumen "/><Run Text="SFX"/></TextBlock>
 
             </Grid>
         </StackPanel>
 
-        <TextBlock  FontFamily="Aldrich"  Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White" FontSize="36"  TextAlignment="Center" Text="IDIOMA"/>
+        <TextBlock  x:Uid="IdiomaOpcionesMenu" FontFamily="Aldrich"  Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White" FontSize="36"  TextAlignment="Center" Text="IDIOMA"/>
 
 
         <StackPanel Grid.Row="2"  Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" >
@@ -472,20 +472,20 @@
 
         </StackPanel>
 
-        <ToggleButton x:Name="besp" Height="75" Width="110" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Checked="ToggleButton_Checked_esp" IsChecked="True" Unchecked="besp_Unchecked">
+        <Button x:Name="besp" Height="75" Width="110" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Click="ToggleButton_Checked_esp" Tag="es">
             <Image Source="/Assets/besp.png" AutomationProperties.Name="Slice" Margin="-5"/>
-        </ToggleButton>
+        </Button>
 
-        <ToggleButton x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="ToggleButton_Checked_cat" Unchecked="bcat_Unchecked">
+        <Button x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ToggleButton_Checked_cat" Tag="cat">
             <Image Source="/Assets/bcat.png" AutomationProperties.Name="Slice" Margin="-5"/>
-        </ToggleButton>
+        </Button>
 
-        <ToggleButton x:Name="buk" Height="75" Width="110" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Checked="ToggleButton_Checked_uk" Unchecked="buk_Unchecked">
+        <Button x:Name="buk" Height="75" Width="110" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ToggleButton_Checked_uk"  Tag="en">
             <Image Source="/Assets/buk.png" AutomationProperties.Name="Slice" Margin="-5"/>
-        </ToggleButton>
+        </Button>
 
-        <ToggleSwitch FontFamily="Aldrich" OnContent="Paso de turnos automático" OffContent="Paso de turnos automático" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Foreground="White" RequestedTheme="Dark" FontSize="14" HorizontalAlignment="Center" Margin="75,0,0,0" />
-        <ToggleSwitch FontFamily="Aldrich" OnContent="Permitir espectar" OffContent="Permitir espectar"  Grid.Row="3"  Grid.Column="3"  Grid.ColumnSpan="5" Foreground="White" RequestedTheme="Dark" FontSize="14"  HorizontalAlignment="Left"  Margin="-35,0,0,0"/>
+        <ToggleSwitch x:Uid="PasoTurnos" FontFamily="Aldrich" OnContent="Paso de turnos automático" OffContent="Paso de turnos automático" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Foreground="White" RequestedTheme="Dark" FontSize="14" HorizontalAlignment="Center" Margin="75,0,0,0" />
+        <ToggleSwitch x:Uid="Espectar" FontFamily="Aldrich" OnContent="Permitir espectar" OffContent="Permitir espectar"  Grid.Row="3"  Grid.Column="3"  Grid.ColumnSpan="5" Foreground="White" RequestedTheme="Dark" FontSize="14"  HorizontalAlignment="Left"  Margin="-35,0,0,0"/>
 
 
     </Grid>

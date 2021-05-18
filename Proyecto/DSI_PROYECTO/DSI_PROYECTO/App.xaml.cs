@@ -30,6 +30,19 @@ namespace DSI_PROYECTO
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            ChangeStartingLanguage();
+        }
+        private void ChangeStartingLanguage()
+        {
+            var culture = new System.Globalization.CultureInfo("es"); //es-ES
+
+            #if WINDOWS_UWP
+            Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = culture.IetfLanguageTag;
+            #else
+			System.Globalization.CultureInfo.CurrentUICulture = culture;
+			System.Globalization.CultureInfo.CurrentCulture = culture;
+			Windows.ApplicationModel.Resources.ResourceLoader.DefaultLanguage = culture.IetfLanguageTag;
+            #endif
         }
 
         /// <summary>
@@ -66,7 +79,7 @@ namespace DSI_PROYECTO
                     // Cuando no se restaura la pila de navegación, navegar a la primera página,
                     // configurando la nueva página pasándole la información requerida como
                     //parámetro de navegación
-                    rootFrame.Navigate(typeof(Tienda), e.Arguments);
+                    rootFrame.Navigate(typeof(PantallaPrincipal), e.Arguments);
                 }
                 // Asegurarse de que la ventana actual está activa.
                 Window.Current.Activate();
