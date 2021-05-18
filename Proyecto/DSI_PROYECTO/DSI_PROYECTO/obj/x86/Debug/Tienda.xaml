@@ -97,7 +97,7 @@
 
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <ToggleButton x:ConnectionId='9' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <ToggleButton x:ConnectionId='14' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
                 </ToggleButton.RenderTransform>
@@ -107,7 +107,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='10' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" >
+            <ToggleButton x:ConnectionId='15' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
                 </ToggleButton.RenderTransform>
@@ -117,10 +117,10 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='11' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top">
+            <ToggleButton x:ConnectionId='16' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top">
                 <Image Source="/Assets/brawl.png" Width="90" Height="60" UseLayoutRounding="False" VerticalAlignment="Top" Margin="0,-4,0,0"/>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='12' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top">
+            <ToggleButton x:ConnectionId='17' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top">
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
@@ -130,7 +130,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='13' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" >
+            <ToggleButton x:ConnectionId='18' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
@@ -144,56 +144,59 @@
 
         <!-- Dinero -->
         <StackPanel Grid.Row="1" Margin="60,0,0,0" Orientation="Horizontal">
-            <TextBlock Text="DINERO" Foreground="White" FontSize="20"/>
-            <TextBlock Text="125" Foreground="White" FontSize="20" Margin="10,0"/>
-            <Image Source="/Assets/coin.png"/>
+            <TextBlock Text="DINERO" FontFamily="Aldrich" Foreground="White" FontSize="20" VerticalAlignment="Center"/>
+            <TextBlock x:ConnectionId='13' x:Name="dinero" Text="125" FontFamily="Aldrich" Foreground="White" FontSize="20" Margin="10,0" VerticalAlignment="Center"/>
+            <Image Source="/Assets/coin.png" Height="25"/>
         </StackPanel>
 
         <!-- Timer -->
         <Canvas Grid.Row="1" HorizontalAlignment="Right" Width="175" Margin="0,0,60,0">
             <Border Background="#d4e3fc" Width="175" Height="30" CornerRadius="10"/>
             <Image Source="/Assets/timer.png" Width="40" Height="40" Canvas.Top="-7" Canvas.Left="-9"/>
-            <TextBlock Text="14:00:56" FontSize="18" Foreground="Black" Height="30" Width="120" Margin="60,2,0,0"/>
+            <TextBlock x:ConnectionId='12' x:Name="timer" FontSize="18" Foreground="Black" Height="30" Width="120" Margin="60,2,0,0"/>
         </Canvas>
 
         <!-- Cartas -->
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-            <Button Margin="10,0">
+            <Button Margin="10,0" Background="Transparent" CornerRadius="10">
+                <Canvas Width="100" Height="150">
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                        <Image Source="/Assets/cartaInGame1.png" Width="100" Height="100"/>
+                        <TextBlock Text="NOMBRE_CARTA" FontFamily="Aldrich" Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="125" FontFamily="Aldrich" Foreground="White" FontSize="16" VerticalAlignment="Center"/>
+                            <Image Source="/Assets/coin.png" Width="20" Height="20" Margin="5,0"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <Image Width="100" Height="100" Canvas.Top="25"/>
+                </Canvas>
+            </Button>
+            <Button Margin="10,0" Background="Transparent" CornerRadius="10">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
                     <Image Source="/Assets/cartaInGame1.png" Width="100" Height="100"/>
-                    <TextBlock Text="NOMBRE_CARTA" Foreground="White" FontSize="14" HorizontalAlignment="Center"/>
+                    <TextBlock Text="NOMBRE_CARTA" FontFamily="Aldrich" Foreground="White" FontSize="14" HorizontalAlignment="Center"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <TextBlock Text="125" Foreground="White" FontSize="14"/>
+                        <TextBlock Text="125" FontFamily="Aldrich" Foreground="White" FontSize="16" VerticalAlignment="Center"/>
                         <Image Source="/Assets/coin.png" Width="20" Height="20" Margin="5,0"/>
                     </StackPanel>
                 </StackPanel>
             </Button>
-            <Button Margin="10,0">
-                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                    <Image Source="/Assets/cartaInGame1.png" Width="100" Height="100"/>
-                    <TextBlock Text="NOMBRE_CARTA" Foreground="White" FontSize="14" HorizontalAlignment="Center"/>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <TextBlock Text="125" Foreground="White" FontSize="14"/>
-                        <Image Source="/Assets/coin.png" Width="20" Height="20" Margin="5,0"/>
-                    </StackPanel>
-                </StackPanel>
-            </Button>
-            <Button Margin="10,0">
+            <Button Margin="10,0" Background="Transparent" CornerRadius="10">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
                     <Image Source="/Assets/cartaInGame3.png" Width="100" Height="100"/>
-                    <TextBlock Text="NOMBRE_CARTA" Foreground="White" FontSize="14" HorizontalAlignment="Center"/>
+                    <TextBlock Text="NOMBRE_CARTA" FontFamily="Aldrich" Foreground="White" FontSize="14" HorizontalAlignment="Center"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <TextBlock Text="125" Foreground="White" FontSize="14"/>
+                        <TextBlock Text="125" FontFamily="Aldrich" Foreground="White" FontSize="16" VerticalAlignment="Center"/>
                         <Image Source="/Assets/coin.png" Width="20" Height="20" Margin="5,0"/>
                     </StackPanel>
                 </StackPanel>
             </Button>
-            <Button Margin="10,0">
+            <Button Margin="10,0" Background="Transparent" CornerRadius="10">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
                     <Image Source="/Assets/cartaInGame1.png" Width="100" Height="100"/>
-                    <TextBlock Text="NOMBRE_CARTA" Foreground="White" FontSize="14" HorizontalAlignment="Center"/>
+                    <TextBlock Text="NOMBRE_CARTA" FontFamily="Aldrich" Foreground="White" FontSize="14" HorizontalAlignment="Center"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <TextBlock Text="125" Foreground="White" FontSize="14"/>
+                        <TextBlock Text="125" FontFamily="Aldrich" Foreground="White" FontSize="16" VerticalAlignment="Center"/>
                         <Image Source="/Assets/coin.png" Width="20" Height="20" Margin="5,0"/>
                     </StackPanel>
                 </StackPanel>
@@ -202,50 +205,53 @@
 
         <!-- Ofertas -->
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Width="100" Height="80" CornerRadius="10" Margin="30,0">
-                <Canvas Width="100" Height="80" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Border Background="White" Width="100" Height="80" CornerRadius="10"/>
-                    <Border Background="#e692f8" Width="80" Height="60" CornerRadius="10" Canvas.Left="10" Canvas.Top="10"/>
-                    <Border Background="White" Width="50" Height="30" CornerRadius="10" Canvas.Left="50"/>
-                    <StackPanel Orientation="Horizontal" Canvas.Left="15" Canvas.Top="27">
-                        <TextBlock Text="300" Foreground="White" FontSize="25"/>
-                        <Image Source="/Assets/coin.png" Width="25" Height="25" Margin="5
-                               ,0"/>
+            <Button x:ConnectionId='9' Width="120" Height="100" CornerRadius="10" Margin="30,0"                       >
+                <Canvas Width="120" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Border Background="White" Width="120" Height="100" CornerRadius="10"/>
+                    <Border Background="#e692f8" Width="100" Height="80" CornerRadius="10" Canvas.Left="10" Canvas.Top="10"/>
+                    <Border Background="White" Width="50" Height="30" CornerRadius="10" Canvas.Left="70"/>
+                    <StackPanel Orientation="Horizontal" Canvas.Left="20" Canvas.Top="37">
+                        <TextBlock Text="300" FontFamily="Aldrich" Foreground="White" FontSize="30" VerticalAlignment="Center"/>
+                        <Image Source="/Assets/coin.png" Width="25" Height="25" Margin="5, 0"/>
                     </StackPanel>
-                    <TextBlock Text="9,99€" FontSize="10" Foreground="Black" Canvas.Left="63" Canvas.Top="7" TextDecorations="Underline" />
+                    <TextBlock Text="9,99€" FontSize="10" Foreground="Black" Canvas.Left="83" Canvas.Top="7" TextDecorations="Underline" />
                 </Canvas>
             </Button>
-            <Button Width="100" Height="80" CornerRadius="10" Margin="30,0">
-                <Canvas Width="100" Height="80" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Border Background="#fec63c" Width="100" Height="80" CornerRadius="10"/>
-                    <Border Background="White" Width="95" Height="75" CornerRadius="10" Canvas.Left="2.5" Canvas.Top="2.5"/>
-                    <Border Background="#ffb4b0" Width="80" Height="60" CornerRadius="10" Canvas.Left="10" Canvas.Top="10"/>
-                    <Border Background="White" Width="45" Height="27.5" CornerRadius="10" Canvas.Left="50" Canvas.Top="2.5"/>
-                    <StackPanel Orientation="Horizontal" Canvas.Left="15" Canvas.Top="27">
-                        <TextBlock Text="650" Foreground="White" FontSize="25"/>
-                        <Image Source="/Assets/coin.png" Width="25" Height="25" Margin="5,0"/>
-                    </StackPanel>
-                    <TextBlock Text="19,99€" FontSize="10" Foreground="Black" Canvas.Left="60" Canvas.Top="7" TextDecorations="Underline" />
-                </Canvas>
-            </Button>
-            <Button Width="100" Height="80" CornerRadius="10" Margin="30,0">
-                <Canvas Width="100" Height="80" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Border Background="Red" Width="100" Height="80" CornerRadius="10"/>
-                    <Border Background="White" Width="95" Height="75" CornerRadius="10" Canvas.Left="2.5" Canvas.Top="2.5"/>
-                    <Border Background="#ffc581" Width="80" Height="60" CornerRadius="10" Canvas.Left="10" Canvas.Top="10"/>
-                    <Border Background="White" Width="45" Height="27.5" CornerRadius="10" Canvas.Left="50" Canvas.Top="2.5"/>
-                    <StackPanel Orientation="Horizontal" Canvas.Left="13" Canvas.Top="30">
-                        <TextBlock Text="1000" Foreground="White" FontSize="20"/>
-                        <Image Source="/Assets/coin.png" Width="25" Height="25" Margin="5,0"/>
-                    </StackPanel>
-                    <TextBlock Text="29,99€" FontSize="10" Foreground="Black" Canvas.Left="60" Canvas.Top="7" TextDecorations="Underline" />
-                </Canvas>
-            </Button>
-        </StackPanel>
+            <Canvas Width="120" Height="100" Margin="30,0">
+                <Button x:ConnectionId='11' Width="120" Height="100" CornerRadius="10"                       >
+                    <Canvas Width="120" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Border Background="#fec63c" Width="120" Height="100" CornerRadius="10"/>
+                        <Border Background="White" Width="110" Height="90" CornerRadius="10" Canvas.Left="5" Canvas.Top="5"/>
+                        <Border Background="#ffb4b0" Width="100" Height="80" CornerRadius="10" Canvas.Left="10" Canvas.Top="10"/>
+                        <Border Background="White" Width="45" Height="27.5" CornerRadius="10" Canvas.Left="70" Canvas.Top="5"/>
+                        <StackPanel Orientation="Horizontal" Canvas.Left="15" Canvas.Top="37">
+                            <TextBlock Text="650" Foreground="White" FontFamily="Aldrich" FontSize="30" VerticalAlignment="Center"/>
+                            <Image Source="/Assets/coin.png" Width="25" Height="25" Margin="5,0"/>
+                        </StackPanel>
+                        <TextBlock Text="19,99€" FontSize="10" Foreground="Black" Canvas.Left="78" Canvas.Top="12" TextDecorations="Underline" />
+                    </Canvas>
+                </Button>
 
-        <!-- Imagenes para cambiar -->
-        <Image Source="/Assets/oferta1.png" Margin="318,19,395,77" RenderTransformOrigin="0.5,0.5" Grid.Row="3" Width="50" Height="40"/>
-        <Image Source="/Assets/oferta2.png" Margin="477,19,236,77" RenderTransformOrigin="0.5,0.5" Grid.Row="3" Width="50" Height="40"/>
+                <Image Source="/Assets/oferta1.png" Width="70" Height="50" Canvas.Left="-20" Canvas.Top="-15"/>
+            </Canvas>
+            <Canvas Width="120" Height="100" Margin="30,0">
+                <Button x:ConnectionId='10' Width="120" Height="100" CornerRadius="10"                       >
+                    <Canvas Width="120" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Border Background="Red" Width="120" Height="100" CornerRadius="10"/>
+                        <Border Background="White" Width="110" Height="90" CornerRadius="10" Canvas.Left="5" Canvas.Top="5"/>
+                        <Border Background="#ffc581" Width="100" Height="80" CornerRadius="10" Canvas.Left="10" Canvas.Top="10"/>
+                        <Border Background="White" Width="45" Height="27.5" CornerRadius="10" Canvas.Left="70" Canvas.Top="5"/>
+                        <StackPanel Orientation="Horizontal" Canvas.Left="15" Canvas.Top="40">
+                            <TextBlock Text="1000" Foreground="White" FontFamily="Aldrich" FontSize="25" VerticalAlignment="Center"/>
+                            <Image Source="/Assets/coin.png" Width="25" Height="25" Margin="5,0"/>
+                        </StackPanel>
+                        <TextBlock Text="29,99€" FontSize="10" Foreground="Black" Canvas.Left="78" Canvas.Top="12" TextDecorations="Underline" />
+                    </Canvas>
+                </Button>
+                <Image Source="/Assets/oferta2.png" Width="70" Height="50" Canvas.Left="-20" Canvas.Top="-15"/>
+            </Canvas>
+
+        </StackPanel>
     </Grid>
 </Page>
 

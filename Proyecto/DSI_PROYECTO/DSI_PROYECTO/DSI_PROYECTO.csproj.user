@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazoMesa.png</Source>
+    <SmallTileSource>C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazoMesa.png</SmallTileSource>
+    <MediumTileSource>C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazoMesa.png</MediumTileSource>
+    <WideTileSource>C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazoMesa.png</WideTileSource>
+    <LargeTileSource>C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazoMesa.png</LargeTileSource>
+    <AppIconSource>C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazoMesa.png</AppIconSource>
+    <SplashScreenSource>C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazoMesa.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazoMesa.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>

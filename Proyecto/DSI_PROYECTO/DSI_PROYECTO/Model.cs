@@ -262,140 +262,166 @@ namespace DSI_PROYECTO
         {
             new Mazos_Grid()
             {
-                Name = "MAZO_1",
+                Name = "NOMBRE_MAZO",
                 Imagen = "Assets\\mazo1.png",
                 Cartas = createCartas()
             },
 
             new Mazos_Grid()
             {
-                Name = "MAZO_2",
-                Imagen = "Assets\\mazo1.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo1.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_3",
-                Imagen = "Assets\\mazo1.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo1.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_4",
-                Imagen = "Assets\\mazo1.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo1.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_5",
-                Imagen = "Assets\\mazo1.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo1.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_6",
-                Imagen = "Assets\\mazo1.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo1.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_7",
-                Imagen = "Assets\\mazo2.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo2.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_8",
-                Imagen = "Assets\\mazo2.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo2.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_9",
-                Imagen = "Assets\\mazo2.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo2.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_10",
-                Imagen = "Assets\\mazo2.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo2.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_11",
-                Imagen = "Assets\\mazo2.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo2.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_12",
-                Imagen = "Assets\\mazo2.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo2.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_13",
-                Imagen = "Assets\\mazo2.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo2.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_14",
-                Imagen = "Assets\\mazo3.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo3.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_15",
-                Imagen = "Assets\\mazo3.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo3.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_16",
-                Imagen = "Assets\\mazo3.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo3.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_17",
-                Imagen = "Assets\\mazo3.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo3.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_18",
-                Imagen = "Assets\\mazo3.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo3.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_19",
-                Imagen = "Assets\\mazo4.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo4.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_20",
-                Imagen = "Assets\\mazo4.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo4.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_21",
-                Imagen = "Assets\\mazo4.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo4.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_22",
-                Imagen = "Assets\\mazo4.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo4.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_23",
-                Imagen = "Assets\\mazo4.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo4.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_24",
-                Imagen = "Assets\\mazo4.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo4.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_25",
-                Imagen = "Assets\\mazo4.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo4.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_26",
-                Imagen = "Assets\\mazo4.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo4.png",
+                Cartas = createCartas()
             },
             new Mazos_Grid()
             {
-                Name = "MAZO_27",
-                Imagen = "Assets\\mazo4.png"
+                Name = "NOMBRE_MAZO",
+                Imagen = "Assets\\mazo4.png",
+                Cartas = createCartas()
             },
 
         };
@@ -404,13 +430,26 @@ namespace DSI_PROYECTO
         {
             List<Cartas> a = new List<Cartas>();
 
-            Cartas carta = new Cartas()
+            var rnd = new Random();
+            int anterior = -1;
+            int cart;
+            for (int i = 1; i <= 2; i++)
             {
-                Nombre = "ESQUELETO",
-                cantidad = 20
-            };
+                do
+                {
+                    cart = rnd.Next(0, cartas_grid_.Count());
+                } while (cart == anterior && cartas_grid_[cart].Tipo != 'c');
 
-            a.Add(carta);
+                int cant = rnd.Next(0, 3);
+
+                Cartas carta = new Cartas();
+
+                carta.Nombre = cartas_grid_[cart].Name;
+                carta.cantidad = i + cant;
+                a.Add(carta);
+
+                anterior = cart;
+            }
 
             return a;
         }
