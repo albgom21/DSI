@@ -94,56 +94,70 @@ namespace DSI_PROYECTO
                 vs.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
             }
         }
-
-        private void ToggleButton_Checked_esp(object sender, RoutedEventArgs e)
-        {
-            if (bcat != null && buk != null)
-            {
-                bcat.IsChecked = false;
-                buk.IsChecked = false;
-            }           
-        }
-
-        private void ToggleButton_Checked_cat(object sender, RoutedEventArgs e)
-        {          
-            besp.IsChecked = false;
-            buk.IsChecked = false;     
-        }
-
-        private void ToggleButton_Checked_uk(object sender, RoutedEventArgs e)
-        {
-            besp.IsChecked = false;
-            bcat.IsChecked = false;
-        }
-
-        private void besp_Unchecked(object sender, RoutedEventArgs e)
-        {
-            if (!(!(bool)besp.IsChecked && ((bool)bcat.IsChecked || (bool)buk.IsChecked)))
-            {
-                besp.IsChecked = true;
-            }           
-        }
-
-        private void bcat_Unchecked(object sender, RoutedEventArgs e)
-        {
-            if (!(!(bool)bcat.IsChecked && ((bool)besp.IsChecked || (bool)buk.IsChecked)))
-            {
-                bcat.IsChecked = true;
-            }
-        }
-
-        private void buk_Unchecked(object sender, RoutedEventArgs e)
-        {
-            if (!(!(bool)buk.IsChecked && ((bool)bcat.IsChecked || (bool)besp.IsChecked)))
-            {
-                buk.IsChecked = true;
-            }
-        }
-
+        
         private void X_Click(object sender, RoutedEventArgs e)
         {
             if (this.Frame.CanGoBack)
                 this.Frame.GoBack();
+        }
+
+
+        private void ToggleButton_Checked_esp(object sender, RoutedEventArgs e)
+        {
+            Frame.CacheSize = 0;
+            if ((sender as Button)?.Tag is string tag)
+            {
+                // Change the app language
+                Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
+
+                // Clear the back-navigation stack, and send the user to MainPage
+                // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
+                // will stay in the previous language until reloaded.
+                Frame.BackStack.Clear();
+                Frame.Navigate(typeof(Opciones));
+            }
+        }
+
+        private void ToggleButton_Checked_cat(object sender, RoutedEventArgs e)
+        {
+            Frame.CacheSize = 0;
+            if ((sender as Button)?.Tag is string tag)
+            {
+                // Change the app language
+                Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
+
+                // Clear the back-navigation stack, and send the user to MainPage
+                // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
+                // will stay in the previous language until reloaded.
+                Frame.BackStack.Clear();
+                Frame.Navigate(typeof(Opciones));
+            }
+        }
+
+        private void ToggleButton_Checked_uk(object sender, RoutedEventArgs e)
+        {
+            Frame.CacheSize = 0;
+            if ((sender as Button)?.Tag is string tag)
+            {
+                // Change the app language
+                Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
+
+                // Clear the back-navigation stack, and send the user to MainPage
+                // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
+                // will stay in the previous language until reloaded.
+                Frame.BackStack.Clear();
+                Frame.Navigate(typeof(Opciones));
+            }
+        }
+
+        private void Rendirse_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PantallaPrincipal));
+        }
+
+        private void Salir_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InGame));
         }
     }
 }

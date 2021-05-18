@@ -95,7 +95,8 @@ namespace DSI_PROYECTO
         }
 
         private void ToggleButton_Checked_esp(object sender, RoutedEventArgs e)
-        {          
+        {
+            Frame.CacheSize = 0;
             if ((sender as Button)?.Tag is string tag)
             {
                 // Change the app language
@@ -105,12 +106,13 @@ namespace DSI_PROYECTO
                 // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
                 // will stay in the previous language until reloaded.
                 Frame.BackStack.Clear();
-                Frame.Navigate(typeof(OpcionesMenu)); Frame.CacheSize = 0;
+                Frame.Navigate(typeof(OpcionesMenu));
             }            
         }
 
         private void ToggleButton_Checked_cat(object sender, RoutedEventArgs e)
         {
+            Frame.CacheSize = 0;
             if ((sender as Button)?.Tag is string tag)
             {
                 // Change the app language
@@ -120,13 +122,13 @@ namespace DSI_PROYECTO
                 // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
                 // will stay in the previous language until reloaded.
                 Frame.BackStack.Clear();
-                Frame.Navigate(typeof(OpcionesMenu)); Frame.CacheSize = 0;
+                Frame.Navigate(typeof(OpcionesMenu)); 
             }
         }
 
         private void ToggleButton_Checked_uk(object sender, RoutedEventArgs e)
         {
-           
+            Frame.CacheSize = 0;
             if ((sender as Button)?.Tag is string tag)
             {
                 // Change the app language
@@ -136,7 +138,7 @@ namespace DSI_PROYECTO
                 // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
                 // will stay in the previous language until reloaded.
                 Frame.BackStack.Clear();
-                Frame.Navigate(typeof(OpcionesMenu)); Frame.CacheSize = 0;
+                Frame.Navigate(typeof(OpcionesMenu));
             }
         }
 

@@ -23,6 +23,7 @@
   <Resources>
     <Resource Language="ES-ES" />
     <Resource Language="ES" />
+    <Resource Language="CA" />
     <Resource Language="EN" />
   </Resources>
   <Applications>

@@ -108,14 +108,14 @@
         </Border>
 
         <!-- Ajustes -->
-        <Button Width="35" Height="35" CornerRadius="50" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1">
+        <Button x:ConnectionId='2' Width="35" Height="35" CornerRadius="50" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1"                     >
             <Image Source="/Assets/settings.png" Margin="-10" />
         </Button>
 
         <!-- Heroe 1 -->
         <Border BorderThickness="2" BorderBrush="Black" Background="#c9f1fd" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" VerticalAlignment="Bottom">
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Image x:ConnectionId='2' x:Name="h" Source="/Assets/heroe1.png" Width="60" Height="80" Margin="0,15"/>
+                <Image x:ConnectionId='3' x:Name="h" Source="/Assets/heroe1.png" Width="60" Height="80" Margin="0,15"/>
                 <Canvas Height="10" Width="100" Margin="0,10">
                     <ProgressBar Height="10" Width="100" Value="14" Maximum="20" Foreground="#92d36e" Background="#dfedd6" CornerRadius="2"/>
                     <TextBlock Text="14" FontSize="10" FontFamily="Aldrich" Foreground="#4f7d36" Canvas.Left="47"/>

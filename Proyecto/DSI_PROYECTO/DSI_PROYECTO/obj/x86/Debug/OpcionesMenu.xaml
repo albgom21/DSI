@@ -476,7 +476,7 @@
             <Image Source="/Assets/besp.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
 
-        <Button x:ConnectionId='36' x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"                                  Tag="cat">
+        <Button x:ConnectionId='36' x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"                                  Tag="ca">
             <Image Source="/Assets/bcat.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
 

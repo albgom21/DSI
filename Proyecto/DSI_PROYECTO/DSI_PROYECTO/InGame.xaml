@@ -108,7 +108,7 @@
         </Border>
 
         <!-- Ajustes -->
-        <Button Width="35" Height="35" CornerRadius="50" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1">
+        <Button Width="35" Height="35" CornerRadius="50" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1" Click="Button_Click">
             <Image Source="/Assets/settings.png" Margin="-10" />
         </Button>
 

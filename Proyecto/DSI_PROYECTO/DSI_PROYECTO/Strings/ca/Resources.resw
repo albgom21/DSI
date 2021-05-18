@@ -118,60 +118,60 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="descripciont.Text" xml:space="preserve">
-    <value>CHOOSE A GAME MODE</value>
+    <value>TRIA UNA MANERA DE JOC</value>
   </data>
   <data name="Dinero.Text" xml:space="preserve">
-    <value>Money</value>
+    <value>Diners</value>
   </data>
   <data name="Espectar.OffContent" xml:space="preserve">
-    <value>Allow spectating</value>
+    <value>Permetre espectar</value>
   </data>
   <data name="Espectar.OnContent" xml:space="preserve">
-    <value>Allow spectating</value>
+    <value>Permetre espectar</value>
   </data>
   <data name="GuardarM.Content" xml:space="preserve">
-    <value>SAVE DECK</value>
+    <value>GUARDAR MALL</value>
   </data>
   <data name="hecB.Content" xml:space="preserve">
-    <value>Spells</value>
+    <value>Encanteris</value>
   </data>
   <data name="Heroe.Text" xml:space="preserve">
-    <value>HERO</value>
+    <value>HEROI</value>
   </data>
   <data name="IdiomaOpcionesMenu.Text" xml:space="preserve">
-    <value>IDIOM</value>
+    <value>IDIOMA</value>
   </data>
   <data name="MDJ_Jugar.Content" xml:space="preserve">
-    <value>PLAY</value>
+    <value>JUGAR</value>
   </data>
   <data name="NCartas.Text" xml:space="preserve">
-    <value>Number of cards</value>
+    <value>Nombre de cartes</value>
   </data>
   <data name="NcartasDes.Text" xml:space="preserve">
-    <value>UNLOCKED CARDS 37/100</value>
+    <value>CARTES DESBLOQUEJADES  37/100</value>
   </data>
   <data name="PasoTurnos.OffContent" xml:space="preserve">
-    <value>Pass turn auto</value>
+    <value>Pas de torns automàtic</value>
   </data>
   <data name="PasoTurnos.OnContent" xml:space="preserve">
-    <value>Pass turn auto</value>
+    <value>Pas de torns automàtic</value>
   </data>
   <data name="rendirseOpc.Content" xml:space="preserve">
-    <value>GIVE UP</value>
+    <value>RENDIR</value>
   </data>
   <data name="salirOpcM.Content" xml:space="preserve">
-    <value>EXIT</value>
+    <value>SORTIR</value>
   </data>
   <data name="subB.Content" xml:space="preserve">
-    <value>Minions</value>
+    <value>Súbdits</value>
   </data>
   <data name="volG.Text" xml:space="preserve">
-    <value>General volume</value>
+    <value>Volum general</value>
   </data>
   <data name="volM.Text" xml:space="preserve">
-    <value>Music volume</value>
+    <value>Volum música</value>
   </data>
   <data name="volS.Text" xml:space="preserve">
-    <value>SFX volume</value>
+    <value>Volum SFX</value>
   </data>
 </root>

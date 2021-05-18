@@ -28,9 +28,17 @@ namespace DSI_PROYECTO
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            Image mazo = e.Parameter as Image;
-            string s = System.IO.Directory.GetCurrentDirectory() + "\\" + mazo.Source;
-            h.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
+            if(e.Parameter != null)
+            {
+                Image mazo = e.Parameter as Image;
+                string s = System.IO.Directory.GetCurrentDirectory() + "\\" + mazo.Source;
+                h.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
+            }            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Opciones));
         }
     }
 }

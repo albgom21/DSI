@@ -7,6 +7,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -53,6 +54,7 @@ namespace DSI_PROYECTO
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;
+            SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;
 
             // No repetir la inicialización de la aplicación si la ventana tiene contenido todavía,
             // solo asegurarse de que la ventana está activa.
@@ -79,11 +81,30 @@ namespace DSI_PROYECTO
                     // Cuando no se restaura la pila de navegación, navegar a la primera página,
                     // configurando la nueva página pasándole la información requerida como
                     //parámetro de navegación
-                    rootFrame.Navigate(typeof(PantallaPrincipal), e.Arguments);
+                    rootFrame.Navigate(typeof(ModosDeJuego), e.Arguments);
                 }
                 // Asegurarse de que la ventana actual está activa.
                 Window.Current.Activate();
             }
+            rootFrame.Navigated += RootFrame_Navigated;
+        }
+
+        private void App_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            var frame = (Frame)Window.Current.Content;
+            if (frame.CanGoBack)
+            {
+                frame.GoBack();
+                e.Handled = true;
+            }
+        }
+
+        private void RootFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+            var frame = (Frame)Window.Current.Content;
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility =
+                frame.CanGoBack ? AppViewBackButtonVisibility.Visible :
+                                  AppViewBackButtonVisibility.Collapsed;
         }
 
         /// <summary>

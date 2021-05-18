@@ -13,7 +13,7 @@
                                                      >
             <StackPanel x:ConnectionId='58' HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
                 <Image x:ConnectionId='59'                              Width="90" Height="90"/>
-                <TextBlock x:ConnectionId='60'                      FontSize="16" Padding="7" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock x:ConnectionId='60'                      FontSize="14" Padding="7" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
 

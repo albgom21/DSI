@@ -129,6 +129,12 @@
   <data name="Espectar.OnContent" xml:space="preserve">
     <value>Permitir espectar</value>
   </data>
+  <data name="GuardarM.Content" xml:space="preserve">
+    <value>GUARDAR MAZO</value>
+  </data>
+  <data name="hecB.Content" xml:space="preserve">
+    <value>Hechizos</value>
+  </data>
   <data name="Heroe.Text" xml:space="preserve">
     <value>HÉROE</value>
   </data>
@@ -138,8 +144,11 @@
   <data name="MDJ_Jugar.Content" xml:space="preserve">
     <value>JUGAR</value>
   </data>
-  <data name="Page1_GoBack.Content" xml:space="preserve">
-    <value>Atras</value>
+  <data name="NCartas.Text" xml:space="preserve">
+    <value>Número de cartas</value>
+  </data>
+  <data name="NcartasDes.Text" xml:space="preserve">
+    <value>CARTAS DESBLOQUEADAS 37/100</value>
   </data>
   <data name="PasoTurnos.OffContent" xml:space="preserve">
     <value>Paso de turnos automático</value>
@@ -147,8 +156,14 @@
   <data name="PasoTurnos.OnContent" xml:space="preserve">
     <value>Paso de turnos automático</value>
   </data>
+  <data name="rendirseOpc.Content" xml:space="preserve">
+    <value>RENDIRSE</value>
+  </data>
   <data name="salirOpcM.Content" xml:space="preserve">
     <value>SALIR</value>
+  </data>
+  <data name="subB.Content" xml:space="preserve">
+    <value>Súbditos</value>
   </data>
   <data name="volG.Text" xml:space="preserve">
     <value>Volumen general</value>

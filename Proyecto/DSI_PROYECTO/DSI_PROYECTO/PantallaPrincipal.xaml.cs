@@ -49,10 +49,5 @@ namespace DSI_PROYECTO
                 }
             base.OnNavigatedTo(e);
         }
-
-        private void BJugar_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(ModosDeJuego));
-        }
     }
 }

@@ -190,7 +190,7 @@
         <Button x:Name="BLogros" Grid.Row="3" Grid.RowSpan="2" FontSize="25" Foreground="White" Background = "Orange" Content="LOGROS" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="150" Height="40" Click="Logros_Click" ></Button>
 
         <!-- Botón de jugar -->
-        <Button x:Name="BJugar" Grid.Row="4" Grid.Column="1" FontSize="25" Foreground="DarkRed" Background = "Red" Content="JUGAR" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="160" Height="50" Click="BJugar_Click"  ></Button>
+        <Button x:Name="BJugar" Grid.Row="4" Grid.Column="1" FontSize="25" Foreground="DarkRed" Background = "Red" Content="JUGAR" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="160" Height="50"></Button>
 
         <!-- Avatar del héroe -->
         <Image Source="/Assets/hero.png" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"></Image>

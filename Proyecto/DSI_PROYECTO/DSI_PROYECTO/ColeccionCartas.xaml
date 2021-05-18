@@ -487,13 +487,13 @@
         <Image Source="Assets/coin.png" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Height="25" Width="25" Margin="0,0,15,0" />
 
         <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="2" Height="45" Width="45" VerticalAlignment="Center" HorizontalAlignment="Center" Click="X_Click"/>
-        <TextBlock Text="CARTAS DESBLOQUEADAS 37/100" Grid.Row="0" Grid.Column="1"  TextWrapping="WrapWholeWords" FontSize="20" FontFamily="Aldrich" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+        <TextBlock x:Uid="NCartasDes" Text="CARTAS DESBLOQUEADAS 37/100" Grid.Row="0" Grid.Column="1"  TextWrapping="WrapWholeWords" FontSize="20" FontFamily="Aldrich" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
         <TextBlock Text="1000" Grid.Row="1" Grid.Column="2"  TextWrapping="WrapWholeWords" FontSize="20" FontFamily="Aldrich" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" Margin="0,0,0,0"/>
 
         <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-            <ToggleButton  x:Name="sbutton" Content="Súbditos" Style="{StaticResource SubStyle}"  Grid.Row="0" Grid.Column="0"  VerticalAlignment="Center"  Margin="20,0,20,0" Height="40" Width="115" Checked="sbutton_Checked" Unchecked="sbutton_Unchecked"/>
-            <ToggleButton  x:Name="hbutton"  Content="Hechizos" Style="{StaticResource HecStyle}"  Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center"   Margin="0,0,20,0" Height="40" Width="115" Checked="hbutton_Checked" Unchecked="hbutton_Unchecked"/>
+            <ToggleButton x:Uid="subB"  x:Name="sbutton" Content="Súbditos" Style="{StaticResource SubStyle}"  Grid.Row="0" Grid.Column="0"  VerticalAlignment="Center"  Margin="20,0,20,0" Height="40" Width="115" Checked="sbutton_Checked" Unchecked="sbutton_Unchecked"/>
+            <ToggleButton x:Uid="hecB"  x:Name="hbutton"  Content="Hechizos" Style="{StaticResource HecStyle}"  Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center"   Margin="0,0,20,0" Height="40" Width="115" Checked="hbutton_Checked" Unchecked="hbutton_Unchecked"/>
             <ToggleButton  x:Name="cbutton" Content="Crafteables" Style="{StaticResource CraftStyle}"  Grid.Row="0" Grid.Column="2"  VerticalAlignment="Center" Margin="0,0,20,0" Height="40" Width="124" Checked="cbutton_Checked" Unchecked="cbutton_Unchecked"/>
 
         </StackPanel>
@@ -507,10 +507,10 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <Button Content="GUARDAR MAZO" Style="{StaticResource SaveStyle}"  Grid.Row="3" Grid.Column="0" Height="40" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click"/>
+        <Button x:Uid="GuardarM" Content="GUARDAR MAZO" Style="{StaticResource SaveStyle}"  Grid.Row="3" Grid.Column="0" Height="40" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click"/>
 
         <TextBox x:Name="MazoName" FontFamily="Aldrich" FontSize="20" Foreground="#FFCB9056" TextChanged="MazoName_TextChanged" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Center"  SelectionHighlightColor="#FFBF7100" Width="220" Height="35"/>
-        <TextBlock Text="Número de cartas" Grid.Row="1" Grid.Column="0"  TextWrapping="WrapWholeWords" FontSize="16" FontFamily="Aldrich" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="#FFCB9056" Margin="0,0,10,0" SelectionHighlightColor="#FFBF7100"/>
+        <TextBlock x:Uid="NCartas" Text="Número de cartas" Grid.Row="1" Grid.Column="0"  TextWrapping="WrapWholeWords" FontSize="16" FontFamily="Aldrich" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="#FFCB9056" Margin="0,0,10,0" SelectionHighlightColor="#FFBF7100"/>
 
         <ListView x:Name="cartasList" 
                   Grid.Row="2" Grid.Column="0"                 

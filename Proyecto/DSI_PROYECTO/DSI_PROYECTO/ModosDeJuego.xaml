@@ -13,7 +13,7 @@
                       x:DataType="local:VMMazos_Grid">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
                 <Image Source="{x:Bind Img.Source}" Width="90" Height="90"/>
-                <TextBlock Text="{x:Bind Name}" FontSize="16" Padding="7" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{x:Bind Name}" FontSize="14" Padding="7" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
 
