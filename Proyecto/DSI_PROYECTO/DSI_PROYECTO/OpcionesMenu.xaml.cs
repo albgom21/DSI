@@ -26,6 +26,12 @@ namespace DSI_PROYECTO
         {
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled; //Required si se quieren ignorar los límites de CacheSize           
+            if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
+                borderEsp.Visibility = Visibility.Visible;
+            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
+                borderUk.Visibility = Visibility.Visible;
+            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "ca")
+                borderCat.Visibility = Visibility.Visible;
         }
 
         private void Slider_ValueChanged_g(object sender, RangeBaseValueChangedEventArgs e)

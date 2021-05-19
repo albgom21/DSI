@@ -156,10 +156,13 @@
   <data name="PasoTurnos.OnContent" xml:space="preserve">
     <value>Pass turn auto</value>
   </data>
-  <data name="rendirseOpc.Content" xml:space="preserve">
+  <data name="rOpc.Content" xml:space="preserve">
     <value>GIVE UP</value>
   </data>
   <data name="salirOpcM.Content" xml:space="preserve">
+    <value>EXIT</value>
+  </data>
+  <data name="sOpc.Content" xml:space="preserve">
     <value>EXIT</value>
   </data>
   <data name="subB.Content" xml:space="preserve">

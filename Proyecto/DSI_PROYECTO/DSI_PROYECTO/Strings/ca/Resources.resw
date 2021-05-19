@@ -156,10 +156,13 @@
   <data name="PasoTurnos.OnContent" xml:space="preserve">
     <value>Pas de torns automàtic</value>
   </data>
-  <data name="rendirseOpc.Content" xml:space="preserve">
+  <data name="rOpc.Content" xml:space="preserve">
     <value>RENDIR</value>
   </data>
   <data name="salirOpcM.Content" xml:space="preserve">
+    <value>SORTIR</value>
+  </data>
+  <data name="sOpc.Content" xml:space="preserve">
     <value>SORTIR</value>
   </data>
   <data name="subB.Content" xml:space="preserve">

@@ -688,7 +688,7 @@
 
     </Page.Resources>
 
-    <Grid>
+    <Grid XYFocusKeyboardNavigation="Enabled">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*"/>
@@ -710,23 +710,23 @@
 
         <Image Source="Assets/fondo.png" Grid.RowSpan="6" Grid.ColumnSpan="6"  Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
-        <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="5" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Click="X_Click"/>
+        <Button Content="X" TabIndex="6" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="5" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Click="X_Click"/>
 
-        <Button  x:Uid="MDJ_Jugar" Content="JUGAR" Style="{StaticResource JugarStyle}"  Grid.Row="4" Grid.Column="5"  Height="50" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="Jugar_Click"/>
+        <Button  x:Uid="MDJ_Jugar" TabIndex="13" Content="JUGAR" Style="{StaticResource JugarStyle}"  Grid.Row="4" Grid.Column="5"  Height="50" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="Jugar_Click"/>
 
         <Border Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" Background="#FF91E4FB" CornerRadius="10" Height="45"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         <TextBlock x:Name="descripcion" x:Uid="descripciont" Text="ELIGE UN MODO DE JUEGO" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" TextWrapping="WrapWholeWords" FontSize="14" FontFamily="Aldrich" Padding="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <ToggleButton x:Name="nbutton" Content="NORMAL"  Style="{StaticResource NormalStyle}"  Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Height="45" Width="100" Checked="nbutton_Checked" Unchecked="restartMazos"/>
-        <ToggleButton x:Name="rbutton" Content="RANKED"  Style="{StaticResource RankedStyle}" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center" Checked="rbutton_Checked" Unchecked="restartMazos" />
-        <ToggleButton x:Name="sbutton" Content="SPELLBREAK"  Style="{StaticResource SpellStyle}"  Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center" Checked="sbutton_Checked" Unchecked="restartMazos"/>
-        <ToggleButton x:Name="obutton"  Content="ORDER"  Style="{StaticResource OrderStyle}"  Grid.Row="4" Grid.Column="4" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center" Checked="obutton_Checked" Unchecked="restartMazos"/>
+        <ToggleButton x:Name="nbutton" TabIndex="9" Content="NORMAL"  Style="{StaticResource NormalStyle}"  Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Height="45" Width="100" Checked="nbutton_Checked" Unchecked="restartMazos"/>
+        <ToggleButton x:Name="rbutton" TabIndex="10" Content="RANKED"  Style="{StaticResource RankedStyle}" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center" Checked="rbutton_Checked" Unchecked="restartMazos" />
+        <ToggleButton x:Name="sbutton" TabIndex="11" Content="SPELLBREAK"  Style="{StaticResource SpellStyle}"  Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center" Checked="sbutton_Checked" Unchecked="restartMazos"/>
+        <ToggleButton x:Name="obutton" TabIndex="12" Content="ORDER"  Style="{StaticResource OrderStyle}"  Grid.Row="4" Grid.Column="4" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center" Checked="obutton_Checked" Unchecked="restartMazos"/>
 
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="6">
-            <ToggleButton x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="Tienda">
+            <ToggleButton x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="Tienda" TabIndex="1">
                 <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
+                    <CompositeTransform SkewX="8.315" TranslateX="-14.6"/>
                 </ToggleButton.RenderTransform>
                 <Image Source="/Assets/shop.png" Width="50" Height="40" Margin="-10,0,10,0" UseLayoutRounding="False" d:LayoutRounding="Auto" >
                     <Image.RenderTransform>
@@ -734,7 +734,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" Checked="Galeria_Mazos" >
+            <ToggleButton x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" Checked="Galeria_Mazos" TabIndex="2">
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
                 </ToggleButton.RenderTransform>
@@ -744,10 +744,10 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"  IsChecked="True" Unchecked="B3_Unchecked">
+            <ToggleButton x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"  IsChecked="True" Unchecked="B3_Unchecked" TabIndex="3">
                 <Image Source="/Assets/brawl.png" Width="90" Height="60" UseLayoutRounding="False" VerticalAlignment="Top" Margin="0,-4,0,0"/>
             </ToggleButton>
-            <ToggleButton x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Checked="Ranking">
+            <ToggleButton x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Checked="Ranking" TabIndex="4">
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
@@ -757,7 +757,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Checked="Opciones">
+            <ToggleButton x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Checked="Opciones" TabIndex="5">
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
@@ -777,6 +777,8 @@
                   ItemsSource= "{x:Bind GridMazos}"
                   ItemTemplate="{StaticResource Mazos_Grid_Template}"        
                   ItemClick="mazosGrid_ItemClick" IsItemClickEnabled="True"
+                  TabIndex="7"
+                  IsFocusEngagementEnabled="True"
                  >
         </GridView>
         <Border Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="4" Background="Red" CornerRadius="5" Height="90" Width="80" />
@@ -785,7 +787,7 @@
         <Image x:Name="MazoSel" Source="/Assets/Mazo0.png" Stretch="Uniform" Grid.Column="5" Grid.Row="2" Margin="20"/>
         <TextBlock x:Uid="Heroe" Text="HÉROE" FontFamily="Aldrich" Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="4"  TextWrapping="WrapWholeWords" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Foreground="Aquamarine"/>
 
-        <FlipView x:Name="a" Grid.Column="5" Grid.Row="3" Margin="15,0,15,30" VerticalAlignment="Top">         
+        <FlipView x:Name="a" Grid.Column="5" Grid.Row="3" Margin="15,0,15,30" VerticalAlignment="Top" TabIndex="8">         
             <Image Source="/Assets/Heroe.png"/>
             <Image Source="/Assets/Heroe3.png"/>
             <Image Source="/Assets/Heroe4.png"/>

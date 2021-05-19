@@ -371,7 +371,7 @@
 
     </Page.Resources>
 
-    <Grid>
+    <Grid XYFocusKeyboardNavigation="Enabled">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
@@ -393,9 +393,9 @@
 
          <!--Barra de botones en la parte superior.--> 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="5">
-            <ToggleButton x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="Tienda">
+            <ToggleButton x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="Tienda" TabIndex="1">
                 <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
+                    <CompositeTransform SkewX="8.315" TranslateX="-14.6"/>
                 </ToggleButton.RenderTransform>
                 <Image Source="/Assets/shop.png" Width="50" Height="40" Margin="-10,0,10,0" UseLayoutRounding="False" d:LayoutRounding="Auto" >
                     <Image.RenderTransform>
@@ -403,7 +403,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" Checked="Galeria_Mazos" >
+            <ToggleButton x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" Checked="Galeria_Mazos" TabIndex="2" >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
                 </ToggleButton.RenderTransform>
@@ -413,20 +413,20 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Checked="Principal">
+            <ToggleButton x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Checked="Principal" TabIndex="3">
                 <Image Source="/Assets/brawl.png" Width="90" Height="60" UseLayoutRounding="False" VerticalAlignment="Top" Margin="0,-4,0,0"/>
             </ToggleButton>
-            <ToggleButton x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Checked="Ranking">
+            <ToggleButton x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Checked="Ranking" TabIndex="4">
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
-                <Image Source="/Assets/trophy.png" Width="50" Height="40" Margin="18,0,-18,0" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Image Source="/Assets/trophy.png" Width="50" Height="40" Margin="18,0,-18,0" UseLayoutRounding="False" d:LayoutRounding="Auto" >
                     <Image.RenderTransform>
                         <CompositeTransform SkewX="9.501" TranslateX="-20.083"/>
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"  IsChecked="True" Unchecked="B5_Unchecked">
+            <ToggleButton x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"  IsChecked="True" Unchecked="B5_Unchecked" TabIndex="5">
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
@@ -438,8 +438,8 @@
             </ToggleButton>
         </StackPanel>
 
-        <Button x:Uid="salirOpcM" Content="SALIR" Style="{StaticResource ExitStyle}" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"  Height="50" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="35,0,0,0" Click="Principal"/>
-        <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="X_Click"/>
+        <Button x:Uid="salirOpcM" Content="SALIR"  TabIndex="15" Style="{StaticResource ExitStyle}" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"  Height="50" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="35,0,0,0" Click="Principal"/>
+        <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="X_Click" TabIndex="6"/>
 
         <StackPanel Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center">
             <Grid Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center">
@@ -466,26 +466,32 @@
 
 
         <StackPanel Grid.Row="2"  Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" >
-            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White" ValueChanged="Slider_ValueChanged_g"  Value="80" Height="40" />
-            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White"  ValueChanged="Slider_ValueChanged_m" Value="80"  Height="40"/>
-            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF"  Background="White"  ValueChanged="Slider_ValueChanged_s" Value="80"  Height="35"/>
+            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White" ValueChanged="Slider_ValueChanged_g"  Value="80" Height="40" TabIndex="10" />
+            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White"  ValueChanged="Slider_ValueChanged_m" Value="80"  Height="40" TabIndex="11"/>
+            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF"  Background="White"  ValueChanged="Slider_ValueChanged_s" Value="80"  Height="35" TabIndex="12"/>
 
         </StackPanel>
 
-        <Button x:Name="besp" Height="75" Width="110" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Click="ToggleButton_Checked_esp" Tag="es">
+        <Border x:Name="borderEsp" Grid.Row="1" Grid.Column="1" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
+
+        <Button x:Name="besp" Height="75" Width="110" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Click="ToggleButton_Checked_esp" Tag="es" TabIndex="7">
             <Image Source="/Assets/besp.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
 
-        <Button x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ToggleButton_Checked_cat" Tag="ca">
+        <Border x:Name="borderCat" Grid.Row="1" Grid.Column="2" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
+
+        <Button x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ToggleButton_Checked_cat" Tag="ca" TabIndex="8">
             <Image Source="/Assets/bcat.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
+        
+        <Border x:Name="borderUk" Grid.Row="1" Grid.Column="3" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
 
-        <Button x:Name="buk" Height="75" Width="110" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ToggleButton_Checked_uk"  Tag="en">
+        <Button x:Name="buk" Height="75" Width="110" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ToggleButton_Checked_uk"  Tag="en" TabIndex="9">
             <Image Source="/Assets/buk.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
 
-        <ToggleSwitch x:Uid="PasoTurnos" FontFamily="Aldrich" OnContent="Paso de turnos automático" OffContent="Paso de turnos automático" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Foreground="White" RequestedTheme="Dark" FontSize="14" HorizontalAlignment="Center" Margin="75,0,0,0" />
-        <ToggleSwitch x:Uid="Espectar" FontFamily="Aldrich" OnContent="Permitir espectar" OffContent="Permitir espectar"  Grid.Row="3"  Grid.Column="3"  Grid.ColumnSpan="5" Foreground="White" RequestedTheme="Dark" FontSize="14"  HorizontalAlignment="Left"  Margin="-35,0,0,0"/>
+        <ToggleSwitch x:Uid="PasoTurnos" FontFamily="Aldrich" OnContent="Paso de turnos automático" OffContent="Paso de turnos automático" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Foreground="White" RequestedTheme="Dark" FontSize="14" HorizontalAlignment="Center" Margin="75,0,0,0" TabIndex="13" />
+        <ToggleSwitch x:Uid="Espectar" FontFamily="Aldrich" OnContent="Permitir espectar" OffContent="Permitir espectar"  Grid.Row="3"  Grid.Column="3"  Grid.ColumnSpan="5" Foreground="White" RequestedTheme="Dark" FontSize="14"  HorizontalAlignment="Left"  Margin="-35,0,0,0" TabIndex="14"/>
 
 
     </Grid>

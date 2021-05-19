@@ -27,6 +27,12 @@ namespace DSI_PROYECTO
         {
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled; //Required si se quieren ignorar los límites de CacheSize
+            if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
+                borderEsp.Visibility = Visibility.Visible;
+            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
+                borderUk.Visibility = Visibility.Visible;
+            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "ca")
+                borderCat.Visibility = Visibility.Visible;
         }
 
         private void Slider_ValueChanged_g(object sender, RangeBaseValueChangedEventArgs e)
@@ -93,14 +99,7 @@ namespace DSI_PROYECTO
                 string s = System.IO.Directory.GetCurrentDirectory() + "\\" + "Assets/altavoz0.png";
                 vs.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
             }
-        }
-        
-        private void X_Click(object sender, RoutedEventArgs e)
-        {
-            if (this.Frame.CanGoBack)
-                this.Frame.GoBack();
-        }
-
+        } 
 
         private void ToggleButton_Checked_esp(object sender, RoutedEventArgs e)
         {
@@ -114,7 +113,7 @@ namespace DSI_PROYECTO
                 // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
                 // will stay in the previous language until reloaded.
                 Frame.BackStack.Clear();
-                Frame.Navigate(typeof(Opciones));
+                Frame.Navigate(typeof(Opciones));               
             }
         }
 
@@ -152,11 +151,30 @@ namespace DSI_PROYECTO
 
         private void Rendirse_Click(object sender, RoutedEventArgs e)
         {
+          
             this.Frame.Navigate(typeof(PantallaPrincipal));
+            if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
+                rendirse.Content = "RENDIRSE";
+            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
+                rendirse.Content = "GIVE UP";
+            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "ca")
+                rendirse.Content = "RENDIR";
         }
 
         private void Salir_Click(object sender, RoutedEventArgs e)
         {
+        
+            this.Frame.Navigate(typeof(InGame));
+            if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
+                salir.Content = "SALIR";
+            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
+                salir.Content = "EXIT";
+            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "ca")
+                salir.Content = "SORTIR";
+        }
+
+        private void X_Click(object sender, RoutedEventArgs e)
+        {       
             this.Frame.Navigate(typeof(InGame));
         }
     }

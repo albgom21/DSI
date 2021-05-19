@@ -318,9 +318,9 @@
         <Image Source="Assets/fondo.png" Grid.RowSpan="5" Grid.ColumnSpan="5" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
 
-        <Button x:Uid="salirOpcM" Content="SALIR" Style="{StaticResource ExitStyle}" Grid.Row="4" Grid.Column="3"  Margin="-45,0,0,0" Height="50" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Salir_Click"/>
-        <Button x:Uid="rendirseOpc" Content="RENDIRSE" Style="{StaticResource SurrenderStyle}"  Grid.Row="5" Grid.Column="1" Margin="-45,0,0,0"  Height="50" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Rendirse_Click"/>
-        <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="X_Click"/>
+        <Button x:Uid="sOpc" x:Name="salir" TabIndex="11" Content="SALIR" Style="{StaticResource ExitStyle}" Grid.Row="4" Grid.Column="3"  Margin="-45,0,0,0" Height="50" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Salir_Click"/>
+        <Button x:Uid="rOpc" x:Name="rendirse" TabIndex="10" Content="RENDIRSE" Style="{StaticResource SurrenderStyle}"  Grid.Row="5" Grid.Column="1" Margin="-45,0,0,0"  Height="50" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Rendirse_Click"/>
+        <Button Content="X"  TabIndex="4" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="X_Click"/>
 
         <StackPanel Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center">
             <Grid Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center">
@@ -347,26 +347,32 @@
 
 
         <StackPanel Grid.Row="2"  Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" >
-            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White" ValueChanged="Slider_ValueChanged_g"  Value="80" Height="40" />
-            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White"  ValueChanged="Slider_ValueChanged_m" Value="80"  Height="40"/>
-            <Slider  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF"  Background="White"  ValueChanged="Slider_ValueChanged_s" Value="80"  Height="35"/>
+            <Slider  ExitDisplayModeOnAccessKeyInvoked="False"  TabIndex="5" Foreground="#FF00AEFF" Background="White" ValueChanged="Slider_ValueChanged_g"  Value="80" Height="40" />
+            <Slider  ExitDisplayModeOnAccessKeyInvoked="False"  TabIndex="6" Foreground="#FF00AEFF" Background="White"  ValueChanged="Slider_ValueChanged_m" Value="80"  Height="40"/>
+            <Slider  ExitDisplayModeOnAccessKeyInvoked="False"  TabIndex="7" Foreground="#FF00AEFF"  Background="White"  ValueChanged="Slider_ValueChanged_s" Value="80"  Height="35"/>
 
         </StackPanel>
+        
+        <Border x:Name="borderEsp" Grid.Row="1" Grid.Column="1" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
 
-        <Button x:Name="besp" Height="75" Width="110" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Click="ToggleButton_Checked_esp" Tag="es">
+        <Button x:Name="besp" Height="75" Width="110" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Click="ToggleButton_Checked_esp" Tag="es" TabIndex="1">
             <Image Source="/Assets/besp.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
 
-        <Button x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ToggleButton_Checked_cat" Tag="ca">
+        <Border x:Name="borderCat" Grid.Row="1" Grid.Column="2" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
+
+        <Button x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ToggleButton_Checked_cat" Tag="ca"  TabIndex="2">
             <Image Source="/Assets/bcat.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
 
-        <Button x:Name="buk" Height="75" Width="110" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ToggleButton_Checked_uk"  Tag="en">
+        <Border x:Name="borderUk" Grid.Row="1" Grid.Column="3" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
+
+        <Button x:Name="buk" Height="75" Width="110" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ToggleButton_Checked_uk"  Tag="en"  TabIndex="3">
             <Image Source="/Assets/buk.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
 
-        <ToggleSwitch x:Uid="PasoTurnos" FontFamily="Aldrich" OnContent="Paso de turnos automático" OffContent="Paso de turnos automático" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Foreground="White" RequestedTheme="Dark" FontSize="14" HorizontalAlignment="Center" Margin="75,0,0,0" />
-        <ToggleSwitch x:Uid="Espectar" FontFamily="Aldrich" OnContent="Permitir espectar" OffContent="Permitir espectar"  Grid.Row="3"  Grid.Column="3"  Grid.ColumnSpan="5" Foreground="White" RequestedTheme="Dark" FontSize="14"  HorizontalAlignment="Left"  Margin="-35,0,0,0"/>
+        <ToggleSwitch x:Uid="PasoTurnos"  TabIndex="8" FontFamily="Aldrich" OnContent="Paso de turnos automático" OffContent="Paso de turnos automático" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Foreground="White" RequestedTheme="Dark" FontSize="14" HorizontalAlignment="Center" Margin="75,0,0,0" />
+        <ToggleSwitch x:Uid="Espectar"   TabIndex="9" FontFamily="Aldrich" OnContent="Permitir espectar" OffContent="Permitir espectar"  Grid.Row="3"  Grid.Column="3"  Grid.ColumnSpan="5" Foreground="White" RequestedTheme="Dark" FontSize="14"  HorizontalAlignment="Left"  Margin="-35,0,0,0"/>
 
 
     </Grid>
