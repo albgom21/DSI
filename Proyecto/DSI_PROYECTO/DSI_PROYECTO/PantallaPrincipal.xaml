@@ -200,11 +200,13 @@
         
         <!-- Título de la lista de amigos -->
         <TextBlock Text="AMIGOS" FontSize="10" FontFamily="Aldrich" Foreground="White" Grid.Row="0" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+        
         <!-- Fondo del buscador de amigos y estado del jugador -->
         <Border Grid.Row="1" Grid.Column="2" Background="LightCyan"></Border>
         
         <!-- Buscador de amigos -->
-        <TextBox  Grid.Row="1" Grid.Column="2"></TextBox>
+        <TextBox x:Name="AmigosTexto" Grid.Row="1" Grid.Column="2" TextChanged="AmigosTexto_TextChanged"></TextBox>
+        
         <!--- Fondo de la lista de amigos -->
         <Border Grid.Row="2" Grid.RowSpan="3"
                 Grid.Column="2" Background="LightBlue"></Border>

@@ -23,6 +23,8 @@ namespace DSI_PROYECTO
     /// </summary>
     public sealed partial class PantallaPrincipal : Page
     {
+        public bool found = false;
+        public int i = 0;
         public ObservableCollection<ViewModelAmigos> ListaAmigos { get; } = new ObservableCollection<ViewModelAmigos>();
         public PantallaPrincipal()
         {
@@ -61,6 +63,36 @@ namespace DSI_PROYECTO
                     ListaAmigos.Add(VMitem);
                 }
             base.OnNavigatedTo(e);
+        }
+
+        // Método que permite buscar amigos.
+        private void AmigosTexto_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            // El total de amigos.
+            int k = ListaAmigos.Count();
+
+            // Comprueba si ya se había buscado un amigo al borrar la lista anteriormente.
+            if (i != k && found == true) {
+                // En caso afirmativo, vuelve a rellenar la lista con todos los amigos.
+                ListaAmigos.Clear();
+                foreach (Amigo amigo in ModelA.getAllAmigos()) {
+                    ViewModelAmigos VMitem = new ViewModelAmigos(amigo);
+                    ListaAmigos.Add(VMitem);
+                }
+                found = false;
+            }
+
+            // Busca en la lista un amigo con el nombre introducido.
+            for (int j = 0; j < ListaAmigos.Count(); j++) {
+                if (AmigosTexto.Text == ListaAmigos[j].Nombre) {
+                    ViewModelAmigos Amigo = ListaAmigos[j];
+                    ListaAmigos.Clear();
+                    ListaAmigos.Add(Amigo);
+                    found = true;
+                }
+                i++;
+            }
+
         }
     }
 }

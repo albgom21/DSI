@@ -131,7 +131,7 @@
 
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="3">
-            <ToggleButton x:ConnectionId='17' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"                     >
+            <ToggleButton x:ConnectionId='18' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"                     >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
                 </ToggleButton.RenderTransform>
@@ -141,7 +141,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='18' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                       >
+            <ToggleButton x:ConnectionId='19' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                       >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
                 </ToggleButton.RenderTransform>
@@ -151,10 +151,10 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='19' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True">
+            <ToggleButton x:ConnectionId='20' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True">
                 <Image Source="/Assets/brawl.png" Width="90" Height="60" UseLayoutRounding="False" VerticalAlignment="Top" Margin="0,-4,0,0"/>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='20' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      >
+            <ToggleButton x:ConnectionId='21' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
@@ -164,7 +164,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='21' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
+            <ToggleButton x:ConnectionId='22' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
@@ -200,17 +200,19 @@
         
         <!-- Título de la lista de amigos -->
         <TextBlock Text="AMIGOS" FontSize="10" FontFamily="Aldrich" Foreground="White" Grid.Row="0" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+        
         <!-- Fondo del buscador de amigos y estado del jugador -->
         <Border Grid.Row="1" Grid.Column="2" Background="LightCyan"></Border>
         
         <!-- Buscador de amigos -->
-        <TextBox  Grid.Row="1" Grid.Column="2"></TextBox>
+        <TextBox x:ConnectionId='16' x:Name="AmigosTexto" Grid.Row="1" Grid.Column="2"                                      ></TextBox>
+        
         <!--- Fondo de la lista de amigos -->
         <Border Grid.Row="2" Grid.RowSpan="3"
                 Grid.Column="2" Background="LightBlue"></Border>
         
         <!-- Lista de amigos-->
-        <ListView x:ConnectionId='16' x:Name="ImageGridView"
+        <ListView x:ConnectionId='17' x:Name="ImageGridView"
                   Grid.Row="2"
                   Grid.RowSpan="3"
                   Grid.Column="2"
