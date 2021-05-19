@@ -32,6 +32,10 @@ namespace DSI_PROYECTO
             Img2.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
             Img2.Width = 50;
             Img2.Height = 50;
+            CCImg1 = new ContentControl();
+            CCImg1.Content = Img1;
+            CCImg2 = new ContentControl();
+            CCImg2.Content = Img2;
         }
     }
 }

@@ -184,7 +184,7 @@
         <!-- Texto del nivel y nombre del jugador -->
         <TextBlock Text="Lv. 63" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Aldrich"></TextBlock>
         <TextBlock Text="Plata III" FontSize="10"  Foreground="White" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Aldrich" Margin="0,128,0,0"/>
-        <TextBlock Text="Jugador" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextAlignment="Center" Width="160" FontFamily="Aldrich"></TextBlock>
+        <TextBlock x:Name="Jugador" Text="Jugador" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextAlignment="Center" Width="160" FontFamily="Aldrich"></TextBlock>
 
         <!-- Botón de logros -->
         <Button x:Name="BLogros" Grid.Row="3" Grid.RowSpan="2" FontSize="25" Foreground="White" Background = "Orange" Content="LOGROS" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="150" Height="40" Click="Logros_Click" ></Button>

@@ -10,18 +10,18 @@
     <Page.Resources>
      <DataTemplate x:Key="ImageGridView_DefaultItemTemplate"
                                                          >
-            <Grid x:ConnectionId='10' Height="40" Width="390" Margin="10">
+            <Grid x:ConnectionId='10' Height="40" Width="475" Margin="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="4*"/>
                 </Grid.ColumnDefinitions>
-                <Image x:ConnectionId='11'                           Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <Image x:ConnectionId='12'                           Grid.Column="3" Margin="60, 0, 0, 0" VerticalAlignment="Center" Width="50"/>
+                <ContentControl x:ConnectionId='11'                           Grid.Column="3" Margin="20, 0, 10, 0" VerticalAlignment="Center" HorizontalAlignment="Left"                               />
+                <Image x:ConnectionId='12'                           Grid.Column="3" Margin="0, 0, 10, 0" VerticalAlignment="Center" HorizontalAlignment="Center" Width="50"/>
                 <TextBlock x:ConnectionId='13'                        Foreground="Black" Grid.Column="0" FontSize="15" FontFamily="Aldrich"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <TextBlock x:ConnectionId='14'                       Foreground="Black" Grid.Column="1" FontSize="15" FontFamily="Aldrich"   HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock x:ConnectionId='15'                       Foreground="Black" Margin="0, 0, 0, 0" Grid.Column="2" FontSize="15" FontFamily="Aldrich"   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock x:ConnectionId='15'                       Foreground="Black" Grid.Column="2" FontSize="15" FontFamily="Aldrich"   HorizontalAlignment="Center" VerticalAlignment="Center"/>
               </Grid>
 
         </DataTemplate>

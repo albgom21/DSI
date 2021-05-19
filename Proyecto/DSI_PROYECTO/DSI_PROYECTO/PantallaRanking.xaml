@@ -10,18 +10,18 @@
     <Page.Resources>
      <DataTemplate x:Key="ImageGridView_DefaultItemTemplate"
                       x:DataType="local:ViewModelRanking">
-            <Grid Height="40" Width="390" Margin="10">
+            <Grid Height="40" Width="475" Margin="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="4*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="{x:Bind Imagen1}" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <Image Source="{x:Bind Imagen2}" Grid.Column="3" Margin="60, 0, 0, 0" VerticalAlignment="Center" Width="50"/>
+                <ContentControl Content="{x:Bind CCImg1}" Grid.Column="3" Margin="20, 0, 10, 0" VerticalAlignment="Center" HorizontalAlignment="Left" PointerPressed="Galeria_Click"/>
+                <Image Source="{x:Bind Imagen2}" Grid.Column="3" Margin="0, 0, 10, 0" VerticalAlignment="Center" HorizontalAlignment="Center" Width="50"/>
                 <TextBlock Text="{x:Bind Nombre}" Foreground="Black" Grid.Column="0" FontSize="15" FontFamily="Aldrich"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <TextBlock Text="{x:Bind Nivel}" Foreground="Black" Grid.Column="1" FontSize="15" FontFamily="Aldrich"   HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="{x:Bind Rango}" Foreground="Black" Margin="0, 0, 0, 0" Grid.Column="2" FontSize="15" FontFamily="Aldrich"   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{x:Bind Rango}" Foreground="Black" Grid.Column="2" FontSize="15" FontFamily="Aldrich"   HorizontalAlignment="Center" VerticalAlignment="Center"/>
               </Grid>
 
         </DataTemplate>

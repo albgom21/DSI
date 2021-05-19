@@ -131,7 +131,7 @@
 
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="3">
-            <ToggleButton x:ConnectionId='16' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"                     >
+            <ToggleButton x:ConnectionId='17' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"                     >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
                 </ToggleButton.RenderTransform>
@@ -141,7 +141,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='17' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                       >
+            <ToggleButton x:ConnectionId='18' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                       >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
                 </ToggleButton.RenderTransform>
@@ -151,10 +151,10 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='18' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True">
+            <ToggleButton x:ConnectionId='19' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True">
                 <Image Source="/Assets/brawl.png" Width="90" Height="60" UseLayoutRounding="False" VerticalAlignment="Top" Margin="0,-4,0,0"/>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='19' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      >
+            <ToggleButton x:ConnectionId='20' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
@@ -164,7 +164,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='20' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
+            <ToggleButton x:ConnectionId='21' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
@@ -184,13 +184,13 @@
         <!-- Texto del nivel y nombre del jugador -->
         <TextBlock Text="Lv. 63" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Aldrich"></TextBlock>
         <TextBlock Text="Plata III" FontSize="10"  Foreground="White" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Aldrich" Margin="0,128,0,0"/>
-        <TextBlock Text="Jugador" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextAlignment="Center" Width="160" FontFamily="Aldrich"></TextBlock>
+        <TextBlock x:ConnectionId='13' x:Name="Jugador" Text="Jugador" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextAlignment="Center" Width="160" FontFamily="Aldrich"></TextBlock>
 
         <!-- Botón de logros -->
-        <Button x:ConnectionId='13' x:Name="BLogros" Grid.Row="3" Grid.RowSpan="2" FontSize="25" Foreground="White" Background = "Orange" Content="LOGROS" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="150" Height="40"                      ></Button>
+        <Button x:ConnectionId='14' x:Name="BLogros" Grid.Row="3" Grid.RowSpan="2" FontSize="25" Foreground="White" Background = "Orange" Content="LOGROS" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="150" Height="40"                      ></Button>
 
         <!-- Botón de jugar -->
-        <Button x:ConnectionId='14' x:Name="BJugar" Grid.Row="4" Grid.Column="1" FontSize="25" Foreground="DarkRed" Background = "Red" Content="JUGAR" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="160" Height="50"></Button>
+        <Button x:ConnectionId='15' x:Name="BJugar" Grid.Row="4" Grid.Column="1" FontSize="25" Foreground="DarkRed" Background = "Red" Content="JUGAR" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="160" Height="50"></Button>
 
         <!-- Avatar del héroe -->
         <Image Source="/Assets/hero.png" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"></Image>
@@ -210,7 +210,7 @@
                 Grid.Column="2" Background="LightBlue"></Border>
         
         <!-- Lista de amigos-->
-        <ListView x:ConnectionId='15' x:Name="ImageGridView"
+        <ListView x:ConnectionId='16' x:Name="ImageGridView"
                   Grid.Row="2"
                   Grid.RowSpan="3"
                   Grid.Column="2"
