@@ -21,9 +21,9 @@
       <RootProperty Name="Width" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="CornerRadius" />
       <RootProperty Name="Tag" />
       <RootProperty Name="Background" />

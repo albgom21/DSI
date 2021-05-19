@@ -55,7 +55,7 @@
                     <Image Source="/Assets/mana.png" Width="20" Height="30" />
                     <TextBlock Text="6" FontSize="20" FontFamily="Aldrich" Foreground="#9c29b7" HorizontalAlignment="Center" Margin="5,0" VerticalAlignment="Center"/>
                 </StackPanel>
-                <Button Grid.RowSpan="2" Width="70" Height="70" CornerRadius="50" Margin="-5,0,0,0" Canvas.Left="459" Canvas.Top="70" >
+                <Button Grid.RowSpan="2" Width="70" Height="70" CornerRadius="50" Margin="-5,0,0,0" Canvas.Left="459" Canvas.Top="70">
                     <Image Source="/Assets/pasarTurno.png" Margin="-10" />
                 </Button>
             </Canvas>

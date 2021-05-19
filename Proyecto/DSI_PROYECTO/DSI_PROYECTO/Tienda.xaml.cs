@@ -92,5 +92,31 @@ namespace DSI_PROYECTO
 
             dinero.Text = miDinero.ToString();
         }
+
+        private void B2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(GaleriaDeMazos));
+        }
+
+        private void B3_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PantallaPrincipal));
+        }
+
+        private void B4_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PantallaRanking));
+        }
+
+        private void B5_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(OpcionesMenu));
+        }
+
+        private void X_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+                this.Frame.GoBack();
+        }
     }
 }

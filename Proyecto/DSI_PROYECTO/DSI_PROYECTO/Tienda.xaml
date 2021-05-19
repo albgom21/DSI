@@ -80,6 +80,103 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <Style x:Key="XStyle" TargetType="Button">
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Background" Value="{x:Null}"/>
+            <Setter Property="BackgroundSizing" Value="InnerBorderEdge"/>
+            <Setter Property="Foreground" Value="#FF3C0000"/>
+            <Setter Property="BorderBrush" Value="#FFD85A24"/>
+            <Setter Property="Padding" Value="8,4,8,4"/>
+            <Setter Property="BorderThickness" Value="5"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Aldrich"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="UseSystemFocusVisuals" Value="True"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid x:Name="RootGrid" Background="{TemplateBinding Background}">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="CornerRadius" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="100"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Button.Background" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FF3C0000"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFE22525"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFE22525"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="CornerRadius" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="100"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FF3C0000"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Button.Background" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFE22525"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="White"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="CornerRadius" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="100"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Button.Background" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#a30707"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#ffc9c9"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#ffe6e6"/>
+                                            </ObjectAnimationUsingKeyFrames>
+
+                                            <PointerDownThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="CornerRadius" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="10"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledBaseMediumLowBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledTransparentBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw"  BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTransitions="{TemplateBinding ContentTransitions}" Content="{TemplateBinding Content}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Page.Resources>
 
     <Grid>
@@ -97,7 +194,7 @@
 
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <ToggleButton x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <ToggleButton x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" IsChecked="True">
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
                 </ToggleButton.RenderTransform>
@@ -107,7 +204,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" >
+            <ToggleButton x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" Click="B2_Click">
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
                 </ToggleButton.RenderTransform>
@@ -117,10 +214,10 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top">
+            <ToggleButton x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Click="B3_Click">
                 <Image Source="/Assets/brawl.png" Width="90" Height="60" UseLayoutRounding="False" VerticalAlignment="Top" Margin="0,-4,0,0"/>
             </ToggleButton>
-            <ToggleButton x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top">
+            <ToggleButton x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Click="B4_Click">
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
@@ -130,7 +227,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" >
+            <ToggleButton x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Click="B5_Click">
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
@@ -202,6 +299,9 @@
                 </StackPanel>
             </Button>
         </StackPanel>
+        
+        <!-- Boton atras -->
+        <Button Content="X"  TabIndex="4" Style="{StaticResource XStyle}" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,50,20"  Click="X_Click"/>
 
         <!-- Ofertas -->
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">

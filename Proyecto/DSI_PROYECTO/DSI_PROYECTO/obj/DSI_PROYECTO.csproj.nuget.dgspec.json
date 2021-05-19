@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\skoon\\Desktop\\dsip\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj": {}
+    "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\skoon\\Desktop\\dsip\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj": {
+    "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\skoon\\Desktop\\dsip\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj",
+        "projectUniqueName": "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj",
         "projectName": "DSI_PROYECTO",
-        "projectPath": "C:\\Users\\skoon\\Desktop\\dsip\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj",
-        "packagesPath": "C:\\Users\\skoon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\skoon\\Desktop\\dsip\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\obj\\",
+        "projectPath": "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj",
+        "packagesPath": "C:\\Users\\adrim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\skoon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adrim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

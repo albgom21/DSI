@@ -200,5 +200,11 @@ namespace DSI_PROYECTO
             MazoPrincipal.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
             mazoActual = mazo;
         }
+
+        private void X_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+                this.Frame.GoBack();
+        }
     }
 }
