@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-G98GD1R</Machine>
-    <WindowsUser>adrim</WindowsUser>
+    <Machine>DESKTOP-E4BHA2K</Machine>
+    <WindowsUser>skoon</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>c7b097e4-b976-490d-9a9a-528113834792</PackageIdentityName>
     <PackageIdentityPublisher>CN=alber</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>DA8101665272F9367AF2D8ECC7CF37A363B91513B821561BFA6BCD1C6E6E5F7D</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>8D7F6501FAC1E3F71FB4155FDC38A407BC09E79DE049ABF7D35281014513D705</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c7b097e4-b976-490d-9a9a-528113834792_1.0.0.0_x86__03azfdtxj8smj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c7b097e4-b976-490d-9a9a-528113834792_03azfdtxj8smj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c7b097e4-b976-490d-9a9a-528113834792</RegisteredPackageID>
@@ -27,18 +27,18 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-19T17:03:50.636</Modified>
+      <Modified>2021-05-19T18:09:36.560</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\DSI_PROYECTO.exe">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\DSI_PROYECTO.exe">
       <PackagePath>entrypoint\DSI_PROYECTO.exe</PackagePath>
-      <Modified>2021-05-19T17:03:48.632</Modified>
+      <Modified>2021-05-19T18:09:36.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\skoon\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-07-22T12:01:14.000</Modified>
     </AppxPackagedFile>
@@ -46,597 +46,597 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T16:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\altavoz.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\altavoz.png">
       <PackagePath>Assets\altavoz.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.630</Modified>
+      <Modified>2021-05-19T17:23:29.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\altavoz0.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\altavoz0.png">
       <PackagePath>Assets\altavoz0.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.630</Modified>
+      <Modified>2021-05-19T17:23:29.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\altavoz1.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\altavoz1.png">
       <PackagePath>Assets\altavoz1.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.631</Modified>
+      <Modified>2021-05-19T17:23:29.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\avatar.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\avatar.png">
       <PackagePath>Assets\avatar.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.632</Modified>
+      <Modified>2021-05-19T17:23:29.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\bcat.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\bcat.png">
       <PackagePath>Assets\bcat.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.632</Modified>
+      <Modified>2021-05-19T17:23:29.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\besp.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\besp.png">
       <PackagePath>Assets\besp.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.633</Modified>
+      <Modified>2021-05-19T17:23:29.424</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\brawl.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\brawl.png">
       <PackagePath>Assets\brawl.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.634</Modified>
+      <Modified>2021-05-19T17:23:29.425</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\buk.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\buk.png">
       <PackagePath>Assets\buk.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.635</Modified>
+      <Modified>2021-05-19T17:23:29.425</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cards.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cards.png">
       <PackagePath>Assets\cards.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.635</Modified>
+      <Modified>2021-05-19T17:23:29.425</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cards2.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cards2.png">
       <PackagePath>Assets\cards2.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.635</Modified>
+      <Modified>2021-05-19T17:23:29.426</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\carta1.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\carta1.png">
       <PackagePath>Assets\carta1.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.636</Modified>
+      <Modified>2021-05-19T17:23:29.426</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\carta2.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\carta2.png">
       <PackagePath>Assets\carta2.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.636</Modified>
+      <Modified>2021-05-19T17:23:29.427</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\carta3.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\carta3.png">
       <PackagePath>Assets\carta3.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.637</Modified>
+      <Modified>2021-05-19T17:23:29.427</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cartaInGame1.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cartaInGame1.png">
       <PackagePath>Assets\cartaInGame1.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.637</Modified>
+      <Modified>2021-05-19T17:23:29.428</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cartaInGame2.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cartaInGame2.png">
       <PackagePath>Assets\cartaInGame2.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.638</Modified>
+      <Modified>2021-05-19T17:23:29.428</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cartaInGame3.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cartaInGame3.png">
       <PackagePath>Assets\cartaInGame3.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.638</Modified>
+      <Modified>2021-05-19T17:23:29.429</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cartaTapada1.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cartaTapada1.png">
       <PackagePath>Assets\cartaTapada1.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.639</Modified>
+      <Modified>2021-05-19T17:23:29.429</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cartaTapada2.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cartaTapada2.png">
       <PackagePath>Assets\cartaTapada2.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.639</Modified>
+      <Modified>2021-05-19T17:23:29.430</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cartaTapada3.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\cartaTapada3.png">
       <PackagePath>Assets\cartaTapada3.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.640</Modified>
+      <Modified>2021-05-19T17:23:29.430</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\coin.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\coin.png">
       <PackagePath>Assets\coin.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.641</Modified>
+      <Modified>2021-05-19T17:23:29.431</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\coins.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\coins.png">
       <PackagePath>Assets\coins.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.641</Modified>
+      <Modified>2021-05-19T17:23:29.431</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\eye.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\eye.png">
       <PackagePath>Assets\eye.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.642</Modified>
+      <Modified>2021-05-19T17:23:29.432</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\fondo.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\fondo.png">
       <PackagePath>Assets\fondo.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.653</Modified>
+      <Modified>2021-05-19T17:23:29.441</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\hero.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\hero.png">
       <PackagePath>Assets\hero.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.653</Modified>
+      <Modified>2021-05-19T17:23:29.442</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe.png">
       <PackagePath>Assets\heroe.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.654</Modified>
+      <Modified>2021-05-19T17:23:29.443</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe1.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe1.png">
       <PackagePath>Assets\heroe1.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.655</Modified>
+      <Modified>2021-05-19T17:23:29.443</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe2.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe2.png">
       <PackagePath>Assets\heroe2.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.655</Modified>
+      <Modified>2021-05-19T17:23:29.444</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe3.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe3.png">
       <PackagePath>Assets\heroe3.png</PackagePath>
-      <Modified>2021-05-18T15:20:58.034</Modified>
+      <Modified>2021-05-19T17:23:29.445</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe4.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe4.png">
       <PackagePath>Assets\heroe4.png</PackagePath>
-      <Modified>2021-05-18T15:20:58.034</Modified>
+      <Modified>2021-05-19T17:23:29.445</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe5.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe5.png">
       <PackagePath>Assets\heroe5.png</PackagePath>
-      <Modified>2021-05-18T15:20:58.035</Modified>
+      <Modified>2021-05-19T17:23:29.446</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe6.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\heroe6.png">
       <PackagePath>Assets\heroe6.png</PackagePath>
-      <Modified>2021-05-18T15:20:58.035</Modified>
+      <Modified>2021-05-19T17:23:29.446</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\historial.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\historial.png">
       <PackagePath>Assets\historial.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.656</Modified>
+      <Modified>2021-05-19T17:23:29.447</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.253</Modified>
+      <Modified>2021-05-19T17:23:29.352</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\LargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\LargeTile.scale-125.png">
       <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.274</Modified>
+      <Modified>2021-05-19T17:23:29.353</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\LargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\LargeTile.scale-150.png">
       <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.306</Modified>
+      <Modified>2021-05-19T17:23:29.353</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.346</Modified>
+      <Modified>2021-05-19T17:23:29.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.472</Modified>
+      <Modified>2021-05-19T17:23:29.354</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\lock.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\lock.png">
       <PackagePath>Assets\lock.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.656</Modified>
+      <Modified>2021-05-19T17:23:29.448</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mana.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mana.png">
       <PackagePath>Assets\mana.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.657</Modified>
+      <Modified>2021-05-19T17:23:29.448</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazo.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazo.png">
       <PackagePath>Assets\mazo.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.657</Modified>
+      <Modified>2021-05-19T17:23:29.449</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazo0.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazo0.png">
       <PackagePath>Assets\mazo0.png</PackagePath>
-      <Modified>2021-05-18T15:20:58.036</Modified>
+      <Modified>2021-05-19T17:23:29.449</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazo1.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazo1.png">
       <PackagePath>Assets\mazo1.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.658</Modified>
+      <Modified>2021-05-19T17:23:29.450</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazo2.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazo2.png">
       <PackagePath>Assets\mazo2.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.658</Modified>
+      <Modified>2021-05-19T17:23:29.450</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazo3.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazo3.png">
       <PackagePath>Assets\mazo3.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.659</Modified>
+      <Modified>2021-05-19T17:23:29.450</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazo4.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazo4.png">
       <PackagePath>Assets\mazo4.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.659</Modified>
+      <Modified>2021-05-19T17:23:29.451</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazoMesa.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazoMesa.png">
       <PackagePath>Assets\mazoMesa.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.660</Modified>
+      <Modified>2021-05-19T17:23:29.451</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazoMesa2.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\mazoMesa2.png">
       <PackagePath>Assets\mazoMesa2.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.661</Modified>
+      <Modified>2021-05-19T17:23:29.452</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\oferta1.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\oferta1.png">
       <PackagePath>Assets\oferta1.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.661</Modified>
+      <Modified>2021-05-19T17:23:29.453</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\oferta2.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\oferta2.png">
       <PackagePath>Assets\oferta2.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.662</Modified>
+      <Modified>2021-05-19T17:23:29.453</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\offline.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\offline.png">
       <PackagePath>Assets\offline.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.663</Modified>
+      <Modified>2021-05-19T17:23:29.454</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\online.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\online.png">
       <PackagePath>Assets\online.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.664</Modified>
+      <Modified>2021-05-19T17:23:29.455</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\pasarTurno.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\pasarTurno.png">
       <PackagePath>Assets\pasarTurno.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.667</Modified>
+      <Modified>2021-05-19T17:23:29.458</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\settings.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\settings.png">
       <PackagePath>Assets\settings.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.668</Modified>
+      <Modified>2021-05-19T17:23:29.459</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\shop.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\shop.png">
       <PackagePath>Assets\shop.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.669</Modified>
+      <Modified>2021-05-19T17:23:29.460</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\silver.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\silver.png">
       <PackagePath>Assets\silver.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.669</Modified>
+      <Modified>2021-05-19T17:23:29.461</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:52.956</Modified>
+      <Modified>2021-05-19T17:23:29.355</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SmallTile.scale-125.png">
       <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:52.967</Modified>
+      <Modified>2021-05-19T17:23:29.355</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SmallTile.scale-150.png">
       <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:52.978</Modified>
+      <Modified>2021-05-19T17:23:29.356</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:52.989</Modified>
+      <Modified>2021-05-19T17:23:29.356</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.006</Modified>
+      <Modified>2021-05-19T17:23:29.356</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.711</Modified>
+      <Modified>2021-05-19T17:23:29.357</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.741</Modified>
+      <Modified>2021-05-19T17:23:29.357</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.783</Modified>
+      <Modified>2021-05-19T17:23:29.358</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:54.089</Modified>
+      <Modified>2021-05-19T17:23:29.359</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.020</Modified>
+      <Modified>2021-05-19T17:23:29.404</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square150x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.032</Modified>
+      <Modified>2021-05-19T17:23:29.405</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square150x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.045</Modified>
+      <Modified>2021-05-19T17:23:29.405</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.104</Modified>
+      <Modified>2021-05-19T17:23:29.406</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.642</Modified>
+      <Modified>2021-05-19T17:23:29.407</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.652</Modified>
+      <Modified>2021-05-19T17:23:29.407</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.688</Modified>
+      <Modified>2021-05-19T17:23:29.408</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.661</Modified>
+      <Modified>2021-05-19T17:23:29.409</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.670</Modified>
+      <Modified>2021-05-19T17:23:29.410</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.587</Modified>
+      <Modified>2021-05-19T17:23:29.410</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.633</Modified>
+      <Modified>2021-05-19T17:23:29.411</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.605</Modified>
+      <Modified>2021-05-19T17:23:29.411</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.615</Modified>
+      <Modified>2021-05-19T17:23:29.412</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.482</Modified>
+      <Modified>2021-05-19T17:23:29.412</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.492</Modified>
+      <Modified>2021-05-19T17:23:29.412</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.501</Modified>
+      <Modified>2021-05-19T17:23:29.413</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.524</Modified>
+      <Modified>2021-05-19T17:23:29.414</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.533</Modified>
+      <Modified>2021-05-19T17:23:29.414</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.543</Modified>
+      <Modified>2021-05-19T17:23:29.414</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.578</Modified>
+      <Modified>2021-05-19T17:23:29.415</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.552</Modified>
+      <Modified>2021-05-19T17:23:29.416</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.561</Modified>
+      <Modified>2021-05-19T17:23:29.416</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\star.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\star.png">
       <PackagePath>Assets\star.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.670</Modified>
+      <Modified>2021-05-19T17:23:29.462</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:54.103</Modified>
+      <Modified>2021-05-19T17:23:29.417</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\StoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\StoreLogo.scale-125.png">
       <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:54.117</Modified>
+      <Modified>2021-05-19T17:23:29.417</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\StoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\StoreLogo.scale-150.png">
       <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:54.130</Modified>
+      <Modified>2021-05-19T17:23:29.418</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:54.143</Modified>
+      <Modified>2021-05-19T17:23:29.418</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:54.159</Modified>
+      <Modified>2021-05-19T17:23:29.419</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\timer.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\timer.png">
       <PackagePath>Assets\timer.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.671</Modified>
+      <Modified>2021-05-19T17:23:29.462</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\trophy.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\trophy.png">
       <PackagePath>Assets\trophy.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.671</Modified>
+      <Modified>2021-05-19T17:23:29.463</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.117</Modified>
+      <Modified>2021-05-19T17:23:29.419</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Wide310x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.132</Modified>
+      <Modified>2021-05-19T17:23:29.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Wide310x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.149</Modified>
+      <Modified>2021-05-19T17:23:29.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.235</Modified>
+      <Modified>2021-05-19T17:23:29.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\xbutton.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\xbutton.png">
       <PackagePath>Assets\xbutton.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.672</Modified>
+      <Modified>2021-05-19T17:23:29.463</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2021-05-11T14:07:08.627</Modified>
+      <Modified>2021-05-19T17:23:29.355</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.846</Modified>
+      <Modified>2021-05-19T17:23:29.359</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.066</Modified>
+      <Modified>2021-05-19T17:23:29.406</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.511</Modified>
+      <Modified>2021-05-19T17:23:29.413</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.596</Modified>
+      <Modified>2021-05-19T17:23:29.415</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-18T15:24:53.171</Modified>
+      <Modified>2021-05-19T17:23:29.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-05-11T14:07:08.687</Modified>
+      <Modified>2021-05-19T17:23:29.477</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\DSI_PROYECTO.xr.xml">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\DSI_PROYECTO.xr.xml">
       <PackagePath>DSI_PROYECTO.xr.xml</PackagePath>
-      <Modified>2021-05-19T17:03:47.913</Modified>
+      <Modified>2021-05-19T17:23:29.651</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-05-19T17:03:48.410</Modified>
+      <Modified>2021-05-19T18:09:35.964</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\ColeccionCartas.xbf">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\ColeccionCartas.xbf">
       <PackagePath>ColeccionCartas.xbf</PackagePath>
-      <Modified>2021-05-19T17:03:48.075</Modified>
+      <Modified>2021-05-19T18:09:35.772</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\GaleriaDeMazos.xbf">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\GaleriaDeMazos.xbf">
       <PackagePath>GaleriaDeMazos.xbf</PackagePath>
-      <Modified>2021-05-19T17:03:48.132</Modified>
+      <Modified>2021-05-19T18:09:35.819</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\InGame.xbf">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\InGame.xbf">
       <PackagePath>InGame.xbf</PackagePath>
-      <Modified>2021-05-19T17:03:48.137</Modified>
+      <Modified>2021-05-19T18:09:35.824</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-05-19T17:03:48.411</Modified>
+      <Modified>2021-05-19T18:09:35.965</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\ModosDeJuego.xbf">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\ModosDeJuego.xbf">
       <PackagePath>ModosDeJuego.xbf</PackagePath>
-      <Modified>2021-05-19T17:03:48.206</Modified>
+      <Modified>2021-05-19T18:09:35.869</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Opciones.xbf">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Opciones.xbf">
       <PackagePath>Opciones.xbf</PackagePath>
-      <Modified>2021-05-19T17:03:48.263</Modified>
+      <Modified>2021-05-19T18:09:35.892</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\OpcionesMenu.xbf">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\OpcionesMenu.xbf">
       <PackagePath>OpcionesMenu.xbf</PackagePath>
-      <Modified>2021-05-19T17:03:48.327</Modified>
+      <Modified>2021-05-19T18:09:35.920</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaLogros.xbf">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaLogros.xbf">
       <PackagePath>PantallaLogros.xbf</PackagePath>
-      <Modified>2021-05-19T17:03:48.343</Modified>
+      <Modified>2021-05-19T18:09:35.928</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaPrincipal.xbf">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaPrincipal.xbf">
       <PackagePath>PantallaPrincipal.xbf</PackagePath>
-      <Modified>2021-05-19T17:03:48.365</Modified>
+      <Modified>2021-05-19T18:09:35.936</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaRanking.xbf">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaRanking.xbf">
       <PackagePath>PantallaRanking.xbf</PackagePath>
-      <Modified>2021-05-19T17:03:48.381</Modified>
+      <Modified>2021-05-19T18:09:35.945</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Tienda.xbf">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Tienda.xbf">
       <PackagePath>Tienda.xbf</PackagePath>
-      <Modified>2021-05-19T17:03:48.409</Modified>
+      <Modified>2021-05-19T18:09:35.964</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T15:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-05-19T17:03:49.394</Modified>
+      <Modified>2021-05-19T18:04:24.574</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adrim\Desktop\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Core\DSI_PROYECTO.exe">
+    <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Core\DSI_PROYECTO.exe">
       <PackagePath>DSI_PROYECTO.exe</PackagePath>
-      <Modified>2021-05-19T17:03:50.624</Modified>
+      <Modified>2021-05-19T18:09:36.557</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Users\adrim\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\skoon\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\adrim\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\skoon\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\adrim\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\skoon\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\adrim\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\skoon\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\adrim\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\skoon\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27902.3</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\adrim\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\skoon\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\adrim\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\skoon\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.27909.0</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\adrim\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\skoon\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\adrim\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\skoon\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.27909.0</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\adrim\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\skoon\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\adrim\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\skoon\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.27909.0</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\adrim\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\skoon\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
