@@ -160,7 +160,7 @@
         </Button>
 
         <!-- Título de pantalla -->
-        <TextBlock Text="LOGROS" FontSize="20" FontFamily="Aldrich" Grid.Column="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Grid.Row="1"></TextBlock>
+        <TextBlock x:Name="Logros" x:Uid="Logros" Text="LOGROS" FontSize="20" FontFamily="Aldrich" Grid.Column="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Grid.Row="1"></TextBlock>
 
         <!-- Lista de logros -->
         <ListView x:Name="ImageGridView"

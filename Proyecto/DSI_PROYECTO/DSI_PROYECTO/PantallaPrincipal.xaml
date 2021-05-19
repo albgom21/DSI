@@ -158,15 +158,15 @@
         <Border Grid.Row="2" Background="#5555AA"  CornerRadius="10" Width="65" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center"/>
 
         <!-- Texto del nivel y nombre del jugador -->
-        <TextBlock Text="Lv. 63" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Aldrich"></TextBlock>
-        <TextBlock Text="Plata III" FontSize="10"  Foreground="White" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Aldrich" Margin="0,128,0,0"/>
-        <TextBlock x:Name="Jugador" Text="Jugador" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextAlignment="Center" Width="160" FontFamily="Aldrich"></TextBlock>
+        <TextBlock x:Name="Nivel" x:Uid="Nivel" Text="Lv. 63" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Aldrich"></TextBlock>
+        <TextBlock x:Name="Rango" x:Uid="Rango" Text="Plata III" FontSize="10"  Foreground="White" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Aldrich" Margin="0,128,0,0"/>
+        <TextBlock x:Name="Jugador" x:Uid="Jugador" Text="Jugador" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextAlignment="Center" Width="160" FontFamily="Aldrich"></TextBlock>
 
         <!-- Botón de logros -->
-        <Button x:Name="BLogros" Grid.Row="3" Grid.RowSpan="2" FontSize="25" Foreground="White" Background = "Orange" Content="LOGROS" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="150" Height="40" Click="Logros_Click" ></Button>
+        <Button x:Name="BLogros" x:Uid="BLogros" Grid.Row="3" Grid.RowSpan="2" FontSize="25" Foreground="White" Background = "Orange" Content="LOGROS" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="150" Height="40" Click="Logros_Click" ></Button>
 
         <!-- Botón de jugar -->
-        <Button x:Name="BJugar" Grid.Row="4" Grid.Column="1" FontSize="25" Foreground="DarkRed" Background = "Red" Content="JUGAR" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="160" Height="50"></Button>
+        <Button x:Name="BJugar" x:Uid="BJugar" Grid.Row="4" Grid.Column="1" FontSize="25" Foreground="DarkRed" Background = "Red" Content="JUGAR" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="160" Height="50"></Button>
 
         <!-- Avatar del héroe -->
         <Image Source="/Assets/hero.png" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"></Image>
@@ -175,7 +175,7 @@
         <Border Grid.Row="0" Grid.Column="2" Background="Blue" Margin="0,80,0,0"> </Border>
         
         <!-- Título de la lista de amigos -->
-        <TextBlock Text="AMIGOS" FontSize="10" FontFamily="Aldrich" Foreground="White" Grid.Row="0" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock x:Name="Amigos" Text="AMIGOS" x:Uid="Amigos" FontSize="10" FontFamily="Aldrich" Foreground="White" Grid.Row="0" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
         
         <!-- Fondo del buscador de amigos y estado del jugador -->
         <Border Grid.Row="1" Grid.Column="2" Background="LightCyan"></Border>

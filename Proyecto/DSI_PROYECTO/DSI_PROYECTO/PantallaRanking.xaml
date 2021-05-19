@@ -165,15 +165,15 @@
         </Button>
 
         <!-- Título de pantalla -->
-        <TextBlock Text="RANKING" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="20" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="0,91,0,319"></TextBlock>
+        <TextBlock x:Name="RankingT" x:Uid="RankingT" Text="RANKING" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="20" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="0,91,0,319"></TextBlock>
 
         <!-- Borde y títulos del ranking -->
         <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" Background="Orange"></Border>
 
-        <TextBlock Text="Nombre" Grid.Row="2" Grid.Column="1" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
-        <TextBlock Text="Nivel" Grid.Row="2" Grid.Column="2" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
-        <TextBlock Text="Rango" Grid.Row="2" Grid.Column="3" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center"  VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
-        <TextBlock Text="Último mazo" Grid.Row="2" Grid.Column="4" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
+        <TextBlock x:Name="NombreT" x:Uid="NombreT" Text="Nombre" Grid.Row="2" Grid.Column="1" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
+        <TextBlock x:Name="NivelT" x:Uid="NivelT" Text="Nivel" Grid.Row="2" Grid.Column="2" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
+        <TextBlock x:Name="RangoT" x:Uid="RangoT" Text="Rango" Grid.Row="2" Grid.Column="3" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center"  VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
+        <TextBlock x:Name="MazoT" x:Uid="MazoT" Text="Último mazo" Grid.Row="2" Grid.Column="4" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
 
         <!-- Borde de la lista del ranking -->
         <Border Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" Background="LightGray"></Border>

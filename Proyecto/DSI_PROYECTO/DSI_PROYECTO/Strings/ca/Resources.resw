@@ -117,11 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Amigos.Text" xml:space="preserve">
+    <value>AMICS</value>
+  </data>
+  <data name="BJugar.Content" xml:space="preserve">
+    <value>JUGAR</value>
+  </data>
+  <data name="BLogros.Content" xml:space="preserve">
+    <value>FITES</value>
+  </data>
+  <data name="BLogros.FontSize" xml:space="preserve">
+    <value>25</value>
+  </data>
   <data name="descripciont.Text" xml:space="preserve">
-    <value>TRIA UNA MANERA DE JOC</value>
+    <value>TRIA UN MODE DE JOC</value>
   </data>
   <data name="Dinero.Text" xml:space="preserve">
-    <value>Diners</value>
+    <value>Doblers</value>
   </data>
   <data name="Espectar.OffContent" xml:space="preserve">
     <value>Permetre espectar</value>
@@ -130,7 +142,7 @@
     <value>Permetre espectar</value>
   </data>
   <data name="GuardarM.Content" xml:space="preserve">
-    <value>GUARDAR MALL</value>
+    <value>GUARDAR BARALLA</value>
   </data>
   <data name="hecB.Content" xml:space="preserve">
     <value>Encanteris</value>
@@ -141,6 +153,21 @@
   <data name="IdiomaOpcionesMenu.Text" xml:space="preserve">
     <value>IDIOMA</value>
   </data>
+  <data name="Jugador.Text" xml:space="preserve">
+    <value>Jugador</value>
+  </data>
+  <data name="Logros.FontSize" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="Logros.Text" xml:space="preserve">
+    <value>FITES</value>
+  </data>
+  <data name="MazoT.FontSize" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="MazoT.Text" xml:space="preserve">
+    <value>DARRERA BARALLA</value>
+  </data>
   <data name="MDJ_Jugar.Content" xml:space="preserve">
     <value>JUGAR</value>
   </data>
@@ -150,14 +177,32 @@
   <data name="NcartasDes.Text" xml:space="preserve">
     <value>CARTES DESBLOQUEJADES  37/100</value>
   </data>
+  <data name="Nivel.Text" xml:space="preserve">
+    <value>Nivell 73</value>
+  </data>
+  <data name="NivelT.Text" xml:space="preserve">
+    <value>NIVELL</value>
+  </data>
+  <data name="NombreT.Text" xml:space="preserve">
+    <value>NOM</value>
+  </data>
   <data name="PasoTurnos.OffContent" xml:space="preserve">
     <value>Pas de torns automàtic</value>
   </data>
   <data name="PasoTurnos.OnContent" xml:space="preserve">
     <value>Pas de torns automàtic</value>
   </data>
+  <data name="Rango.Text" xml:space="preserve">
+    <value>Plata III</value>
+  </data>
+  <data name="RangoT.Text" xml:space="preserve">
+    <value>RÀNKING</value>
+  </data>
+  <data name="RankingT.Text" xml:space="preserve">
+    <value>RÀNKING</value>
+  </data>
   <data name="rOpc.Content" xml:space="preserve">
-    <value>RENDIR</value>
+    <value>RENDIR-SE</value>
   </data>
   <data name="salirOpcM.Content" xml:space="preserve">
     <value>SORTIR</value>

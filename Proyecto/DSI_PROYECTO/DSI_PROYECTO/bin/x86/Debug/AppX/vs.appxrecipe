@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-19T18:09:36.560</Modified>
+      <Modified>2021-05-19T18:50:51.895</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\DSI_PROYECTO.exe">
       <PackagePath>entrypoint\DSI_PROYECTO.exe</PackagePath>
-      <Modified>2021-05-19T18:09:36.065</Modified>
+      <Modified>2021-05-19T18:46:36.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -526,51 +526,51 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-05-19T18:09:35.964</Modified>
+      <Modified>2021-05-19T18:50:51.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\ColeccionCartas.xbf">
       <PackagePath>ColeccionCartas.xbf</PackagePath>
-      <Modified>2021-05-19T18:09:35.772</Modified>
+      <Modified>2021-05-19T18:50:51.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\GaleriaDeMazos.xbf">
       <PackagePath>GaleriaDeMazos.xbf</PackagePath>
-      <Modified>2021-05-19T18:09:35.819</Modified>
+      <Modified>2021-05-19T18:50:51.290</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\InGame.xbf">
       <PackagePath>InGame.xbf</PackagePath>
-      <Modified>2021-05-19T18:09:35.824</Modified>
+      <Modified>2021-05-19T18:50:51.295</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-05-19T18:09:35.965</Modified>
+      <Modified>2021-05-19T18:50:51.434</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\ModosDeJuego.xbf">
       <PackagePath>ModosDeJuego.xbf</PackagePath>
-      <Modified>2021-05-19T18:09:35.869</Modified>
+      <Modified>2021-05-19T18:50:51.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Opciones.xbf">
       <PackagePath>Opciones.xbf</PackagePath>
-      <Modified>2021-05-19T18:09:35.892</Modified>
+      <Modified>2021-05-19T18:50:51.362</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\OpcionesMenu.xbf">
       <PackagePath>OpcionesMenu.xbf</PackagePath>
-      <Modified>2021-05-19T18:09:35.920</Modified>
+      <Modified>2021-05-19T18:50:51.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaLogros.xbf">
       <PackagePath>PantallaLogros.xbf</PackagePath>
-      <Modified>2021-05-19T18:09:35.928</Modified>
+      <Modified>2021-05-19T18:50:51.398</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaPrincipal.xbf">
       <PackagePath>PantallaPrincipal.xbf</PackagePath>
-      <Modified>2021-05-19T18:09:35.936</Modified>
+      <Modified>2021-05-19T18:50:51.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaRanking.xbf">
       <PackagePath>PantallaRanking.xbf</PackagePath>
-      <Modified>2021-05-19T18:09:35.945</Modified>
+      <Modified>2021-05-19T18:50:51.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Tienda.xbf">
       <PackagePath>Tienda.xbf</PackagePath>
-      <Modified>2021-05-19T18:09:35.964</Modified>
+      <Modified>2021-05-19T18:50:51.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -578,11 +578,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-05-19T18:04:24.574</Modified>
+      <Modified>2021-05-19T18:47:43.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Core\DSI_PROYECTO.exe">
       <PackagePath>DSI_PROYECTO.exe</PackagePath>
-      <Modified>2021-05-19T18:09:36.557</Modified>
+      <Modified>2021-05-19T18:50:51.890</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

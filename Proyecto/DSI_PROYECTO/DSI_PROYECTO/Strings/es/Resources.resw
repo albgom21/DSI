@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Amigos.Text" xml:space="preserve">
+    <value>AMIGOS</value>
+  </data>
+  <data name="BJugar.Content" xml:space="preserve">
+    <value>JUGAR</value>
+  </data>
+  <data name="BLogros.Content" xml:space="preserve">
+    <value>LOGROS</value>
+  </data>
+  <data name="BLogros.FontSize" xml:space="preserve">
+    <value>25</value>
+  </data>
   <data name="descripciont.Text" xml:space="preserve">
     <value>ELIGE UN MODO DE JUEGO</value>
   </data>
@@ -141,6 +153,21 @@
   <data name="IdiomaOpcionesMenu.Text" xml:space="preserve">
     <value>IDIOMA</value>
   </data>
+  <data name="Jugador.Text" xml:space="preserve">
+    <value>Jugador</value>
+  </data>
+  <data name="Logros.FontSize" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="Logros.Text" xml:space="preserve">
+    <value>LOGROS</value>
+  </data>
+  <data name="MazoT.FontSize" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="MazoT.Text" xml:space="preserve">
+    <value>ÚLTIMO MAZO</value>
+  </data>
   <data name="MDJ_Jugar.Content" xml:space="preserve">
     <value>JUGAR</value>
   </data>
@@ -150,11 +177,29 @@
   <data name="NcartasDes.Text" xml:space="preserve">
     <value>CARTAS DESBLOQUEADAS 37/100</value>
   </data>
+  <data name="Nivel.Text" xml:space="preserve">
+    <value>Nivel 73</value>
+  </data>
+  <data name="NivelT.Text" xml:space="preserve">
+    <value>NIVEL</value>
+  </data>
+  <data name="NombreT.Text" xml:space="preserve">
+    <value>NOMBRE</value>
+  </data>
   <data name="PasoTurnos.OffContent" xml:space="preserve">
     <value>Paso de turnos automático</value>
   </data>
   <data name="PasoTurnos.OnContent" xml:space="preserve">
     <value>Paso de turnos automático</value>
+  </data>
+  <data name="Rango.Text" xml:space="preserve">
+    <value>Plata III</value>
+  </data>
+  <data name="RangoT.Text" xml:space="preserve">
+    <value>RANGO</value>
+  </data>
+  <data name="RankingT.Text" xml:space="preserve">
+    <value>RANKING</value>
   </data>
   <data name="rOpc.Content" xml:space="preserve">
     <value>RENDIRSE</value>
