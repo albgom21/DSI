@@ -117,7 +117,7 @@
         </Style>
 
     </Page.Resources>
-    <Grid>
+    <Grid x:ConnectionId='16' XYFocusKeyboardNavigation="Enabled"                   >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="2*"/>
@@ -133,53 +133,54 @@
             <RowDefinition Height="5*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
+        
         <!-- Imagen de fondo -->
         <Image Source="/Assets/fondo.png" Grid.RowSpan="5" Grid.ColumnSpan="6" Stretch="UniformToFill"  VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
 
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="6">
-            <ToggleButton x:ConnectionId='23' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                     >
+            <ToggleButton x:ConnectionId='24' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                     >
                 <Image Source="/Assets/shop.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='24' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                       >
+            <ToggleButton x:ConnectionId='25' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                       >
                 <Image Source="/Assets/cards.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='25' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                                >
+            <ToggleButton x:ConnectionId='26' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                                >
                 <Image Source="/Assets/brawl.png" Width="100" Height="40" UseLayoutRounding="False" VerticalAlignment="Top"/>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='26' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True">
+            <ToggleButton x:ConnectionId='27' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True">
                 <Image Source="/Assets/trophy.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='27' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
+            <ToggleButton x:ConnectionId='28' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
                 <Image Source="/Assets/settings.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
             </ToggleButton>
         </StackPanel>
 
         <!-- Botón de vuelta atrás -->
-        <Button x:ConnectionId='16' x:Name="Atras" VerticalAlignment="Top" Background="Transparent" HorizontalAlignment="Right" Margin="0,30,30,0"                     Grid.Column="5">
+        <Button x:ConnectionId='17' x:Name="Atras" VerticalAlignment="Top" Background="Transparent" HorizontalAlignment="Right" Margin="0,30,30,0"                     Grid.Column="5">
             <Image Source="/Assets/Xbutton.png" Width="50"></Image>
         </Button>
 
         <!-- Título de pantalla -->
-        <TextBlock x:ConnectionId='17' x:Name="RankingT" x:Uid="RankingT" Text="RANKING" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="20" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="0,91,0,319"></TextBlock>
+        <TextBlock x:ConnectionId='18' x:Name="RankingT" x:Uid="RankingT" Text="RANKING" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="20" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="0,91,0,319"></TextBlock>
 
         <!-- Borde y títulos del ranking -->
         <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" Background="Orange"></Border>
 
-        <TextBlock x:ConnectionId='18' x:Name="NombreT" x:Uid="NombreT" Text="Nombre" Grid.Row="2" Grid.Column="1" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
-        <TextBlock x:ConnectionId='19' x:Name="NivelT" x:Uid="NivelT" Text="Nivel" Grid.Row="2" Grid.Column="2" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
-        <TextBlock x:ConnectionId='20' x:Name="RangoT" x:Uid="RangoT" Text="Rango" Grid.Row="2" Grid.Column="3" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center"  VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
-        <TextBlock x:ConnectionId='21' x:Name="MazoT" x:Uid="MazoT" Text="Último mazo" Grid.Row="2" Grid.Column="4" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
+        <TextBlock x:ConnectionId='19' x:Name="NombreT" x:Uid="NombreT" Text="Nombre" Grid.Row="2" Grid.Column="1" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
+        <TextBlock x:ConnectionId='20' x:Name="NivelT" x:Uid="NivelT" Text="Nivel" Grid.Row="2" Grid.Column="2" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
+        <TextBlock x:ConnectionId='21' x:Name="RangoT" x:Uid="RangoT" Text="Rango" Grid.Row="2" Grid.Column="3" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center"  VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
+        <TextBlock x:ConnectionId='22' x:Name="MazoT" x:Uid="MazoT" Text="Último mazo" Grid.Row="2" Grid.Column="4" FontSize="15" FontFamily="Aldrich" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
 
         <!-- Borde de la lista del ranking -->
         <Border Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" Background="LightGray"></Border>
 
         <!-- Lista de ranking -->
-         <ListView x:ConnectionId='22' x:Name="ImageGridView"
+         <ListView x:ConnectionId='23' x:Name="ImageGridView"
                   Grid.Row="3"
                   Grid.Column="1"
                   Grid.ColumnSpan="4"

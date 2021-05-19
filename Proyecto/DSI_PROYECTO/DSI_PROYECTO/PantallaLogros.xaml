@@ -116,7 +116,7 @@
         </Style>
 
     </Page.Resources>
-    <Grid>
+    <Grid XYFocusKeyboardNavigation="Enabled" KeyUp="Grid_KeyUp">
         <Grid.RowDefinitions>
             <RowDefinition Height="1.5*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
@@ -128,6 +128,7 @@
             <ColumnDefinition Width="3*"></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        
         <!-- Imagen de fondo -->
         <Image Source="/Assets/fondo.png" Grid.RowSpan="4" Grid.ColumnSpan="3" Stretch="UniformToFill"  VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
 

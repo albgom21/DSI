@@ -116,7 +116,7 @@
         </Style>
 
     </Page.Resources>
-    <Grid>
+    <Grid x:ConnectionId='16' XYFocusKeyboardNavigation="Enabled"                   >
         <Grid.RowDefinitions>
             <RowDefinition Height="1.5*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
@@ -128,42 +128,43 @@
             <ColumnDefinition Width="3*"></ColumnDefinition>
             <ColumnDefinition Width="2*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        
         <!-- Imagen de fondo -->
         <Image Source="/Assets/fondo.png" Grid.RowSpan="4" Grid.ColumnSpan="3" Stretch="UniformToFill"  VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
 
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="3">
-            <ToggleButton x:ConnectionId='19' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                     >
+            <ToggleButton x:ConnectionId='20' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                     >
                 <Image Source="/Assets/shop.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='20' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                       >
+            <ToggleButton x:ConnectionId='21' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                       >
                 <Image Source="/Assets/cards.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='21' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                                >
+            <ToggleButton x:ConnectionId='22' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                                >
                 <Image Source="/Assets/brawl.png" Width="100" Height="40" UseLayoutRounding="False" VerticalAlignment="Top"/>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='22' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      >
+            <ToggleButton x:ConnectionId='23' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      >
                 <Image Source="/Assets/trophy.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='23' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
+            <ToggleButton x:ConnectionId='24' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
                 <Image Source="/Assets/settings.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
             </ToggleButton>
         </StackPanel>
 
         <!-- Botón de vuelta atrás -->
-        <Button x:ConnectionId='16' x:Name="Atras" VerticalAlignment="Top" Background="Transparent" Grid.Column="2" HorizontalAlignment="Right"                     >
+        <Button x:ConnectionId='17' x:Name="Atras" VerticalAlignment="Top" Background="Transparent" Grid.Column="2" HorizontalAlignment="Right"                     >
             <Image Source="/Assets/Xbutton.png" Width="50" Height="50"></Image>
         </Button>
 
         <!-- Título de pantalla -->
-        <TextBlock x:ConnectionId='17' x:Name="Logros" x:Uid="Logros" Text="LOGROS" FontSize="20" FontFamily="Aldrich" Grid.Column="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Grid.Row="1"></TextBlock>
+        <TextBlock x:ConnectionId='18' x:Name="Logros" x:Uid="Logros" Text="LOGROS" FontSize="20" FontFamily="Aldrich" Grid.Column="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Grid.Row="1"></TextBlock>
 
         <!-- Lista de logros -->
-        <ListView x:ConnectionId='18' x:Name="ImageGridView"
+        <ListView x:ConnectionId='19' x:Name="ImageGridView"
                   Grid.Row="2"
                   Grid.Column="1"
                                                      

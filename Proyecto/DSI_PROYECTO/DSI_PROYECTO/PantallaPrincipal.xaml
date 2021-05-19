@@ -112,7 +112,7 @@
         </Style>
 
     </Page.Resources>
-    <Grid>
+    <Grid XYFocusKeyboardNavigation="Enabled" KeyUp="Grid_KeyUp">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="2*"/>
