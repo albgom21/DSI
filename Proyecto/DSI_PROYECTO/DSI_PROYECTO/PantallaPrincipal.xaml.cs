@@ -29,15 +29,28 @@ namespace DSI_PROYECTO
             this.InitializeComponent();
         }
 
-        private void B4_Click(object sender, RoutedEventArgs e)
-        {
+        // Botones de navegación en la parte superior.
+        private void Tienda_Click(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(Tienda));
+        }
+
+        private void Galeria_Click(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(GaleriaDeMazos));
+        }
+
+        private void Ranking_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(PantallaRanking));
         }
 
-        private void Logros_Click(object sender, RoutedEventArgs e)
-        {
+        private void Opciones_Click(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(OpcionesMenu));
+        }
+
+        // Botón de navegación para los logros.
+        private void Logros_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(PantallaLogros));
         }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             // Cosntruye las listas de ModelView a partir de la lista Modelo 

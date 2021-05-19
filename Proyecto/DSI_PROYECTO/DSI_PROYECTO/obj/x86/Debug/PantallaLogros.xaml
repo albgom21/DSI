@@ -133,7 +133,7 @@
 
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="3">
-            <ToggleButton x:ConnectionId='18' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <ToggleButton x:ConnectionId='18' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"                     >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
                 </ToggleButton.RenderTransform>
@@ -143,7 +143,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='19' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" >
+            <ToggleButton x:ConnectionId='19' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                       >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
                 </ToggleButton.RenderTransform>
@@ -153,10 +153,10 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='20' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top">
+            <ToggleButton x:ConnectionId='20' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                                >
                 <Image Source="/Assets/brawl.png" Width="90" Height="60" UseLayoutRounding="False" VerticalAlignment="Top" Margin="0,-4,0,0"/>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='21' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top">
+            <ToggleButton x:ConnectionId='21' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>
@@ -166,7 +166,7 @@
                     </Image.RenderTransform>
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='22' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" >
+            <ToggleButton x:ConnectionId='22' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
                 <ToggleButton.RenderTransform>
                     <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
                 </ToggleButton.RenderTransform>

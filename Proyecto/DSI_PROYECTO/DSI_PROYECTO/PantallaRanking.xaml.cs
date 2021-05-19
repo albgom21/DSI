@@ -29,11 +29,33 @@ namespace DSI_PROYECTO
             this.InitializeComponent();
         }
 
+        // Botón de navegación hacia atrás.
         private void Atras_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PantallaPrincipal));
         }
-                
+
+        // Botones de navegación en la parte superior.
+        private void Tienda_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Tienda));
+        }
+
+        private void Galeria_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(GaleriaDeMazos));
+        }
+
+        private void PantallaPrincipal_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PantallaPrincipal));
+        }
+
+        private void Opciones_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(OpcionesMenu));
+        }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             // Cosntruye las listas de ModelView a partir de la lista Modelo 
