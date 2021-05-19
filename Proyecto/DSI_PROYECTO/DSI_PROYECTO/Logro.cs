@@ -98,7 +98,7 @@ namespace DSI_PROYECTO
             {
                 Id = 9,
                 Recompensa = 150,
-                Nombre = "Logro 0",
+                Nombre = "Logro 9",
                 Descripcion = "Descripción Logro 9",
                 Imagen = "Assets\\lock.png",
             },

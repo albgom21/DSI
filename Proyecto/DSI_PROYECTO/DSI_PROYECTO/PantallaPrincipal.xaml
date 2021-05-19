@@ -10,27 +10,27 @@
     <Page.Resources>
         <DataTemplate x:Key="ImageGridView_DefaultItemTemplate"
                       x:DataType="local:ViewModelAmigos">
-            <Grid Height="40" Width="150" Margin="8">
+            <Grid Height="20" Width="150" Margin="8">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="4*"/>
                 </Grid.ColumnDefinitions>
                 <Image Source="{x:Bind Imagen}" Grid.Column="0" VerticalAlignment="Center" Width="5" HorizontalAlignment="Left"/>
                 <TextBlock Text="{x:Bind Nombre}" Grid.Column="1" FontSize="15" FontFamily="Aldrich" Foreground="Black"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
-              </Grid>
+            </Grid>
 
         </DataTemplate>
         <Style x:Key="MenuStyle" TargetType="ToggleButton">
             <Setter Property="CornerRadius" Value="10"/>
-            <Setter Property="Background" Value="{x:Null}"/>
+            <Setter Property="Background" Value="#3c728a"/>
             <Setter Property="BackgroundSizing" Value="InnerBorderEdge"/>
-            <Setter Property="Foreground" Value="#FF3C0000"/>
-            <Setter Property="BorderBrush" Value="BlueViolet"/>
+            <Setter Property="Foreground" Value="#FFE22525"/>
+            <Setter Property="BorderBrush" Value="#3c728a"/>
             <Setter Property="Padding" Value="8,4,8,4"/>
             <Setter Property="BorderThickness" Value="5"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="FontFamily" Value="Verdana"/>
+            <Setter Property="FontFamily" Value="Aldrich"/>
             <Setter Property="FontWeight" Value="Normal"/>
             <Setter Property="FontSize" Value="30"/>
             <Setter Property="UseSystemFocusVisuals" Value="True"/>
@@ -68,24 +68,151 @@
                                             <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
                                         </Storyboard>
                                     </VisualState>
-                                    <!--<VisualState x:Name="Pressed">
+                                    <VisualState x:Name="Disabled">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="CornerRadius" Storyboard.TargetName="ContentPresenter">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="10"/>
                                             </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="ContentPresenter">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#a30707"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#ffc9c9"/>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}"/>
                                             </ObjectAnimationUsingKeyFrames>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
-                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#ffe6e6"/>
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledBaseMediumLowBrush}"/>
                                             </ObjectAnimationUsingKeyFrames>
-
-                                            <PointerDownThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledTransparentBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
-                                    </VisualState>-->
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw"  BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTransitions="{TemplateBinding ContentTransitions}" Content="{TemplateBinding Content}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="JugarStyle" TargetType="Button">
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Background" Value="Red"/>
+            <Setter Property="BackgroundSizing" Value="InnerBorderEdge"/>
+            <Setter Property="Foreground" Value="#FFE22525"/>
+            <Setter Property="BorderBrush" Value="DarkRed"/>
+            <Setter Property="Padding" Value="8,4,8,4"/>
+            <Setter Property="BorderThickness" Value="5"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Aldrich"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="UseSystemFocusVisuals" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid x:Name="RootGrid" Background="{TemplateBinding Background}">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#BD3620"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#B13620"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFFFFF"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#B13620"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#E03620"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFFFFF"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="CornerRadius" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="10"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="RootGrid">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledBaseMediumLowBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledTransparentBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw"  BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTransitions="{TemplateBinding ContentTransitions}" Content="{TemplateBinding Content}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="LogrosStyle" TargetType="Button">
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Background" Value="Red"/>
+            <Setter Property="BackgroundSizing" Value="InnerBorderEdge"/>
+            <Setter Property="Foreground" Value="#FFE22525"/>
+            <Setter Property="BorderBrush" Value="FFED16"/>
+            <Setter Property="Padding" Value="4,2,4,2"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Aldrich"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="UseSystemFocusVisuals" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid x:Name="RootGrid" Background="{TemplateBinding Background}">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#C49E14"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFE919"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFFFFF"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFE919"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFCC19"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentPresenter">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#FFFFFF"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                        </Storyboard>
+                                    </VisualState>
                                     <VisualState x:Name="Disabled">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="CornerRadius" Storyboard.TargetName="ContentPresenter">
@@ -151,42 +278,42 @@
                 </Image>
             </ToggleButton>
         </StackPanel>
-        
+
         <!-- Imagen del rango del jugador y su avatar -->
-        <Image Source="/Assets/silver.png" Grid.Row="2" Grid.Column="0" Width="125" Height="125" Margin="34,13,33,28" ></Image>
-        <Image Source="/Assets/avatar.png" Grid.Row="2" Grid.Column="0" Width="50" Height="50" Margin="72,50,70,58" ></Image>
+        <Image Source="/Assets/silver.png" Grid.Row="2" Grid.Column="0" Width="105" Height="105" Margin="34,13,33,28" ></Image>
+        <Image Source="/Assets/avatar.png" Grid.Row="2" Grid.Column="0" Width="45" Height="45" Margin="72,50,70,58" ></Image>
         <Border Grid.Row="2" Background="#5555AA"  CornerRadius="10" Width="65" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center"/>
 
         <!-- Texto del nivel y nombre del jugador -->
         <TextBlock x:Name="Nivel" x:Uid="Nivel" Text="Lv. 63" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Aldrich"></TextBlock>
-        <TextBlock x:Name="Rango" x:Uid="Rango" Text="Plata III" FontSize="10"  Foreground="White" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Aldrich" Margin="0,128,0,0"/>
+        <TextBlock x:Name="Rango" x:Uid="Rango" Text="Plata III" FontSize="10"  Foreground="White" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontFamily="Aldrich" Margin="0,122,0,0"/>
         <TextBlock x:Name="Jugador" x:Uid="Jugador" Text="Jugador" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextAlignment="Center" Width="160" FontFamily="Aldrich"></TextBlock>
 
         <!-- Botón de logros -->
-        <Button x:Name="BLogros" x:Uid="BLogros" Grid.Row="3" Grid.RowSpan="2" FontSize="25" Foreground="White" Background = "Orange" Content="LOGROS" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="150" Height="40" Click="Logros_Click" ></Button>
+        <Button x:Name="BLogros" x:Uid="BLogros" Grid.Row="3" Grid.RowSpan="2" FontSize="25" Style="{StaticResource LogrosStyle}"  Content="LOGROS" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="150" Height="40" Click="Logros_Click" ></Button>
 
         <!-- Botón de jugar -->
-        <Button x:Name="BJugar" x:Uid="BJugar" Grid.Row="4" Grid.Column="1" FontSize="25" Foreground="DarkRed" Background = "Red" Content="JUGAR" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="160" Height="50"></Button>
+        <Button x:Name="BJugar" x:Uid="BJugar" Grid.Row="4" Grid.Column="1" FontSize="25" Style="{StaticResource JugarStyle}" Content="JUGAR" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="30" Width="160" Height="50"></Button>
 
         <!-- Avatar del héroe -->
         <Image Source="/Assets/hero.png" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"></Image>
 
         <!-- Fondo del título de la lista de amigos -->
-        <Border Grid.Row="0" Grid.Column="2" Background="Blue" Margin="0,80,0,0"> </Border>
-        
+        <Border Grid.Row="0" Grid.Column="2" Background="Blue" Margin="0,80,0,0"></Border>
+
         <!-- Título de la lista de amigos -->
         <TextBlock x:Name="Amigos" Text="AMIGOS" x:Uid="Amigos" FontSize="10" FontFamily="Aldrich" Foreground="White" Grid.Row="0" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Center"></TextBlock>
-        
+
         <!-- Fondo del buscador de amigos y estado del jugador -->
         <Border Grid.Row="1" Grid.Column="2" Background="LightCyan"></Border>
-        
+
         <!-- Buscador de amigos -->
         <TextBox x:Name="AmigosTexto" Grid.Row="1" Grid.Column="2" TextChanged="AmigosTexto_TextChanged"></TextBox>
-        
+
         <!--- Fondo de la lista de amigos -->
         <Border Grid.Row="2" Grid.RowSpan="3"
                 Grid.Column="2" Background="LightBlue"></Border>
-        
+
         <!-- Lista de amigos-->
         <ListView x:Name="ImageGridView"
                   Grid.Row="2"
