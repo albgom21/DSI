@@ -56,6 +56,12 @@ namespace DSI_PROYECTO
             this.Frame.Navigate(typeof(PantallaLogros));
         }
 
+        // Botón de navegación para jugar.
+        private void Jugar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ModosDeJuego));
+        }
+
         // Control de teclado estando en la pantalla.
         private void Grid_KeyUp(object sender, KeyRoutedEventArgs e)
         {
@@ -121,7 +127,6 @@ namespace DSI_PROYECTO
                 }
                 i++;
             }
-
         }
     }
 }

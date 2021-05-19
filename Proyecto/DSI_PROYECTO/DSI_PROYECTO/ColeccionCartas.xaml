@@ -492,10 +492,24 @@
 
         <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-            <ToggleButton x:Uid="subB" TabIndex="2"  x:Name="sbutton" Content="Súbditos" Style="{StaticResource SubStyle}"  Grid.Row="0" Grid.Column="0"  VerticalAlignment="Center"  Margin="20,0,20,0" Height="40" Width="115" Checked="sbutton_Checked" Unchecked="sbutton_Unchecked"/>
-            <ToggleButton x:Uid="hecB" TabIndex="3" x:Name="hbutton"  Content="Hechizos" Style="{StaticResource HecStyle}"  Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center"   Margin="0,0,20,0" Height="40" Width="115" Checked="hbutton_Checked" Unchecked="hbutton_Unchecked"/>
-            <ToggleButton x:Name="cbutton" TabIndex="4" Content="Crafteables" Style="{StaticResource CraftStyle}"  Grid.Row="0" Grid.Column="2"  VerticalAlignment="Center" Margin="0,0,20,0" Height="40" Width="124" Checked="cbutton_Checked" Unchecked="cbutton_Unchecked"/>
+            <ToggleButton  x:Uid="subB" TabIndex="2"  x:Name="sbutton" Content="Súbditos" Style="{StaticResource SubStyle}"  Grid.Row="0" Grid.Column="0"  VerticalAlignment="Center"  Margin="20,0,20,0" Height="40" Width="115" Checked="sbutton_Checked" Unchecked="sbutton_Unchecked">
+                <ToggleButton.KeyboardAccelerators>
+                    <KeyboardAccelerator Key="S" Modifiers="Control" />
+                </ToggleButton.KeyboardAccelerators>
+            </ToggleButton>
 
+            <ToggleButton x:Uid="hecB" TabIndex="3" x:Name="hbutton"  Content="Hechizos" Style="{StaticResource HecStyle}"  Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center"   Margin="0,0,20,0" Height="40" Width="115" Checked="hbutton_Checked" Unchecked="hbutton_Unchecked">
+                <ToggleButton.KeyboardAccelerators>
+                    <KeyboardAccelerator Key="H" Modifiers="Control" />
+                </ToggleButton.KeyboardAccelerators>
+            </ToggleButton>
+
+            <ToggleButton x:Name="cbutton" TabIndex="4" Content="Crafteables" Style="{StaticResource CraftStyle}"  Grid.Row="0" Grid.Column="2"  VerticalAlignment="Center" Margin="0,0,20,0" Height="40" Width="124" Checked="cbutton_Checked" Unchecked="cbutton_Unchecked">
+                <ToggleButton.KeyboardAccelerators>
+                    <KeyboardAccelerator Key="C" Modifiers="Control" />
+                </ToggleButton.KeyboardAccelerators>
+            </ToggleButton>
+            
         </StackPanel>
 
 
@@ -507,7 +521,13 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <Button x:Uid="GuardarM" TabIndex="8" Content="GUARDAR MAZO" Style="{StaticResource SaveStyle}"  Grid.Row="3" Grid.Column="0" Height="40" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click"/>
+
+        <Button x:Uid="GuardarM" TabIndex="8" Content="GUARDAR MAZO" Style="{StaticResource SaveStyle}"  Grid.Row="3" Grid.Column="0" Height="40" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="G" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>  
+
 
         <TextBox x:Name="MazoName" TabIndex="1" FontFamily="Aldrich" FontSize="20" Foreground="#FFCB9056" TextChanged="MazoName_TextChanged" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Center"  SelectionHighlightColor="#FFBF7100" Width="220" Height="35"/>
         <TextBlock x:Uid="NCartas" Text="Número de cartas" Grid.Row="1" Grid.Column="0"  TextWrapping="WrapWholeWords" FontSize="16" FontFamily="Aldrich" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="#FFCB9056" Margin="0,0,10,0" SelectionHighlightColor="#FFBF7100"/>

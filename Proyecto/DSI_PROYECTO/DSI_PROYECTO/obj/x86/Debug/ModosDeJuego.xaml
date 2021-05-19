@@ -712,62 +712,67 @@
 
         <Button x:ConnectionId='61' Content="X" TabIndex="6" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="5" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20"                />
 
-        <Button x:ConnectionId='62'  x:Uid="MDJ_Jugar" TabIndex="13" Content="JUGAR" Style="{StaticResource JugarStyle}"  Grid.Row="4" Grid.Column="5"  Height="50" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Center"                    />
+        <Button x:ConnectionId='62'  x:Uid="MDJ_Jugar" TabIndex="13" Content="JUGAR" Style="{StaticResource JugarStyle}"  Grid.Row="4" Grid.Column="5"  Height="50" Width="200" VerticalAlignment="Bottom" HorizontalAlignment="Center"                    >
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="J" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
+        
+    
 
         <Border Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" Background="#FF91E4FB" CornerRadius="10" Height="45"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         <TextBlock x:ConnectionId='63' x:Name="descripcion" x:Uid="descripciont" Text="ELIGE UN MODO DE JUEGO" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" TextWrapping="WrapWholeWords" FontSize="14" FontFamily="Aldrich" Padding="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <ToggleButton x:ConnectionId='64' x:Name="nbutton" TabIndex="9" Content="NORMAL"  Style="{StaticResource NormalStyle}"  Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Height="45" Width="100"                                                   />
-        <ToggleButton x:ConnectionId='65' x:Name="rbutton" TabIndex="10" Content="RANKED"  Style="{StaticResource RankedStyle}" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center"                                                    />
-        <ToggleButton x:ConnectionId='66' x:Name="sbutton" TabIndex="11" Content="SPELLBREAK"  Style="{StaticResource SpellStyle}"  Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center"                                                   />
-        <ToggleButton x:ConnectionId='67' x:Name="obutton" TabIndex="12" Content="ORDER"  Style="{StaticResource OrderStyle}"  Grid.Row="4" Grid.Column="4" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center"                                                   />
+
+        <ToggleButton x:ConnectionId='64' x:Name="nbutton" TabIndex="9" Content="NORMAL"  Style="{StaticResource NormalStyle}"  Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Height="45" Width="100"                                                   >
+            <ToggleButton.KeyboardAccelerators>
+                <KeyboardAccelerator Key="N" Modifiers="Control" />
+            </ToggleButton.KeyboardAccelerators>
+        </ToggleButton>
+
+        <ToggleButton x:ConnectionId='65' x:Name="rbutton" TabIndex="10" Content="RANKED"  Style="{StaticResource RankedStyle}" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center"                                                   >
+            <ToggleButton.KeyboardAccelerators>
+                <KeyboardAccelerator Key="R" Modifiers="Control" />
+            </ToggleButton.KeyboardAccelerators>
+        </ToggleButton>
+
+        <ToggleButton x:ConnectionId='66' x:Name="sbutton" TabIndex="11" Content="SPELLBREAK"  Style="{StaticResource SpellStyle}"  Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center"                                                   >
+            <ToggleButton.KeyboardAccelerators>
+                <KeyboardAccelerator Key="S" Modifiers="Control" />
+            </ToggleButton.KeyboardAccelerators>
+        </ToggleButton>
+
+        <ToggleButton x:ConnectionId='67' x:Name="obutton" TabIndex="12" Content="ORDER"  Style="{StaticResource OrderStyle}"  Grid.Row="4" Grid.Column="4" VerticalAlignment="Center" Height="45" Width="100" HorizontalAlignment="Center"                                                   >
+            <ToggleButton.KeyboardAccelerators>
+                <KeyboardAccelerator Key="O" Modifiers="Control" />
+            </ToggleButton.KeyboardAccelerators>
+        </ToggleButton>
+
+
 
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="6">
-            <ToggleButton x:ConnectionId='72' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"                  TabIndex="1">
-                <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="8.315" TranslateX="-14.6"/>
-                </ToggleButton.RenderTransform>
-                <Image Source="/Assets/shop.png" Width="50" Height="40" Margin="-10,0,10,0" UseLayoutRounding="False" d:LayoutRounding="Auto" >
-                    <Image.RenderTransform>
-                        <CompositeTransform SkewX="-6.366" TranslateX="13.388"/>
-                    </Image.RenderTransform>
+            <ToggleButton x:ConnectionId='72' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                  TabIndex="1">
+                <Image Source="/Assets/shop.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='73' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                         TabIndex="2">
-                <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
-                </ToggleButton.RenderTransform>
-                <Image Source="/Assets/cards.png" Width="50" Height="40" Margin="-10,0,10,0" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                    <Image.RenderTransform>
-                        <CompositeTransform SkewX="-7.416" TranslateX="15.62"/>
-                    </Image.RenderTransform>
+            <ToggleButton x:ConnectionId='73' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                         TabIndex="2" >
+                <Image Source="/Assets/cards.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='74' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"  IsChecked="True"                          TabIndex="3">
-                <Image Source="/Assets/brawl.png" Width="90" Height="60" UseLayoutRounding="False" VerticalAlignment="Top" Margin="0,-4,0,0"/>
+            <ToggleButton x:ConnectionId='74' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True"                          TabIndex="3">
+                <Image Source="/Assets/brawl.png" Width="100" Height="40" UseLayoutRounding="False" VerticalAlignment="Top"/>
             </ToggleButton>
             <ToggleButton x:ConnectionId='75' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                   TabIndex="4">
-                <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
-                </ToggleButton.RenderTransform>
-                <Image Source="/Assets/trophy.png" Width="50" Height="40" Margin="18,0,-18,0" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                    <Image.RenderTransform>
-                        <CompositeTransform SkewX="9.501" TranslateX="-20.083"/>
-                    </Image.RenderTransform>
+                <Image Source="/Assets/trophy.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
             </ToggleButton>
             <ToggleButton x:ConnectionId='76' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                    TabIndex="5">
-                <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
-                </ToggleButton.RenderTransform>
-                <Image Source="/Assets/settings.png" Width="50" Height="40" Margin="18,0,-18,0" UseLayoutRounding="False" d:LayoutRounding="Auto" >
-                    <Image.RenderTransform>
-                        <CompositeTransform SkewX="10.534" TranslateX="-22.314"/>
-                    </Image.RenderTransform>
+                <Image Source="/Assets/settings.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
             </ToggleButton>
         </StackPanel>
+
 
 
         <GridView x:ConnectionId='68' x:Name="mazosGrid" Margin="75,0,0,0"

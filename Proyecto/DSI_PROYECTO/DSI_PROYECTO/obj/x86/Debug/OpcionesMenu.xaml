@@ -391,49 +391,26 @@
 
         <Image Source="Assets/fondo.png" Grid.RowSpan="5" Grid.ColumnSpan="5" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
-         <!--Barra de botones en la parte superior.--> 
+    
+        <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="5">
-            <ToggleButton x:ConnectionId='47' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"                  TabIndex="1">
-                <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="8.315" TranslateX="-14.6"/>
-                </ToggleButton.RenderTransform>
-                <Image Source="/Assets/shop.png" Width="50" Height="40" Margin="-10,0,10,0" UseLayoutRounding="False" d:LayoutRounding="Auto" >
-                    <Image.RenderTransform>
-                        <CompositeTransform SkewX="-6.366" TranslateX="13.388"/>
-                    </Image.RenderTransform>
+            <ToggleButton x:ConnectionId='47' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                  TabIndex="1">
+                <Image Source="/Assets/shop.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
             </ToggleButton>
             <ToggleButton x:ConnectionId='48' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                         TabIndex="2" >
-                <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="8.315" TranslateX="-18.854"/>
-                </ToggleButton.RenderTransform>
-                <Image Source="/Assets/cards.png" Width="50" Height="40" Margin="-10,0,10,0" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                    <Image.RenderTransform>
-                        <CompositeTransform SkewX="-7.416" TranslateX="15.62"/>
-                    </Image.RenderTransform>
+                <Image Source="/Assets/cards.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='49' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                     TabIndex="3">
-                <Image Source="/Assets/brawl.png" Width="90" Height="60" UseLayoutRounding="False" VerticalAlignment="Top" Margin="0,-4,0,0"/>
+            <ToggleButton x:ConnectionId='49' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      TabIndex="3">
+                <Image Source="/Assets/brawl.png" Width="100" Height="40" UseLayoutRounding="False" VerticalAlignment="Top"/>
             </ToggleButton>
             <ToggleButton x:ConnectionId='50' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                   TabIndex="4">
-                <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
-                </ToggleButton.RenderTransform>
-                <Image Source="/Assets/trophy.png" Width="50" Height="40" Margin="18,0,-18,0" UseLayoutRounding="False" d:LayoutRounding="Auto" >
-                    <Image.RenderTransform>
-                        <CompositeTransform SkewX="9.501" TranslateX="-20.083"/>
-                    </Image.RenderTransform>
+                <Image Source="/Assets/trophy.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='51' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"  IsChecked="True"                          TabIndex="5">
-                <ToggleButton.RenderTransform>
-                    <CompositeTransform SkewX="-10.033" TranslateX="22.823"/>
-                </ToggleButton.RenderTransform>
-                <Image Source="/Assets/settings.png" Width="50" Height="40" Margin="18,0,-18,0" UseLayoutRounding="False" d:LayoutRounding="Auto" >
-                    <Image.RenderTransform>
-                        <CompositeTransform SkewX="10.534" TranslateX="-22.314"/>
-                    </Image.RenderTransform>
+            <ToggleButton x:ConnectionId='51' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True"                          TabIndex="5">
+                <Image Source="/Assets/settings.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
             </ToggleButton>
         </StackPanel>

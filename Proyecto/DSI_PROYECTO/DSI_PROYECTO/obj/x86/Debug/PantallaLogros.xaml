@@ -243,7 +243,8 @@
         <TextBlock x:ConnectionId='26' x:Name="Logros" x:Uid="Logros" Text="LOGROS" FontSize="20" FontFamily="Aldrich" Grid.Column="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Grid.Row="1"></TextBlock>
 
         <!-- Barra de progreso -->
-        <ProgressBar Width="Auto" Height="20" Value="70" Grid.Row="3" Grid.Column="1"/>
+        <ProgressBar Width="Auto" Height="20" Value="77" Grid.Row="3" Grid.Column="1"/>
+        
         <!-- Lista de logros -->
         <ListView x:ConnectionId='27' x:Name="ImageGridView"
                   Grid.Row="2"
