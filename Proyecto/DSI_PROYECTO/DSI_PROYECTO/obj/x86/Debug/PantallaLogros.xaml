@@ -216,25 +216,39 @@
         <Image x:ConnectionId='25' x:Name="Fondo" Source="/Assets/fondo.png" Grid.RowSpan="4" Grid.ColumnSpan="3" Stretch="UniformToFill"  VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
 
         <!-- Barra de botones en la parte superior. -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="3">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="6">
             <ToggleButton x:ConnectionId='30' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                     >
                 <Image Source="/Assets/shop.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
+                <ToggleButton.KeyboardAccelerators>
+                    <KeyboardAccelerator Key="T" Modifiers="Control" />
+                </ToggleButton.KeyboardAccelerators>
             </ToggleButton>
             <ToggleButton x:ConnectionId='31' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                       >
                 <Image Source="/Assets/cards.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
+                <ToggleButton.KeyboardAccelerators>
+                    <KeyboardAccelerator Key="G" Modifiers="Control" />
+                </ToggleButton.KeyboardAccelerators>
             </ToggleButton>
             <ToggleButton x:ConnectionId='32' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                                >
                 <Image Source="/Assets/brawl.png" Width="100" Height="40" UseLayoutRounding="False" VerticalAlignment="Top"/>
+                <ToggleButton.KeyboardAccelerators>
+                    <KeyboardAccelerator Key="P" Modifiers="Control" />
+                </ToggleButton.KeyboardAccelerators>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='33' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      >
-                <Image Source="/Assets/trophy.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
-                </Image>
+            <ToggleButton x:ConnectionId='33' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
+                <Image Source="/Assets/trophy.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" />
+                <ToggleButton.KeyboardAccelerators>
+                    <KeyboardAccelerator Key="R" Modifiers="Control" />
+                </ToggleButton.KeyboardAccelerators>
             </ToggleButton>
             <ToggleButton x:ConnectionId='34' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
                 <Image Source="/Assets/settings.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
+                <ToggleButton.KeyboardAccelerators>
+                    <KeyboardAccelerator Key="O" Modifiers="Control" />
+                </ToggleButton.KeyboardAccelerators>
             </ToggleButton>
         </StackPanel>
 

@@ -279,7 +279,10 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="TabIndex" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="CornerRadius" />
       <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="DSI_PROYECTO.ModosDeJuego" />
     <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">

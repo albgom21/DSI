@@ -185,13 +185,11 @@
     <Content Include="Assets\eye.png" />
     <Content Include="Assets\fondo.png" />
     <Content Include="Assets\hero.png" />
-    <Content Include="Assets\heroe.png" />
     <Content Include="Assets\heroe1.png" />
     <Content Include="Assets\heroe2.png" />
     <Content Include="Assets\heroe3.png" />
     <Content Include="Assets\heroe4.png" />
     <Content Include="Assets\heroe5.png" />
-    <Content Include="Assets\heroe6.png" />
     <Content Include="Assets\historial.png" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-125.png" />

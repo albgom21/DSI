@@ -32,6 +32,10 @@ namespace DSI_PROYECTO
     }
     public class Model
     {
+        public static int dinero_ = 125;
+
+        public static List<bool> cartasCompradas = new List<bool>() { false, false, false, false };
+
         public static List<Cartas> cartas_ = new List<Cartas>()
         {
             // new Cartas()
@@ -452,6 +456,21 @@ namespace DSI_PROYECTO
             }
 
             return a;
+        }
+
+        public static int getDinero()
+        {
+            return dinero_;
+        }
+
+        public static void setDinero(int dinero)
+        {
+            dinero_ = dinero;
+        }
+
+        public static IList<bool> GetCartasCompradas()
+        {
+            return cartasCompradas;
         }
 
         public static IList<Cartas> GetAllCartas()

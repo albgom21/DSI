@@ -26,6 +26,15 @@ namespace DSI_PROYECTO
         {
             this.InitializeComponent();
 
+            dinero.Text = Model.getDinero().ToString();
+
+            var compradas = Model.GetCartasCompradas();
+
+            if (compradas[0]) comprar1.Visibility = Visibility.Visible;
+            if (compradas[1]) comprar2.Visibility = Visibility.Visible;
+            if (compradas[2]) comprar3.Visibility = Visibility.Visible;
+            if (compradas[3]) comprar4.Visibility = Visibility.Visible;
+
             // Timer
             DispatcherTimer tim = new DispatcherTimer();
             timer_Tick(new object(), new object());
@@ -51,45 +60,33 @@ namespace DSI_PROYECTO
 
         private void Button_Oferta1(object sender, RoutedEventArgs e)
         {
-            double miDinero = 0;
-            int length = dinero.Text.Length - 1;
-            for (int i = 0; i <= length; i++)
-            {
-                int c = dinero.Text[i] - '0';
-                miDinero += c * (Math.Pow(10, length - i));
-            }
+            int miDinero = Model.getDinero();
 
             miDinero += 300;
+
+            Model.setDinero(miDinero);
 
             dinero.Text = miDinero.ToString();
         }
 
         private void Button_Oferta2(object sender, RoutedEventArgs e)
         {
-            double miDinero = 0;
-            int length = dinero.Text.Length - 1;
-            for (int i = 0; i <= length; i++)
-            {
-                int c = dinero.Text[i] - '0';
-                miDinero += c * (Math.Pow(10, length - i));
-            }
+            int miDinero = Model.getDinero();
 
             miDinero += 800;
+
+            Model.setDinero(miDinero);
 
             dinero.Text = miDinero.ToString();
         }
 
         private void Button_Oferta3(object sender, RoutedEventArgs e)
         {
-            double miDinero = 0;
-            int length = dinero.Text.Length - 1;
-            for (int i = 0; i <= length; i++)
-            {
-                int c = dinero.Text[i] - '0';
-                miDinero += c * (Math.Pow(10, length - i));
-            }
+            int miDinero = Model.getDinero();
 
             miDinero += 1450;
+
+            Model.setDinero(miDinero);
 
             dinero.Text = miDinero.ToString();
         }
@@ -127,19 +124,17 @@ namespace DSI_PROYECTO
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            double miDinero = 0;
-            int length = dinero.Text.Length - 1;
-            for (int i = 0; i <= length; i++)
-            {
-                int c = dinero.Text[i] - '0';
-                miDinero += c * (Math.Pow(10, length - i));
-            }
+            int miDinero = Model.getDinero();
 
             if (comprar1.Visibility == Visibility.Collapsed && miDinero >= 125)
             {
                 miDinero -= 125;
 
+                Model.setDinero(miDinero);
+
                 dinero.Text = miDinero.ToString();
+
+                Model.GetCartasCompradas()[0] = true;
 
                 comprar1.Visibility = Visibility.Visible;
             }
@@ -147,19 +142,17 @@ namespace DSI_PROYECTO
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            double miDinero = 0;
-            int length = dinero.Text.Length - 1;
-            for (int i = 0; i <= length; i++)
-            {
-                int c = dinero.Text[i] - '0';
-                miDinero += c * (Math.Pow(10, length - i));
-            }
+            int miDinero = Model.getDinero();
 
             if (comprar2.Visibility == Visibility.Collapsed && miDinero >= 125)
             {
                 miDinero -= 125;
 
+                Model.setDinero(miDinero);
+
                 dinero.Text = miDinero.ToString();
+
+                Model.GetCartasCompradas()[1] = true;
 
                 comprar2.Visibility = Visibility.Visible;
             }
@@ -167,19 +160,17 @@ namespace DSI_PROYECTO
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            double miDinero = 0;
-            int length = dinero.Text.Length - 1;
-            for (int i = 0; i <= length; i++)
-            {
-                int c = dinero.Text[i] - '0';
-                miDinero += c * (Math.Pow(10, length - i));
-            }
+            int miDinero = Model.getDinero();
 
             if (comprar3.Visibility == Visibility.Collapsed && miDinero >= 125)
             {
                 miDinero -= 125;
 
+                Model.setDinero(miDinero);
+
                 dinero.Text = miDinero.ToString();
+
+                Model.GetCartasCompradas()[2] = true;
 
                 comprar3.Visibility = Visibility.Visible;
             }
@@ -187,19 +178,17 @@ namespace DSI_PROYECTO
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            double miDinero = 0;
-            int length = dinero.Text.Length - 1;
-            for (int i = 0; i <= length; i++)
-            {
-                int c = dinero.Text[i] - '0';
-                miDinero += c * (Math.Pow(10, length - i));
-            }
+            int miDinero = Model.getDinero();
 
             if (comprar4.Visibility == Visibility.Collapsed && miDinero >= 125)
             {
                 miDinero -= 125;
 
+                Model.setDinero(miDinero);
+
                 dinero.Text = miDinero.ToString();
+
+                Model.GetCartasCompradas()[3] = true;
 
                 comprar4.Visibility = Visibility.Visible;
             }

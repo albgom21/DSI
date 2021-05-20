@@ -36,8 +36,9 @@ namespace DSI_PROYECTO
             Image mazo = e.Parameter as Image;
             if (mazo != null)
             {
-                string s = System.IO.Directory.GetCurrentDirectory() + "\\" + mazo.Source;
-                h.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
+                //string s = System.IO.Directory.GetCurrentDirectory() + "\\" + mazo.Source;
+                //h.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
+                h.Source = mazo.Source;
             }
             canvas.PointerPressed += new PointerEventHandler(Target_PointerPressed);
             canvas.PointerReleased += new PointerEventHandler(Target_PointerReleased);

@@ -476,7 +476,7 @@
     </Page.Resources>
 
     <Grid>
-        
+
         <!--Divisiones grid columnas y filas-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2.5*"/>
@@ -490,16 +490,20 @@
             <RowDefinition Height="1.1*"/>
         </Grid.RowDefinitions>
 
-        <!--Fondo y modeas-->
+        <!--Fondo-->
         <Image Source="Assets/fondo.png" Grid.RowSpan="4" Grid.ColumnSpan="3"  Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <Image Source="Assets/coin.png" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Height="25" Width="25" Margin="0,0,15,0" />
 
         <!--Boton X-->
         <Button x:ConnectionId='47' Content="X" TabIndex="5" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="2" Height="45" Width="45" VerticalAlignment="Center" HorizontalAlignment="Center"                />
 
-        <!--Texto cartas desbloqueadas y monedas-->
+        <!--Texto cartas desbloqueadas-->
         <TextBlock x:Uid="NCartasDes" Text="CARTAS DESBLOQUEADAS 37/100" Grid.Row="0" Grid.Column="1"  TextWrapping="WrapWholeWords" FontSize="20" FontFamily="Aldrich" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
-        <TextBlock Text="1000" Grid.Row="1" Grid.Column="2"  TextWrapping="WrapWholeWords" FontSize="20" FontFamily="Aldrich" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" Margin="0,0,0,0"/>
+        
+        <!-- Dinero -->
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:ConnectionId='55' x:Name="dinero" Text="0" TextWrapping="WrapWholeWords" FontSize="20" FontFamily="Aldrich" Foreground="White" VerticalAlignment="Center" Margin="5,0"/>
+            <Image Source="Assets/coin.png" VerticalAlignment="Center" Height="25" Width="25"/>
+        </StackPanel>
 
         <!--Botones subditos, hechizos y crafteables-->
         <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -520,7 +524,7 @@
                     <KeyboardAccelerator Key="C" Modifiers="Control" />
                 </ToggleButton.KeyboardAccelerators>
             </ToggleButton>
-            
+
         </StackPanel>
 
         <!--Fondo lista de cartas-->
@@ -569,7 +573,7 @@
                   IsFocusEngagementEnabled="True"
                  >
         </GridView>
-        
+
     </Grid>
 </Page>
 

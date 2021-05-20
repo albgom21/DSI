@@ -66,6 +66,8 @@ namespace DSI_PROYECTO
                     GridCartas.Add(VMitem);
                 }
 
+            dinero.Text = Model.getDinero().ToString();
+
             base.OnNavigatedTo(e);
         }
 

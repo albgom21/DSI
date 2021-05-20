@@ -802,12 +802,22 @@
 
         <!--Heroes-->
         <TextBlock x:Uid="Heroe" Text="HÉROE" FontFamily="Aldrich" Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="4"  TextWrapping="WrapWholeWords" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Foreground="Aquamarine"/>
-        <FlipView x:ConnectionId='71' x:Name="a" Grid.Column="5" Grid.Row="3" Margin="15,0,15,30" VerticalAlignment="Top" TabIndex="8">         
-            <Image Source="/Assets/Heroe.png"/>
-            <Image Source="/Assets/Heroe3.png"/>
-            <Image Source="/Assets/Heroe4.png"/>
-            <Image Source="/Assets/Heroe5.png"/>
-            <Image Source="/Assets/Heroe6.png"/>      
+        <FlipView x:ConnectionId='71' x:Name="a" Grid.Column="5" Grid.Row="3" Margin="15,0,15,30" VerticalAlignment="Top" TabIndex="8" Width="138" CornerRadius="10"                                      >
+            <Border Background="#c9f1fd" Width="138" Height="75" CornerRadius="10">
+                <Image Source="Assets\\Heroe1.png" Width="50"/>
+            </Border>
+            <Border Background="#c34d4c" Width="138" Height="75" CornerRadius="10">
+                <Image Source="Assets\\Heroe2.png" Width="50"/>
+            </Border>
+            <Border Background="#c6d617" Width="138" Height="75" CornerRadius="10">
+                <Image Source="Assets\\Heroe3.png" Width="50"/>
+            </Border>
+            <Border Background="#646798" Width="138" Height="75" CornerRadius="10">
+                <Image Source="Assets\\Heroe4.png" Width="50"/>
+            </Border>
+            <Border Background="#89cb66" Width="138" Height="75" CornerRadius="10">
+                <Image Source="Assets\\Heroe5.png" Width="50"/>
+            </Border>
         </FlipView>
 
     </Grid>

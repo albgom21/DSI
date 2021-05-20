@@ -218,7 +218,6 @@
         <Image Source="/Assets/fondo.png" Grid.RowSpan="5" Grid.ColumnSpan="6" Stretch="UniformToFill"  VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
 
         <!-- Barra de botones en la parte superior. -->
-        <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="6">
             <ToggleButton x:ConnectionId='32' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                     >
                 <Image Source="/Assets/shop.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >

@@ -25,6 +25,8 @@ namespace DSI_PROYECTO
     {
         public ObservableCollection<VMMazos_Grid> GridMazos { get; } = new ObservableCollection<VMMazos_Grid>();
 
+        Image heroe;
+
         public ModosDeJuego()
         {
             this.InitializeComponent();
@@ -40,16 +42,16 @@ namespace DSI_PROYECTO
                     VMMazos_Grid VMitem = new VMMazos_Grid(mazos);
                     GridMazos.Add(VMitem);
                 }
-           
+
             base.OnNavigatedTo(e);
         }
 
         //Funcionamiento botones normal, ranked, spellbreak y order
         private void nbutton_Checked(object sender, RoutedEventArgs e)
         {
-            if (rbutton != null )
+            if (rbutton != null)
             {
-                GridMazos.Clear();                
+                GridMazos.Clear();
                 if (GridMazos != null)
                 {
                     foreach (Mazos_Grid mazos in Model.GetAllMazos_Grid())
@@ -63,7 +65,7 @@ namespace DSI_PROYECTO
                     rbutton.IsChecked = false;
                     sbutton.IsChecked = false;
                     obutton.IsChecked = false;
-                }               
+                }
                 if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
                     descripcion.Text = "NORMAL: mazos de 20 cartas máximo, pudiendo tener 3 copias de la misma carta.";
                 else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
@@ -75,7 +77,7 @@ namespace DSI_PROYECTO
 
         private void rbutton_Checked(object sender, RoutedEventArgs e)
         {
-            GridMazos.Clear();           
+            GridMazos.Clear();
             if (GridMazos != null)
             {
                 foreach (Mazos_Grid mazos in Model.GetAllMazos_Grid())
@@ -91,9 +93,9 @@ namespace DSI_PROYECTO
                 obutton.IsChecked = false;
             }
 
-            if(Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
+            if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
                 descripcion.Text = "RANKED: partida igualadas respecto a tu rango con mazos de 20 cartas máximo, pudiendo tener 3 copias de la misma carta.";
-            else if(Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
+            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
                 descripcion.Text = "RANKED: matched games with respect to your rank with decks of 20 cards maximum, being able to have 3 copies of the same card.";
             else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "ca")
                 descripcion.Text = "RANKED: partida igualades respecte al teu rang amb malls de 20 cartes màxim, podent tenir 3 còpies de la mateixa carta.";
@@ -151,18 +153,18 @@ namespace DSI_PROYECTO
                 descripcion.Text = "ORDER: el mall es construeix amb 20 tipus de cartes diferents.";
         }
 
-              
+
         //Elegir mazo
         private void mazosGrid_ItemClick(object sender, ItemClickEventArgs e)
         {
-           
+
             VMMazos_Grid mazo = e.ClickedItem as VMMazos_Grid;
             string s = System.IO.Directory.GetCurrentDirectory() + "\\" + mazo.Imagen;
             if (mazo.Imagen == "mazo1.png")
                 nbutton.IsChecked = true;
- 
+
             MazoSel.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
-            mazoName.Text = mazo.Name;            
+            mazoName.Text = mazo.Name;
         }
 
         //Reiniciar mazos
@@ -184,7 +186,7 @@ namespace DSI_PROYECTO
                     descripcion.Text = "TRIA UNA MANERA DE JOC";
                 mazoName.Text = "";
                 string s = System.IO.Directory.GetCurrentDirectory() + "\\" + "Assets/Mazo0.png";
-                MazoSel.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));                
+                MazoSel.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
             }
         }
 
@@ -220,12 +222,20 @@ namespace DSI_PROYECTO
 
         private void Jugar_Click(object sender, RoutedEventArgs e)
         {
-            if(mazoName.Text != "")
-               this.Frame.Navigate(typeof(InGame), a.SelectedItem);            
+            if (mazoName.Text != "")
+                this.Frame.Navigate(typeof(InGame), heroe);
         }
         private void B3_Unchecked(object sender, RoutedEventArgs e)
         {
             B3.IsChecked = true;
+        }
+
+        private void a_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Border f = a.SelectedItem as Border;
+            Image b = f.Child as Image;
+            if (b != null)
+                heroe = b;
         }
     }
 }

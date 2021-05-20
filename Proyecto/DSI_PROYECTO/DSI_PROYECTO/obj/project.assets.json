@@ -8150,26 +8150,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\usuario_local\\.nuget\\packages\\": {},
-    "c:\\software\\programacion\\MSVStudio2017\\Shared\\NuGetPackages": {},
-    "c:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
+    "C:\\Users\\adrim\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\hlocal\\Sime\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj",
+      "projectUniqueName": "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj",
       "projectName": "DSI_PROYECTO",
-      "projectPath": "C:\\hlocal\\Sime\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj",
-      "packagesPath": "C:\\Users\\usuario_local\\.nuget\\packages\\",
-      "outputPath": "C:\\hlocal\\Sime\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\obj\\",
+      "projectPath": "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj",
+      "packagesPath": "C:\\Users\\adrim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "c:\\software\\programacion\\MSVStudio2017\\Shared\\NuGetPackages",
-        "c:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\usuario_local\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adrim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8177,7 +8177,7 @@
         "uap10.0.17763"
       ],
       "sources": {
-        "c:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
