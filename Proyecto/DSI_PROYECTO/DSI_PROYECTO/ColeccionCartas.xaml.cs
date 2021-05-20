@@ -27,6 +27,7 @@ namespace DSI_PROYECTO
         public ObservableCollection<VMCartas> ListaCartas { get; } = new ObservableCollection<VMCartas>();
         public ObservableCollection<VMCartas_Grid> GridCartas { get; } = new ObservableCollection<VMCartas_Grid>();
         public ObservableCollection<VMMazos_Grid> ListaMazos { get; set; } = new ObservableCollection<VMMazos_Grid>();
+
         public VMMazos_Grid mazoActual;
 
         public ColeccionCartas()
@@ -38,10 +39,10 @@ namespace DSI_PROYECTO
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            //Rellenar mazos y cartas
             if (e.Parameter != null)
             {
-                mazoActual = e.Parameter as VMMazos_Grid;
-                // Cosntruye las listas de ModelView a partir de la lista Modelo 
+                mazoActual = e.Parameter as VMMazos_Grid;              
                 if (ListaCartas != null)
                     foreach (Cartas cartas in mazoActual.Cartas)
                     {
@@ -68,6 +69,7 @@ namespace DSI_PROYECTO
             base.OnNavigatedTo(e);
         }
 
+        //Botones subditos, hechizos y craftebales
         private void sbutton_Checked(object sender, RoutedEventArgs e)
         {
             if (GridCartas != null)
@@ -204,6 +206,7 @@ namespace DSI_PROYECTO
             }
         }
 
+        //Añadir cartas
         private void cartasGrid_ItemClick(object sender, ItemClickEventArgs e)
         {
             VMCartas_Grid item = e.ClickedItem as VMCartas_Grid;
@@ -253,6 +256,7 @@ namespace DSI_PROYECTO
             }
         }
 
+        //Eliminar cartas
         private void cartasList_ItemClick(object sender, ItemClickEventArgs e)
         {
             VMCartas item = e.ClickedItem as VMCartas;
@@ -303,7 +307,8 @@ namespace DSI_PROYECTO
                 this.Frame.GoBack();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        //Guardar mazo
+        private void Save_Click(object sender, RoutedEventArgs e)
         {
 
             var mazos = Model.GetAllMazos_Grid();
@@ -333,6 +338,7 @@ namespace DSI_PROYECTO
             this.Frame.Navigate(typeof(GaleriaDeMazos));
         }
 
+        //Cambiar nombre del mazo
         private void MazoName_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (mazoActual != null)

@@ -9,6 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.Resources>
+        <!--Estilo boton salir-->
         <Style x:Key="ExitStyle" TargetType="Button">
             <Setter Property="CornerRadius" Value="10"/>       
             <Setter Property="Background" Value="{x:Null}"/>
@@ -100,6 +101,7 @@
             </Setter>
         </Style>
 
+        <!--Estilo boton X-->
         <Style x:Key="XStyle" TargetType="Button">
             <Setter Property="CornerRadius" Value="10"/>
             <Setter Property="Background" Value="{x:Null}"/>
@@ -198,6 +200,7 @@
             </Setter>
         </Style>
 
+        <!--Estilo boton rendirse-->
         <Style x:Key="SurrenderStyle" TargetType="Button">
             <Setter Property="CornerRadius" Value="10"/>
             <Setter Property="Background" Value="{x:Null}"/>
@@ -299,6 +302,7 @@
 
     <Grid>
 
+        <!--Divisiones grid columnas y filas-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="*"/>
@@ -314,14 +318,18 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
-
+        <!--Fondo-->
         <Image Source="Assets/fondo.png" Grid.RowSpan="5" Grid.ColumnSpan="5" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
+        <!--Texto idioma-->
+        <TextBlock  x:Uid="IdiomaOpcionesMenu" FontFamily="Aldrich"  Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White" FontSize="36"  TextAlignment="Center" Text="IDIOMA"/>
 
+        <!--Botones de salir, rendirse y X-->
         <Button x:ConnectionId='26' x:Uid="sOpc" x:Name="salir" TabIndex="11" Content="SALIR" Style="{StaticResource ExitStyle}" Grid.Row="4" Grid.Column="3"  Margin="-45,0,0,0" Height="50" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center"                    />
         <Button x:ConnectionId='27' x:Uid="rOpc" x:Name="rendirse" TabIndex="10" Content="RENDIRSE" Style="{StaticResource SurrenderStyle}"  Grid.Row="5" Grid.Column="1" Margin="-45,0,0,0"  Height="50" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center"                       />
         <Button x:ConnectionId='28' Content="X"  TabIndex="4" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center"                />
 
+        <!--Texto de volumnes e imagenes-->
         <StackPanel Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center">
             <Grid Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center">
                 <Grid.ColumnDefinitions>
@@ -343,37 +351,33 @@
             </Grid>
         </StackPanel>
 
-        <TextBlock  x:Uid="IdiomaOpcionesMenu" FontFamily="Aldrich"  Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White" FontSize="36"  TextAlignment="Center" Text="IDIOMA"/>
-
-
+        <!--Slider volumen-->
         <StackPanel Grid.Row="2"  Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" >
             <Slider x:ConnectionId='35'  ExitDisplayModeOnAccessKeyInvoked="False"  TabIndex="5" Foreground="#FF00AEFF" Background="White"                                       Value="80" Height="40" />
             <Slider x:ConnectionId='36'  ExitDisplayModeOnAccessKeyInvoked="False"  TabIndex="6" Foreground="#FF00AEFF" Background="White"                                       Value="80"  Height="40"/>
             <Slider x:ConnectionId='37'  ExitDisplayModeOnAccessKeyInvoked="False"  TabIndex="7" Foreground="#FF00AEFF"  Background="White"                                       Value="80"  Height="35"/>
 
         </StackPanel>
-        
-        <Border x:ConnectionId='29' x:Name="borderEsp" Grid.Row="1" Grid.Column="1" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
 
-        <Button x:ConnectionId='30' x:Name="besp" Height="75" Width="110" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center"                                  Tag="es" TabIndex="1">
+        <!--Boton y borde de los idiomas-->
+        <Border x:ConnectionId='29' x:Name="borderEsp" Grid.Row="1" Grid.Column="1" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
+        <Button x:ConnectionId='30' x:Name="besp" Height="75" Width="110" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center"                   Tag="es" TabIndex="1">
             <Image Source="/Assets/besp.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
 
         <Border x:ConnectionId='31' x:Name="borderCat" Grid.Row="1" Grid.Column="2" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
-
-        <Button x:ConnectionId='32' x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"                                  Tag="ca"  TabIndex="2">
+        <Button x:ConnectionId='32' x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"                   Tag="ca"  TabIndex="2">
             <Image Source="/Assets/bcat.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
 
         <Border x:ConnectionId='33' x:Name="borderUk" Grid.Row="1" Grid.Column="3" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
-
-        <Button x:ConnectionId='34' x:Name="buk" Height="75" Width="110" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"                                  Tag="en"  TabIndex="3">
+        <Button x:ConnectionId='34' x:Name="buk" Height="75" Width="110" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"                    Tag="en"  TabIndex="3">
             <Image Source="/Assets/buk.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
 
+        <!--Botones turno y espectar-->
         <ToggleSwitch x:Uid="PasoTurnos"  TabIndex="8" FontFamily="Aldrich" OnContent="Paso de turnos automático" OffContent="Paso de turnos automático" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Foreground="White" RequestedTheme="Dark" FontSize="14" HorizontalAlignment="Center" Margin="75,0,0,0" />
         <ToggleSwitch x:Uid="Espectar"   TabIndex="9" FontFamily="Aldrich" OnContent="Permitir espectar" OffContent="Permitir espectar"  Grid.Row="3"  Grid.Column="3"  Grid.ColumnSpan="5" Foreground="White" RequestedTheme="Dark" FontSize="14"  HorizontalAlignment="Left"  Margin="-35,0,0,0"/>
-
 
     </Grid>
 </Page>

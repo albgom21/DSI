@@ -25,7 +25,8 @@ namespace DSI_PROYECTO
         public OpcionesMenu()
         {
             this.InitializeComponent();
-            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled; //Required si se quieren ignorar los límites de CacheSize           
+            this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled; //Required si se quieren ignorar los límites de CacheSize  
+            
             if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
                 borderEsp.Visibility = Visibility.Visible;
             else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
@@ -34,6 +35,7 @@ namespace DSI_PROYECTO
                 borderCat.Visibility = Visibility.Visible;
         }
 
+        //Cmabiar la imagen segun el valor de la barra de volumen
         private void Slider_ValueChanged_g(object sender, RangeBaseValueChangedEventArgs e)
         {
             double new_value = e.NewValue;
@@ -100,74 +102,45 @@ namespace DSI_PROYECTO
             }
         }
 
-        private void ToggleButton_Checked_esp(object sender, RoutedEventArgs e)
+        //Cambiar el idioma
+        private void SetIdioma(object sender, RoutedEventArgs e)
         {
             Frame.CacheSize = 0;
             if ((sender as Button)?.Tag is string tag)
             {
-                // Change the app language
+
                 Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
 
-                // Clear the back-navigation stack, and send the user to MainPage
-                // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
-                // will stay in the previous language until reloaded.
-                Frame.BackStack.Clear();
-                Frame.Navigate(typeof(OpcionesMenu));
-            }            
-        }
-
-        private void ToggleButton_Checked_cat(object sender, RoutedEventArgs e)
-        {
-            Frame.CacheSize = 0;
-            if ((sender as Button)?.Tag is string tag)
-            {
-                // Change the app language
-                Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
-
-                // Clear the back-navigation stack, and send the user to MainPage
-                // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
-                // will stay in the previous language until reloaded.
-                Frame.BackStack.Clear();
-                Frame.Navigate(typeof(OpcionesMenu)); 
-            }
-        }
-
-        private void ToggleButton_Checked_uk(object sender, RoutedEventArgs e)
-        {
-            Frame.CacheSize = 0;
-            if ((sender as Button)?.Tag is string tag)
-            {
-                // Change the app language
-                Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
-
-                // Clear the back-navigation stack, and send the user to MainPage
-                // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
-                // will stay in the previous language until reloaded.
                 Frame.BackStack.Clear();
                 Frame.Navigate(typeof(OpcionesMenu));
             }
         }
 
+        //Navegacion
         private void Tienda(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Tienda));
             B1.IsChecked = false;
         }
+
         private void Galeria_Mazos(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(GaleriaDeMazos));
             B2.IsChecked = false;
         }
+
         private void Ranking(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PantallaRanking));
             B4.IsChecked = false;
         }
+
         private void Principal(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PantallaPrincipal));
             B3.IsChecked = false;
         }
+
         private void B5_Unchecked(object sender, RoutedEventArgs e)
         {
             B5.IsChecked = true;

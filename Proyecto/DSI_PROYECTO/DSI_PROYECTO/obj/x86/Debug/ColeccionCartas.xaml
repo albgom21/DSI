@@ -9,6 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.Resources>
+        <!--Template para las cartas del mazo-->
         <DataTemplate x:Key="Cartas_Template"
                                                  >
             <Grid x:ConnectionId='44' Height="40" Width="400" Margin="8">
@@ -23,6 +24,7 @@
             </Grid>
         </DataTemplate>
 
+        <!--Template para las cartas del grid-->
         <DataTemplate x:Key="Cartas_Grid_Template"
                                                       >
             <StackPanel x:ConnectionId='40' HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
@@ -32,6 +34,7 @@
             </StackPanel>
         </DataTemplate>
 
+        <!--Estilo boton X-->
         <Style x:Key="XStyle" TargetType="Button">
             <Setter Property="CornerRadius" Value="10"/>
             <Setter Property="Background" Value="{x:Null}"/>
@@ -129,6 +132,7 @@
             </Setter>
         </Style>
 
+        <!--Estilo boton subditos-->
         <Style x:Key="SubStyle" TargetType="ToggleButton">
             <Setter Property="CornerRadius" Value="2"/>
             <Setter Property="Background" Value="{x:Null}"/>
@@ -209,6 +213,7 @@
             </Setter>
         </Style>
 
+        <!--Estilo boton hechizos-->
         <Style x:Key="HecStyle" TargetType="ToggleButton">
             <Setter Property="CornerRadius" Value="2"/>
             <Setter Property="Background" Value="{x:Null}"/>
@@ -289,6 +294,7 @@
             </Setter>
         </Style>
 
+        <!--Estilo boton crafteables-->
         <Style x:Key="CraftStyle" TargetType="ToggleButton">
             <Setter Property="CornerRadius" Value="2"/>
             <Setter Property="Background" Value="{x:Null}"/>
@@ -369,6 +375,7 @@
             </Setter>
         </Style>
 
+        <!--Estilo boton guardar mazo-->
         <Style x:Key="SaveStyle" TargetType="Button">
             <Setter Property="CornerRadius" Value="1"/>
             <Setter Property="Background" Value="{x:Null}"/>
@@ -469,11 +476,12 @@
     </Page.Resources>
 
     <Grid>
+        
+        <!--Divisiones grid columnas y filas-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2.5*"/>
             <ColumnDefinition Width="5.5*"/>
             <ColumnDefinition Width="*"/>
-
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="1.1*"/>
@@ -482,16 +490,19 @@
             <RowDefinition Height="1.1*"/>
         </Grid.RowDefinitions>
 
-
+        <!--Fondo y modeas-->
         <Image Source="Assets/fondo.png" Grid.RowSpan="4" Grid.ColumnSpan="3"  Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <Image Source="Assets/coin.png" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Height="25" Width="25" Margin="0,0,15,0" />
 
+        <!--Boton X-->
         <Button x:ConnectionId='47' Content="X" TabIndex="5" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="2" Height="45" Width="45" VerticalAlignment="Center" HorizontalAlignment="Center"                />
+
+        <!--Texto cartas desbloqueadas y monedas-->
         <TextBlock x:Uid="NCartasDes" Text="CARTAS DESBLOQUEADAS 37/100" Grid.Row="0" Grid.Column="1"  TextWrapping="WrapWholeWords" FontSize="20" FontFamily="Aldrich" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
         <TextBlock Text="1000" Grid.Row="1" Grid.Column="2"  TextWrapping="WrapWholeWords" FontSize="20" FontFamily="Aldrich" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" Margin="0,0,0,0"/>
 
+        <!--Botones subditos, hechizos y crafteables-->
         <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-
             <ToggleButton x:ConnectionId='52'  x:Uid="subB" TabIndex="2"  x:Name="sbutton" Content="Súbditos" Style="{StaticResource SubStyle}"  Grid.Row="0" Grid.Column="0"  VerticalAlignment="Center"  Margin="20,0,20,0" Height="40" Width="115"                                                        >
                 <ToggleButton.KeyboardAccelerators>
                     <KeyboardAccelerator Key="S" Modifiers="Control" />
@@ -512,7 +523,7 @@
             
         </StackPanel>
 
-
+        <!--Fondo lista de cartas-->
         <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="4" FocusVisualPrimaryBrush="Black">
             <Border.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -522,16 +533,20 @@
             </Border.Background>
         </Border>
 
-        <Button x:ConnectionId='48' x:Uid="GuardarM" TabIndex="8" Content="GUARDAR MAZO" Style="{StaticResource SaveStyle}"  Grid.Row="3" Grid.Column="0" Height="40" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center"                     >
+        <!--Boton guardar mazo-->
+        <Button x:ConnectionId='48' x:Uid="GuardarM" TabIndex="8" Content="GUARDAR MAZO" Style="{StaticResource SaveStyle}"  Grid.Row="3" Grid.Column="0" Height="40" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center"                   >
             <Button.KeyboardAccelerators>
                 <KeyboardAccelerator Key="G" Modifiers="Control" />
             </Button.KeyboardAccelerators>
-        </Button>  
+        </Button>
 
-
+        <!--Nombre del mazo-->
         <TextBox x:ConnectionId='49' x:Name="MazoName" TabIndex="1" FontFamily="Aldrich" FontSize="20" Foreground="#FFCB9056"                                    HorizontalAlignment="Center" VerticalAlignment="Bottom" TextAlignment="Center"  SelectionHighlightColor="#FFBF7100" Width="220" Height="35"/>
+
+        <!--Guardar mazo-->
         <TextBlock x:Uid="NCartas" Text="Número de cartas" Grid.Row="1" Grid.Column="0"  TextWrapping="WrapWholeWords" FontSize="16" FontFamily="Aldrich" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="#FFCB9056" Margin="0,0,10,0" SelectionHighlightColor="#FFBF7100"/>
 
+        <!--ListView con las cartas del mazo-->
         <ListView x:ConnectionId='50' x:Name="cartasList" 
                   Grid.Row="2" Grid.Column="0"                 
                                                      
@@ -541,6 +556,7 @@
                  >
         </ListView>
 
+        <!--Grid view con las cartas-->
         <GridView x:ConnectionId='51' x:Name="cartasGrid" 
                   Grid.Row="2" Grid.Column="1"       
                   HorizontalAlignment="Center"
@@ -553,6 +569,7 @@
                   IsFocusEngagementEnabled="True"
                  >
         </GridView>
+        
     </Grid>
 </Page>
 

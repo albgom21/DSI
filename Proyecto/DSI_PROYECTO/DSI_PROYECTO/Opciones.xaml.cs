@@ -26,7 +26,9 @@ namespace DSI_PROYECTO
         public Opciones()
         {
             this.InitializeComponent();
+
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled; //Required si se quieren ignorar los límites de CacheSize
+
             if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
                 borderEsp.Visibility = Visibility.Visible;
             else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
@@ -35,6 +37,7 @@ namespace DSI_PROYECTO
                 borderCat.Visibility = Visibility.Visible;
         }
 
+        //cambiar imagen segun el valor de la barra de volumen
         private void Slider_ValueChanged_g(object sender, RangeBaseValueChangedEventArgs e)
         {
             double new_value = e.NewValue;
@@ -100,77 +103,32 @@ namespace DSI_PROYECTO
                 vs.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));
             }
         } 
+        
 
-        private void ToggleButton_Checked_esp(object sender, RoutedEventArgs e)
+
+        //Cambiar el idioma de la app
+        private void SetIdioma(object sender, RoutedEventArgs e)
         {
             Frame.CacheSize = 0;
             if ((sender as Button)?.Tag is string tag)
-            {
-                // Change the app language
+            {       
                 Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
-
-                // Clear the back-navigation stack, and send the user to MainPage
-                // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
-                // will stay in the previous language until reloaded.
-                Frame.BackStack.Clear();
-                Frame.Navigate(typeof(Opciones));               
-            }
-        }
-
-        private void ToggleButton_Checked_cat(object sender, RoutedEventArgs e)
-        {
-            Frame.CacheSize = 0;
-            if ((sender as Button)?.Tag is string tag)
-            {
-                // Change the app language
-                Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
-
-                // Clear the back-navigation stack, and send the user to MainPage
-                // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
-                // will stay in the previous language until reloaded.
+               
                 Frame.BackStack.Clear();
                 Frame.Navigate(typeof(Opciones));
             }
         }
 
-        private void ToggleButton_Checked_uk(object sender, RoutedEventArgs e)
-        {
-            Frame.CacheSize = 0;
-            if ((sender as Button)?.Tag is string tag)
-            {
-                // Change the app language
-                Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
 
-                // Clear the back-navigation stack, and send the user to MainPage
-                // This is done because any loaded pages (MainPage(in back-stack) and LanguageSettings (current active page))
-                // will stay in the previous language until reloaded.
-                Frame.BackStack.Clear();
-                Frame.Navigate(typeof(Opciones));
-            }
-        }
-
+        //Navegacion
         private void Rendirse_Click(object sender, RoutedEventArgs e)
-        {
-          
-            this.Frame.Navigate(typeof(PantallaPrincipal));
-            if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
-                rendirse.Content = "RENDIRSE";
-            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
-                rendirse.Content = "GIVE UP";
-            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "ca")
-                rendirse.Content = "RENDIR";
+        {          
+            this.Frame.Navigate(typeof(PantallaPrincipal));           
         }
 
         private void Salir_Click(object sender, RoutedEventArgs e)
-        {
-        
-            this.Frame.Navigate(typeof(InGame));
-            if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "es")
-                salir.Content = "SALIR";
-            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "en")
-                salir.Content = "EXIT";
-            else if (Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride == "ca")
-                salir.Content = "SORTIR";
+        {        
+            this.Frame.Navigate(typeof(InGame));            
         }
 
         private void X_Click(object sender, RoutedEventArgs e)

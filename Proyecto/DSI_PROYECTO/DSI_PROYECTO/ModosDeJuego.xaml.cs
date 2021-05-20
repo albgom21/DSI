@@ -33,7 +33,7 @@ namespace DSI_PROYECTO
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            // Cosntruye las listas de ModelView a partir de la lista Modelo 
+            // Construye los mazos
             if (GridMazos != null)
                 foreach (Mazos_Grid mazos in Model.GetAllMazos_Grid())
                 {
@@ -44,6 +44,7 @@ namespace DSI_PROYECTO
             base.OnNavigatedTo(e);
         }
 
+        //Funcionamiento botones normal, ranked, spellbreak y order
         private void nbutton_Checked(object sender, RoutedEventArgs e)
         {
             if (rbutton != null )
@@ -150,12 +151,8 @@ namespace DSI_PROYECTO
                 descripcion.Text = "ORDER: el mall es construeix amb 20 tipus de cartes diferents.";
         }
 
-        private void X_Click(object sender, RoutedEventArgs e)
-        {
-            if (this.Frame.CanGoBack)
-                this.Frame.GoBack();
-        }
-
+              
+        //Elegir mazo
         private void mazosGrid_ItemClick(object sender, ItemClickEventArgs e)
         {
            
@@ -168,6 +165,7 @@ namespace DSI_PROYECTO
             mazoName.Text = mazo.Name;            
         }
 
+        //Reiniciar mazos
         private void restartMazos(object sender, RoutedEventArgs e)
         {
             if (GridMazos != null && !(bool)nbutton.IsChecked && !(bool)sbutton.IsChecked && !(bool)obutton.IsChecked && !(bool)rbutton.IsChecked)
@@ -189,7 +187,15 @@ namespace DSI_PROYECTO
                 MazoSel.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));                
             }
         }
-        
+
+
+        //Navegación
+        private void X_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+                this.Frame.GoBack();
+        }
+
         private void Tienda(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Tienda));
@@ -217,7 +223,6 @@ namespace DSI_PROYECTO
             if(mazoName.Text != "")
                this.Frame.Navigate(typeof(InGame), a.SelectedItem);            
         }
-
         private void B3_Unchecked(object sender, RoutedEventArgs e)
         {
             B3.IsChecked = true;
