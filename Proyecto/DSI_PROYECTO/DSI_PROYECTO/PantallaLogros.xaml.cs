@@ -25,6 +25,7 @@ namespace DSI_PROYECTO
     /// </summary>
     public sealed partial class PantallaLogros : Page
     {
+        public int progressBar = 0;
         public List<VirtualKey> keys = new List<VirtualKey>();
         public ObservableCollection<VM_Logro> ListaLogros { get; } = new ObservableCollection<VM_Logro>();
         public PantallaLogros()
@@ -70,6 +71,7 @@ namespace DSI_PROYECTO
             if (ListaLogros != null)
                 foreach (Logro logro in ModelLogro.getAllLogros())
                 {
+                    if (logro.Imagen == "Assets\\star.png") progressBar += 10;
                     VM_Logro VMitem = new VM_Logro(logro);
                     ListaLogros.Add(VMitem);
                 }
@@ -103,6 +105,30 @@ namespace DSI_PROYECTO
             else if (r >= 2) this.Frame.Navigate(typeof(PantallaRanking));
             else if (o >= 2) this.Frame.Navigate(typeof(OpcionesMenu));
             // Con la B va directamente a la pantalla principal.
+        }
+
+        // Método para bloquear/desbloquear logros.
+        private void ImageGridView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            VM_Logro Item = e.ClickedItem as VM_Logro;
+            int id = Item.Id;
+            int i = 0;
+            ListaLogros.Clear();
+            foreach (Logro logro in ModelLogro.getAllLogros()) {
+                if (i == id) {
+                    if (logro.Imagen == "Assets\\lock.png") {
+                        logro.Imagen = "Assets\\star.png";
+                        pbar.Value += 10;
+                    }
+                    else {
+                        logro.Imagen = "Assets\\lock.png";
+                        pbar.Value -= 10;
+                    }
+                }
+                VM_Logro VMitem = new VM_Logro(logro);
+                ListaLogros.Add(VMitem);
+                i++;
+            }
         }
     }
 }

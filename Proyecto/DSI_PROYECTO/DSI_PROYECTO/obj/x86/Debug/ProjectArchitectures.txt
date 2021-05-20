@@ -1,1 +1,1 @@
-C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\DSI_PROYECTO.csproj;x86
+C:\Users\skoon\Desktop\dsiclon\DSI\Proyecto\DSI_PROYECTO\DSI_PROYECTO\DSI_PROYECTO.csproj;x86

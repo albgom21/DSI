@@ -16,12 +16,14 @@
                     <ColumnDefinition Width="3*"/>
                     <ColumnDefinition Width="2.5*"/>
                 </Grid.ColumnDefinitions>
+                
                 <Image x:ConnectionId='19'                          Grid.Column="0" VerticalAlignment="Center" Width="40" HorizontalAlignment="Left"/>
                 <Image x:ConnectionId='20'                        Grid.Column="2" Margin="0, 0, 10, 0" VerticalAlignment="Center" Width="40" HorizontalAlignment="Center"/>
                 <TextBlock x:ConnectionId='21'                             FontSize="10" Margin="0, 20, 0, 0" FontFamily="Aldrich" Foreground="White" Grid.Column="1" VerticalAlignment="Center"/>
                 <TextBlock x:ConnectionId='22'                        Margin="0, 0, 0, 25" Height="25" FontSize="15" FontFamily="Aldrich" Foreground="White" Grid.Column="1" VerticalAlignment="Center"/>
                 <TextBlock x:ConnectionId='23'                            FontSize="10" Margin="0, 0, 75, 0" FontFamily="Aldrich" Grid.Column="2"  Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            </Grid>
+                
+                </Grid>
 
         </DataTemplate>
         <Style x:Key="XStyle" TargetType="Button">
@@ -211,47 +213,48 @@
         </Grid.ColumnDefinitions>
         
         <!-- Imagen de fondo -->
-        <Image Source="/Assets/fondo.png" Grid.RowSpan="4" Grid.ColumnSpan="3" Stretch="UniformToFill"  VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
+        <Image x:ConnectionId='25' x:Name="Fondo" Source="/Assets/fondo.png" Grid.RowSpan="4" Grid.ColumnSpan="3" Stretch="UniformToFill"  VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
 
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="3">
-            <ToggleButton x:ConnectionId='28' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                     >
+            <ToggleButton x:ConnectionId='30' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                     >
                 <Image Source="/Assets/shop.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='29' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                       >
+            <ToggleButton x:ConnectionId='31' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                       >
                 <Image Source="/Assets/cards.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='30' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                                >
+            <ToggleButton x:ConnectionId='32' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                                >
                 <Image Source="/Assets/brawl.png" Width="100" Height="40" UseLayoutRounding="False" VerticalAlignment="Top"/>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='31' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      >
+            <ToggleButton x:ConnectionId='33' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      >
                 <Image Source="/Assets/trophy.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='32' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
+            <ToggleButton x:ConnectionId='34' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                       >
                 <Image Source="/Assets/settings.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
             </ToggleButton>
         </StackPanel>
 
         <!-- Botón de vuelta atrás -->
-        <Button x:ConnectionId='25' Content="X"  TabIndex="4" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="3" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center"                    />
+        <Button x:ConnectionId='26' Content="X"  TabIndex="4" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="3" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center"                    />
 
         <!-- Título de pantalla -->
-        <TextBlock x:ConnectionId='26' x:Name="Logros" x:Uid="Logros" Text="LOGROS" FontSize="20" FontFamily="Aldrich" Grid.Column="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Grid.Row="1"></TextBlock>
+        <TextBlock x:ConnectionId='27' x:Name="Logros" x:Uid="Logros" Text="LOGROS" FontSize="20" FontFamily="Aldrich" Grid.Column="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Grid.Row="1"></TextBlock>
 
         <!-- Barra de progreso -->
-        <ProgressBar Width="Auto" Height="20" Value="77" Grid.Row="3" Grid.Column="1"/>
+        <ProgressBar x:ConnectionId='28' x:Name="pbar" Width="Auto" Height="20"                              Grid.Row="3" Grid.Column="1"/>
         
         <!-- Lista de logros -->
-        <ListView x:ConnectionId='27' x:Name="ImageGridView"
+        <ListView x:ConnectionId='29' x:Name="ImageGridView"
                   Grid.Row="2"
                   Grid.Column="1"
                                                      
                   ItemTemplate="{StaticResource ImageGridView_DefaultItemTemplate}" 
-                  ></ListView>
+                                                      IsItemClickEnabled="True">
+                  </ListView>
     </Grid>
 </Page>
 

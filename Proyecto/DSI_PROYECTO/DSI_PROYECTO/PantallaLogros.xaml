@@ -16,12 +16,14 @@
                     <ColumnDefinition Width="3*"/>
                     <ColumnDefinition Width="2.5*"/>
                 </Grid.ColumnDefinitions>
+                
                 <Image Source="{x:Bind Imagen}" Grid.Column="0" VerticalAlignment="Center" Width="40" HorizontalAlignment="Left"/>
                 <Image Source="{x:Bind Coin}" Grid.Column="2" Margin="0, 0, 10, 0" VerticalAlignment="Center" Width="40" HorizontalAlignment="Center"/>
                 <TextBlock Text="{x:Bind Descripcion}" FontSize="10" Margin="0, 20, 0, 0" FontFamily="Aldrich" Foreground="White" Grid.Column="1" VerticalAlignment="Center"/>
                 <TextBlock Text="{x:Bind Nombre}" Margin="0, 0, 0, 25" Height="25" FontSize="15" FontFamily="Aldrich" Foreground="White" Grid.Column="1" VerticalAlignment="Center"/>
                 <TextBlock Text="{x:Bind Recompensa}" FontSize="10" Margin="0, 0, 75, 0" FontFamily="Aldrich" Grid.Column="2"  Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            </Grid>
+                
+                </Grid>
 
         </DataTemplate>
         <Style x:Key="XStyle" TargetType="Button">
@@ -211,7 +213,7 @@
         </Grid.ColumnDefinitions>
         
         <!-- Imagen de fondo -->
-        <Image Source="/Assets/fondo.png" Grid.RowSpan="4" Grid.ColumnSpan="3" Stretch="UniformToFill"  VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
+        <Image x:Name="Fondo" Source="/Assets/fondo.png" Grid.RowSpan="4" Grid.ColumnSpan="3" Stretch="UniformToFill"  VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
 
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="3">
@@ -243,7 +245,7 @@
         <TextBlock x:Name="Logros" x:Uid="Logros" Text="LOGROS" FontSize="20" FontFamily="Aldrich" Grid.Column="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" Grid.Row="1"></TextBlock>
 
         <!-- Barra de progreso -->
-        <ProgressBar Width="Auto" Height="20" Value="77" Grid.Row="3" Grid.Column="1"/>
+        <ProgressBar x:Name="pbar" Width="Auto" Height="20" Value="{x:Bind progressBar}" Grid.Row="3" Grid.Column="1"/>
         
         <!-- Lista de logros -->
         <ListView x:Name="ImageGridView"
@@ -251,6 +253,7 @@
                   Grid.Column="1"
                   ItemsSource= "{x:Bind ListaLogros}"
                   ItemTemplate="{StaticResource ImageGridView_DefaultItemTemplate}" 
-                  ></ListView>
+                  ItemClick="ImageGridView_ItemClick" IsItemClickEnabled="True">
+                  </ListView>
     </Grid>
 </Page>
