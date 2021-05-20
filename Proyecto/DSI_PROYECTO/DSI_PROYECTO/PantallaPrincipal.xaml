@@ -261,21 +261,32 @@
             <ToggleButton x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" Click="Tienda_Click">
                 <Image Source="/Assets/shop.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
+                <ToggleButton.KeyboardAccelerators>
+                    <KeyboardAccelerator Key="T" Modifiers="Control" />
+                </ToggleButton.KeyboardAccelerators>
             </ToggleButton>
             <ToggleButton x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top" Click="Galeria_Click" >
                 <Image Source="/Assets/cards.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
+                <ToggleButton.KeyboardAccelerators>
+                    <KeyboardAccelerator Key="G" Modifiers="Control" />
+                </ToggleButton.KeyboardAccelerators>
             </ToggleButton>
             <ToggleButton x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True">
                 <Image Source="/Assets/brawl.png" Width="100" Height="40" UseLayoutRounding="False" VerticalAlignment="Top"/>
             </ToggleButton>
-            <ToggleButton x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Click="Ranking_Click">
-                <Image Source="/Assets/trophy.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
-                </Image>
+            <ToggleButton x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Checked="Ranking_Click">
+                <Image Source="/Assets/trophy.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" />
+                <ToggleButton.KeyboardAccelerators>
+                    <KeyboardAccelerator Key="R" Modifiers="Control" />
+                </ToggleButton.KeyboardAccelerators>
             </ToggleButton>
             <ToggleButton x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Click="Opciones_Click">
                 <Image Source="/Assets/settings.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
+                <ToggleButton.KeyboardAccelerators>
+                    <KeyboardAccelerator Key="O" Modifiers="Control" />
+                </ToggleButton.KeyboardAccelerators>
             </ToggleButton>
         </StackPanel>
 
@@ -290,10 +301,18 @@
         <TextBlock x:Name="Jugador" x:Uid="Jugador" Text="Jugador" FontSize="15"  Foreground="White" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextAlignment="Center" Width="160" FontFamily="Aldrich"></TextBlock>
 
         <!-- Botón de logros -->
-        <Button x:Name="BLogros" x:Uid="BLogros" Grid.Row="3" Grid.RowSpan="2" FontSize="25" Style="{StaticResource LogrosStyle}"  Content="LOGROS" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="150" Height="40" Click="Logros_Click" ></Button>
+        <Button x:Name="BLogros" x:Uid="BLogros" Grid.Row="3" Grid.RowSpan="2" FontSize="25" Style="{StaticResource LogrosStyle}"  Content="LOGROS" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="10" Width="150" Height="40" Click="Logros_Click" >
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="L" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
 
         <!-- Botón de jugar -->
-        <Button x:Name="BJugar" x:Uid="BJugar" Grid.Row="4" Grid.Column="1" FontSize="25" Style="{StaticResource JugarStyle}" Content="JUGAR" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="30" Width="160" Height="50" Click="Jugar_Click"></Button>
+        <Button x:Name="BJugar" x:Uid="BJugar" Grid.Row="4" Grid.Column="1" FontSize="25" Style="{StaticResource JugarStyle}" Content="JUGAR" FontFamily="Aldrich" HorizontalAlignment="Center" CornerRadius="30" Width="160" Height="50" Click="Jugar_Click">
+            <Button.KeyboardAccelerators>
+                <KeyboardAccelerator Key="J" Modifiers="Control" />
+            </Button.KeyboardAccelerators>
+        </Button>
 
         <!-- Avatar del héroe -->
         <Image Source="/Assets/hero.png" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1"></Image>

@@ -26,7 +26,6 @@ namespace DSI_PROYECTO
     public sealed partial class PantallaLogros : Page
     {
         public int progressBar = 0;
-        public List<VirtualKey> keys = new List<VirtualKey>();
         public ObservableCollection<VM_Logro> ListaLogros { get; } = new ObservableCollection<VM_Logro>();
         public PantallaLogros()
         {
@@ -86,25 +85,6 @@ namespace DSI_PROYECTO
                 {
                     CoreApplication.Exit();
                 }
-
-            // Sistema de aceleradores.
-            keys.Add(e.Key);
-            int t = 0, g = 0, r = 0, o = 0;
-            for (int i = 0; i < keys.Count(); i++)
-            {
-                if (keys[i] == VirtualKey.Control || keys[i] == VirtualKey.GamepadLeftTrigger)
-                    t++; g++; r++; o++;
-
-                if (keys[i] == VirtualKey.Number1 || keys[i] == VirtualKey.GamepadA) t++;
-                if (keys[i] == VirtualKey.Number2 || keys[i] == VirtualKey.GamepadB) g++;
-                if (keys[i] == VirtualKey.Number4 || keys[i] == VirtualKey.GamepadX) r++;
-                if (keys[i] == VirtualKey.Number5 || keys[i] == VirtualKey.GamepadY) o++;
-            }
-            if (t >= 2) this.Frame.Navigate(typeof(Tienda));
-            else if (g >= 2) this.Frame.Navigate(typeof(GaleriaDeMazos));
-            else if (r >= 2) this.Frame.Navigate(typeof(PantallaRanking));
-            else if (o >= 2) this.Frame.Navigate(typeof(OpcionesMenu));
-            // Con la B va directamente a la pantalla principal.
         }
 
         // Método para bloquear/desbloquear logros.

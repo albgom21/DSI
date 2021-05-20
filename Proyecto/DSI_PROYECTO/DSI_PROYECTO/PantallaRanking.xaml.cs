@@ -25,7 +25,6 @@ namespace DSI_PROYECTO
     /// </summary>
     public sealed partial class PantallaRanking : Page
     {
-        public List<VirtualKey> keys = new List<VirtualKey>();
         public ObservableCollection<ViewModelRanking> ListaRanking { get; } = new ObservableCollection<ViewModelRanking>();
         public PantallaRanking()
         {
@@ -64,27 +63,9 @@ namespace DSI_PROYECTO
         {
             // Si se pulsa el botón de Menú o Escape, se cierra la aplicación (no se tiene en cuenta la tecla B).
             if (e.OriginalKey != VirtualKey.GamepadB)
-                if (e.Key == VirtualKey.GamepadMenu || e.Key == VirtualKey.Escape)
-                {
+                if (e.Key == VirtualKey.GamepadMenu || e.Key == VirtualKey.Escape) {
                     CoreApplication.Exit();
                 }
-
-            // Sistema de aceleradores.
-            keys.Add(e.Key);
-            int t = 0, g = 0, r = 0, o = 0;
-            for (int i = 0; i < keys.Count(); i++)
-            {
-                if (keys[i] == VirtualKey.Control || keys[i] == VirtualKey.GamepadLeftTrigger)
-                    t++; g++; r++; o++;
-               
-                if (keys[i] == VirtualKey.Number1 || keys[i] == VirtualKey.GamepadA) t++;
-                if (keys[i] == VirtualKey.Number2 || keys[i] == VirtualKey.GamepadB) g++;
-                if (keys[i] == VirtualKey.Number5 || keys[i] == VirtualKey.GamepadY) o++;
-            }
-            if (t >= 2) this.Frame.Navigate(typeof(Tienda));
-            else if (g >= 2) this.Frame.Navigate(typeof(GaleriaDeMazos));
-            // Con la B va directamente a la pantalla principal.
-            else if (o >= 2) this.Frame.Navigate(typeof(OpcionesMenu));
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

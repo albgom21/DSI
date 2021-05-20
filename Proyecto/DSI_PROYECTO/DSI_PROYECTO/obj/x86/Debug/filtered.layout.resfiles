@@ -1,4 +1,3 @@
-WinMetadata\Windows.winmd
 Assets\altavoz.png
 Assets\altavoz0.png
 Assets\altavoz1.png
@@ -118,3 +117,4 @@ PantallaPrincipal.xbf
 PantallaRanking.xbf
 Tienda.xbf
 Properties\Default.rd.xml
+WinMetadata\Windows.winmd
