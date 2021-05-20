@@ -129,11 +129,17 @@
   <data name="BLogros.FontSize" xml:space="preserve">
     <value>25</value>
   </data>
+  <data name="BotonEditar.Content" xml:space="preserve">
+    <value>EDITAR</value>
+  </data>
+  <data name="BotonNuevoMazo.Content" xml:space="preserve">
+    <value>NOVA BARALLA</value>
+  </data>
   <data name="descripciont.Text" xml:space="preserve">
     <value>TRIA UN MODE DE JOC</value>
   </data>
   <data name="Dinero.Text" xml:space="preserve">
-    <value>Doblers</value>
+    <value>DINERS</value>
   </data>
   <data name="Espectar.OffContent" xml:space="preserve">
     <value>Permetre espectar</value>
@@ -151,7 +157,7 @@
     <value>HEROI</value>
   </data>
   <data name="IdiomaOpcionesMenu.Text" xml:space="preserve">
-    <value>IDIOMA</value>
+    <value>LLENGUA</value>
   </data>
   <data name="Jugador.Text" xml:space="preserve">
     <value>Jugador</value>

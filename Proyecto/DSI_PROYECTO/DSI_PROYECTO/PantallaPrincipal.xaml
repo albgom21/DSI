@@ -170,7 +170,7 @@
             <Setter Property="Background" Value="Red"/>
             <Setter Property="BackgroundSizing" Value="InnerBorderEdge"/>
             <Setter Property="Foreground" Value="#FFE22525"/>
-            <Setter Property="BorderBrush" Value="FFED16"/>
+            <Setter Property="BorderBrush" Value="#FFED16"/>
             <Setter Property="Padding" Value="4,2,4,2"/>
             <Setter Property="BorderThickness" Value="3"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>

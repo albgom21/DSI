@@ -172,22 +172,27 @@ namespace DSI_PROYECTO
             this.Frame.Navigate(typeof(ColeccionCartas), mazoActual);
         }
 
-        private void Go_Tienda(object sender, RoutedEventArgs e)
+        private void B1_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Tienda));
         }
 
-        private void Go_Pantalla_Principal(object sender, RoutedEventArgs e)
+        private void B2_Click(object sender, RoutedEventArgs e)
+        {
+            B2.IsChecked = true;
+        }
+
+        private void B3_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PantallaPrincipal));
         }
 
-        private void Go_Ranking(object sender, RoutedEventArgs e)
+        private void B4_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PantallaRanking));
         }
 
-        private void Go_Opciones(object sender, RoutedEventArgs e)
+        private void B5_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(OpcionesMenu));
         }

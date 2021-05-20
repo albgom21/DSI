@@ -23,10 +23,47 @@
         <!-- Fondo -->
         <Image Stretch="UniformToFill" Source="/Assets/fondo.png" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
 
+       
+        <!-- Tablero -->
+        <Canvas x:Name="canvas" Grid.Row="1">
+            <Canvas Grid.RowSpan="2"  Width="500" Height="215" HorizontalAlignment="Center" Margin="60,0,0,0">
+                <Border Background="White" Width="500" Height="215" CornerRadius="10" Grid.RowSpan="2"/>
+                <Border Width="390" Height="3" Grid.RowSpan="2" Background="Black" Canvas.Left="98" Canvas.Top="107.5" CornerRadius="5"/>
+                <ProgressBar x:Name="mana" Height="15" Maximum="10" Canvas.Left="-34.8" Canvas.Top="85" Width="160" RenderTransformOrigin="0.5,0.5" Value="2" Foreground="#d757f6" Background="#f2c9fb" CornerRadius="10" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <ProgressBar.RenderTransform>
+                        <CompositeTransform Rotation="-90"/>
+                    </ProgressBar.RenderTransform>
+                </ProgressBar>
+                <StackPanel Orientation="Horizontal" Canvas.Left="24" Canvas.Top="175">
+                    <Image Source="/Assets/mana.png" Width="20" Height="30" />
+                    <TextBlock x:Name="manaText" Text="2" FontSize="20" FontFamily="Aldrich" Foreground="#9c29b7" HorizontalAlignment="Center" Margin="5,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <Button Grid.RowSpan="2" Width="70" Height="70" CornerRadius="50" Margin="-5,0,0,0" Canvas.Left="459" Canvas.Top="75" Click="Button_Click_3">
+                    <Image Source="/Assets/pasarTurno.png" Margin="-10" />
+                </Button>
+            </Canvas>
+
+            <Button Grid.RowSpan="2" Width="35" Height="35" CornerRadius="50" Margin="-5,0,0,0" Click="Button_Click_1" Canvas.Top="88">
+                <Image Source="/Assets/historial.png" Margin="-10,-10,-10,-10"/>
+            </Button>
+
+            <!-- Parte superior -->
+            <Image x:Name="C1" Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0" PointerMoved="C1_PointerMoved" Canvas.Top="120" Canvas.Left="280"/>
+            <Image x:Name="C2" Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0" PointerMoved="C2_PointerMoved"  Canvas.Left="359" Canvas.Top="18"/>
+            <Image x:Name="C3" Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0" PointerMoved="C3_PointerMoved" Canvas.Left="280" Canvas.Top="17"/>
+            <Image x:Name="C4" Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0" PointerMoved="C4_PointerMoved" Canvas.Left="199" Canvas.Top="17"/>
+
+        </Canvas>
+
         <!-- Parte superior -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Image Source="/Assets/mazoMesa.png" Width="80" Height="80" Margin="40,0"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <Canvas Height="80" Width="600" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Canvas Width="80" Height="80" Margin="40,0" HorizontalAlignment="Center" PointerEntered="Canvas_PointerEntered_1" PointerExited="Canvas_PointerExited_1">
+                <Image Source="/Assets/mazoMesa2.png" Width="80" Height="80"/>
+                <Border x:Name="MazoTop" Background="White" Width="40" Height="15" Canvas.Top="80" Canvas.Left="20" CornerRadius="10" Visibility="Collapsed">
+                    <TextBlock Text="15" Foreground="#f06e9c" Width="17" Height="15" FontFamily="Aldrich" HorizontalAlignment="Center"/>
+                </Border>
+            </Canvas>
+            <StackPanel Orientation="Horizontal" Canvas.Left="160" HorizontalAlignment="Center">
                 <Image Source="/Assets/cartaTapada2.png" Width="60" Height="80" Margin="5,0"/>
                 <Image Source="/Assets/cartaTapada2.png" Width="60" Height="80" Margin="5,0"/>
                 <Image Source="/Assets/cartaTapada3.png" Width="60" Height="80" Margin="5,0"/>
@@ -34,58 +71,17 @@
                 <Image Source="/Assets/cartaTapada1.png" Width="60" Height="80" Margin="5,0"/>
                 <Image Source="/Assets/cartaTapada2.png" Width="60" Height="80" Margin="5,0"/>
             </StackPanel>
-        </StackPanel>
-
-        <!-- Tablero -->
-        <Grid Grid.Row="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-            </Grid.RowDefinitions>
-
-            <Canvas Grid.RowSpan="2"  Width="500" Height="210" HorizontalAlignment="Center" Margin="60,0,0,0">
-                <Border Background="White" Width="500" Height="210" CornerRadius="10" Grid.RowSpan="2"/>
-                <Border Width="390" Height="3" Grid.RowSpan="2" Background="Black" Canvas.Left="98" Canvas.Top="105" CornerRadius="5"/>
-                <ProgressBar Height="15" Maximum="10" Canvas.Left="-34.8" Canvas.Top="80.6" Width="160" RenderTransformOrigin="0.5,0.5" Value="5" Foreground="#d757f6" Background="#f2c9fb" CornerRadius="10" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                    <ProgressBar.RenderTransform>
-                        <CompositeTransform Rotation="-90"/>
-                    </ProgressBar.RenderTransform>
-                </ProgressBar>
-                <StackPanel Orientation="Horizontal" Canvas.Left="24" Canvas.Top="170">
-                    <Image Source="/Assets/mana.png" Width="20" Height="30" />
-                    <TextBlock Text="6" FontSize="20" FontFamily="Aldrich" Foreground="#9c29b7" HorizontalAlignment="Center" Margin="5,0" VerticalAlignment="Center"/>
-                </StackPanel>
-                <Button Grid.RowSpan="2" Width="70" Height="70" CornerRadius="50" Margin="-5,0,0,0" Canvas.Left="459" Canvas.Top="70">
-                    <Image Source="/Assets/pasarTurno.png" Margin="-10" />
-                </Button>
-            </Canvas>
-
-            <Button Grid.RowSpan="2" Width="35" Height="35" CornerRadius="50" Margin="-5,0,0,0" VerticalAlignment="Center" >
-                <Image Source="/Assets/historial.png" Margin="-10" />
-            </Button>
-
-            <!-- Parte superior -->
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="60,0,0,10">
-                <Image Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0"/>
-                <Image Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0"/>
-                <Image Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0"/>
-                <Image Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0"/>
-            </StackPanel>
-
-            <!-- Parte Inferior -->
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1" Margin="60,10,0,0">
-                <Image Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0"/>
-                <Image Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0"/>
-                <Image Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0"/>
-                <Image Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0"/>
-            </StackPanel>
-
-        </Grid>
+        </Canvas>
 
         <!-- Parte inferior -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="3">
-            <Image Source="/Assets/mazoMesa2.png" Width="80" Height="80" Margin="40,0"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <Canvas Height="80" Width="600" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="3">
+            <Canvas Width="80" Height="80" Margin="40,0" HorizontalAlignment="Center" PointerEntered="Canvas_PointerEntered" PointerExited="Canvas_PointerExited">
+                <Image Source="/Assets/mazoMesa2.png" Width="80" Height="80"/>
+                <Border x:Name="MazoBot" Background="White" Width="40" Height="15" Canvas.Top="-18" Canvas.Left="20" CornerRadius="10" Visibility="Collapsed">
+                    <TextBlock Text="12" Foreground="#f06e9c" Width="17" Height="15" FontFamily="Aldrich" HorizontalAlignment="Center"/>
+                </Border>
+            </Canvas>
+            <StackPanel Orientation="Horizontal" Canvas.Left="160">
                 <Image Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0"/>
                 <Image Source="/Assets/cartaInGame3.png" Width="60" Height="80" Margin="5,0"/>
                 <Image Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0"/>
@@ -93,7 +89,7 @@
                 <Image Source="/Assets/cartaInGame3.png" Width="60" Height="80" Margin="5,0"/>
                 <Image Source="/Assets/cartaInGame3.png" Width="60" Height="80" Margin="5,0"/>
             </StackPanel>
-        </StackPanel>
+        </Canvas>
 
         <!-- Heroe 2 -->
         <Border BorderThickness="2" BorderBrush="Black" Background="#f06e9c" Grid.Column="1" Grid.RowSpan="2" VerticalAlignment="Top">
@@ -124,6 +120,22 @@
             </StackPanel>
         </Border>
 
+        <!-- Imagen historial -->
+        <Border x:Name="historial"  Grid.RowSpan="3" Width="100" Height="470" HorizontalAlignment="Left" Background="#c9f1fd" Visibility="Collapsed" VerticalAlignment="Center">
+            <Canvas Width="100" Height="470" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Orientation="Vertical" Canvas.Left="15">
+                    <Image Source="/Assets/cartaInGame1.png" Width="60" Height="80" Margin="5,0"/>
+                    <Image Source="/Assets/cartaTapada2.png" Width="60" Height="80" Margin="5,0"/>
+                    <Image Source="/Assets/cartaTapada1.png" Width="60" Height="80" Margin="5,0"/>
+                    <Image Source="/Assets/cartaTapada1.png" Width="60" Height="80" Margin="5,0"/>
+                    <Image Source="/Assets/cartaInGame3.png" Width="60" Height="80" Margin="5,0"/>
+                    <Image Source="/Assets/cartaInGame3.png" Width="60" Height="80" Margin="5,0"/>
+                </StackPanel>
+                <Button Width="35" Height="35" CornerRadius="50" Click="Button_Click_2" Canvas.Left="85" Canvas.Top="218">
+                    <Image Source="/Assets/historial.png" Margin="-10"/>
+                </Button>
+            </Canvas>
+        </Border>
     </Grid>
 
 </Page>

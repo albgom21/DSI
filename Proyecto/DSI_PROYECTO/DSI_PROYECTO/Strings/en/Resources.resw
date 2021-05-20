@@ -129,11 +129,17 @@
   <data name="BLogros.FontSize" xml:space="preserve">
     <value>15</value>
   </data>
+  <data name="BotonEditar.Content" xml:space="preserve">
+    <value>EDIT</value>
+  </data>
+  <data name="BotonNuevoMazo.Content" xml:space="preserve">
+    <value>NEW DECK</value>
+  </data>
   <data name="descripciont.Text" xml:space="preserve">
     <value>CHOOSE A GAME MODE</value>
   </data>
   <data name="Dinero.Text" xml:space="preserve">
-    <value>Money</value>
+    <value>MONEY</value>
   </data>
   <data name="Espectar.OffContent" xml:space="preserve">
     <value>Allow spectating</value>

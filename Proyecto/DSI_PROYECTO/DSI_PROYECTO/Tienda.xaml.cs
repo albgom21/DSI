@@ -28,6 +28,7 @@ namespace DSI_PROYECTO
 
             // Timer
             DispatcherTimer tim = new DispatcherTimer();
+            timer_Tick(new object(), new object());
             tim.Interval = TimeSpan.FromSeconds(1);
             tim.Tick += timer_Tick;
             tim.Start();
@@ -93,6 +94,11 @@ namespace DSI_PROYECTO
             dinero.Text = miDinero.ToString();
         }
 
+        private void B1_Click(object sender, RoutedEventArgs e)
+        {
+            B1.IsChecked = true;
+        }
+
         private void B2_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(GaleriaDeMazos));
@@ -117,6 +123,86 @@ namespace DSI_PROYECTO
         {
             if (this.Frame.CanGoBack)
                 this.Frame.GoBack();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            double miDinero = 0;
+            int length = dinero.Text.Length - 1;
+            for (int i = 0; i <= length; i++)
+            {
+                int c = dinero.Text[i] - '0';
+                miDinero += c * (Math.Pow(10, length - i));
+            }
+
+            if (comprar1.Visibility == Visibility.Collapsed && miDinero >= 125)
+            {
+                miDinero -= 125;
+
+                dinero.Text = miDinero.ToString();
+
+                comprar1.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            double miDinero = 0;
+            int length = dinero.Text.Length - 1;
+            for (int i = 0; i <= length; i++)
+            {
+                int c = dinero.Text[i] - '0';
+                miDinero += c * (Math.Pow(10, length - i));
+            }
+
+            if (comprar2.Visibility == Visibility.Collapsed && miDinero >= 125)
+            {
+                miDinero -= 125;
+
+                dinero.Text = miDinero.ToString();
+
+                comprar2.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            double miDinero = 0;
+            int length = dinero.Text.Length - 1;
+            for (int i = 0; i <= length; i++)
+            {
+                int c = dinero.Text[i] - '0';
+                miDinero += c * (Math.Pow(10, length - i));
+            }
+
+            if (comprar3.Visibility == Visibility.Collapsed && miDinero >= 125)
+            {
+                miDinero -= 125;
+
+                dinero.Text = miDinero.ToString();
+
+                comprar3.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            double miDinero = 0;
+            int length = dinero.Text.Length - 1;
+            for (int i = 0; i <= length; i++)
+            {
+                int c = dinero.Text[i] - '0';
+                miDinero += c * (Math.Pow(10, length - i));
+            }
+
+            if (comprar4.Visibility == Visibility.Collapsed && miDinero >= 125)
+            {
+                miDinero -= 125;
+
+                dinero.Text = miDinero.ToString();
+
+                comprar4.Visibility = Visibility.Visible;
+            }
         }
     }
 }
