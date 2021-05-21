@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj": {}
+    "C:\\Users\\alber\\Desktop\\DSI PROYECTO\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj": {
+    "C:\\Users\\alber\\Desktop\\DSI PROYECTO\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj",
+        "projectUniqueName": "C:\\Users\\alber\\Desktop\\DSI PROYECTO\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj",
         "projectName": "DSI_PROYECTO",
-        "projectPath": "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj",
-        "packagesPath": "C:\\Users\\adrim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adrim\\Desktop\\DSI\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\obj\\",
+        "projectPath": "C:\\Users\\alber\\Desktop\\DSI PROYECTO\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\DSI_PROYECTO.csproj",
+        "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alber\\Desktop\\DSI PROYECTO\\Proyecto\\DSI_PROYECTO\\DSI_PROYECTO\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\adrim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\alber\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

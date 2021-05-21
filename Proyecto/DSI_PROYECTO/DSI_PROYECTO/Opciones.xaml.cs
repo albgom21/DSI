@@ -125,12 +125,7 @@ namespace DSI_PROYECTO
         {          
             this.Frame.Navigate(typeof(PantallaPrincipal));           
         }
-
-        private void Salir_Click(object sender, RoutedEventArgs e)
-        {        
-            this.Frame.Navigate(typeof(InGame));            
-        }
-
+          
         private void X_Click(object sender, RoutedEventArgs e)
         {       
             this.Frame.Navigate(typeof(InGame));

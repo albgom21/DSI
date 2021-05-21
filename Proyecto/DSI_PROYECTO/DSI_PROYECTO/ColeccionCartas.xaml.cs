@@ -34,7 +34,6 @@ namespace DSI_PROYECTO
         {
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled; //Required si se quieren ignorar los límites de CacheSize
-
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -255,6 +254,26 @@ namespace DSI_PROYECTO
                     foreach (VMCartas cartas in ListaCartas)
                         mazoActual.Cartas.Add(cartas);
                 }
+            }
+
+            else if(item.Tipo == 'c' && Model.getDinero()>= 100)
+            {
+                var colecCartas = Model.GetAllCartas_Grid();
+             
+                int miDinero = Model.getDinero();
+                miDinero -= 100;
+                Model.setDinero(miDinero);
+                dinero.Text = miDinero.ToString();
+
+                VMCartas_Grid VMitem = new VMCartas_Grid(item);
+                VMitem.Name = item.Name;              
+                VMitem.Imagen = "Assets\\carta2.png";
+                VMitem.Tipo = 's';
+                var elimina = Model.GetCartaById(item.Id);
+                GridCartas.Remove(item);
+               
+                colecCartas.Remove(elimina);
+                colecCartas.Add(VMitem);
             }
         }
 

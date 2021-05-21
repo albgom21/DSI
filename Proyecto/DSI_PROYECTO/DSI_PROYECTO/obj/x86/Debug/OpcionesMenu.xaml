@@ -291,7 +291,7 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
 
         <!--Fondo-->
@@ -299,22 +299,22 @@
     
         <!-- Barra de botones en la parte superior. -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.ColumnSpan="5">
-            <ToggleButton x:ConnectionId='39' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                  TabIndex="1">
+            <ToggleButton x:ConnectionId='38' x:Name="B1" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                  TabIndex="1">
                 <Image Source="/Assets/shop.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='40' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                         TabIndex="2" >
+            <ToggleButton x:ConnectionId='39' x:Name="B2" Style="{StaticResource MenuStyle}"  VerticalAlignment="Top"                         TabIndex="2" >
                 <Image Source="/Assets/cards.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='41' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      TabIndex="3">
+            <ToggleButton x:ConnectionId='40' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                      TabIndex="3">
                 <Image Source="/Assets/brawl.png" Width="100" Height="40" UseLayoutRounding="False" VerticalAlignment="Top"/>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='42' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                   TabIndex="4">
+            <ToggleButton x:ConnectionId='41' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                   TabIndex="4">
                 <Image Source="/Assets/trophy.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto">
                 </Image>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='43' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True"                          TabIndex="5">
+            <ToggleButton x:ConnectionId='42' x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True"                          TabIndex="5">
                 <Image Source="/Assets/settings.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" >
                 </Image>
             </ToggleButton>
@@ -323,9 +323,8 @@
         <!--Texto idioma-->
         <TextBlock  x:Uid="IdiomaOpcionesMenu" FontFamily="Aldrich"  Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White" FontSize="36"  TextAlignment="Center" Text="IDIOMA"/>
 
-        <!--Botones de salir y X-->
-        <Button x:ConnectionId='25' x:Uid="salirOpcM" Content="SALIR"  TabIndex="15" Style="{StaticResource ExitStyle}" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"  Height="50" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="35,0,0,0"                  />
-        <Button x:ConnectionId='26' Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center"                 TabIndex="6"/>
+        <!--Botones X-->
+        <Button x:ConnectionId='25' Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center"                 TabIndex="6"/>
 
         <!--Texto de volumnes e imagenes-->
         <StackPanel Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center">
@@ -339,9 +338,9 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Image x:ConnectionId='36' x:Name="vg" Grid.Row="0"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
-                <Image x:ConnectionId='37' x:Name="vm" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
-                <Image x:ConnectionId='38' x:Name="vs" Grid.Row="2"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
+                <Image x:ConnectionId='35' x:Name="vg" Grid.Row="0"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
+                <Image x:ConnectionId='36' x:Name="vm" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
+                <Image x:ConnectionId='37' x:Name="vs" Grid.Row="2"  Grid.Column="1" HorizontalAlignment="Center" Height="40"  VerticalAlignment="Center" Width="40" Source="Assets/altavoz1.png"/>
                 <TextBlock  x:Uid="volG" Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16" FontFamily="Aldrich"  TextAlignment="Center"><Run Text="V"/><Run Text="olumen general"/></TextBlock>
                 <TextBlock  x:Uid="volM" Grid.Row="1"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16" FontFamily="Aldrich" TextAlignment="Center"><Run Text="V"/><Run Text="olumen "/><Run Text="música"/></TextBlock>
                 <TextBlock  x:Uid="volS" Grid.Row="2"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center"  Foreground="White" FontSize="16"  FontFamily="Aldrich" TextAlignment="Center"><Run Text="V"/><Run Text="olumen "/><Run Text="SFX"/></TextBlock>
@@ -351,25 +350,25 @@
 
         <!--Slider volumen-->
         <StackPanel Grid.Row="2"  Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" >
-            <Slider x:ConnectionId='33'  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White"                                       Value="80" Height="40" TabIndex="10" />
-            <Slider x:ConnectionId='34'  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White"                                       Value="80"  Height="40" TabIndex="11"/>
-            <Slider x:ConnectionId='35'  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF"  Background="White"                                       Value="80"  Height="35" TabIndex="12"/>
+            <Slider x:ConnectionId='32'  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White"                                       Value="80" Height="40" TabIndex="10" />
+            <Slider x:ConnectionId='33'  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF" Background="White"                                       Value="80"  Height="40" TabIndex="11"/>
+            <Slider x:ConnectionId='34'  ExitDisplayModeOnAccessKeyInvoked="False" Foreground="#FF00AEFF"  Background="White"                                       Value="80"  Height="35" TabIndex="12"/>
 
         </StackPanel>
 
         <!--Boton y borde de los idiomas-->
-        <Border x:ConnectionId='27' x:Name="borderEsp" Grid.Row="1" Grid.Column="1" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
-        <Button x:ConnectionId='28' x:Name="besp" Height="75" Width="110" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center"                   Tag="es" TabIndex="7">
+        <Border x:ConnectionId='26' x:Name="borderEsp" Grid.Row="1" Grid.Column="1" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
+        <Button x:ConnectionId='27' x:Name="besp" Height="75" Width="110" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Center"                   Tag="es" TabIndex="7">
             <Image Source="/Assets/besp.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
 
-        <Border x:ConnectionId='29' x:Name="borderCat" Grid.Row="1" Grid.Column="2" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
-        <Button x:ConnectionId='30' x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"                   Tag="ca" TabIndex="8">
+        <Border x:ConnectionId='28' x:Name="borderCat" Grid.Row="1" Grid.Column="2" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
+        <Button x:ConnectionId='29' x:Name="bcat" Height="75" Width="110"  Grid.Row="1"  Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"                   Tag="ca" TabIndex="8">
             <Image Source="/Assets/bcat.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
         
-        <Border x:ConnectionId='31' x:Name="borderUk" Grid.Row="1" Grid.Column="3" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
-        <Button x:ConnectionId='32' x:Name="buk" Height="75" Width="110" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"                    Tag="en" TabIndex="9">
+        <Border x:ConnectionId='30' x:Name="borderUk" Grid.Row="1" Grid.Column="3" Background="AliceBlue" Margin="12" Visibility="Collapsed"></Border>
+        <Button x:ConnectionId='31' x:Name="buk" Height="75" Width="110" Grid.Row="1"  Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center"                    Tag="en" TabIndex="9">
             <Image Source="/Assets/buk.png" AutomationProperties.Name="Slice" Margin="-5"/>
         </Button>
 

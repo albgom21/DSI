@@ -291,7 +291,7 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
         </Grid.RowDefinitions>
 
         <!--Fondo-->
@@ -323,8 +323,7 @@
         <!--Texto idioma-->
         <TextBlock  x:Uid="IdiomaOpcionesMenu" FontFamily="Aldrich"  Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White" FontSize="36"  TextAlignment="Center" Text="IDIOMA"/>
 
-        <!--Botones de salir y X-->
-        <Button x:Uid="salirOpcM" Content="SALIR"  TabIndex="15" Style="{StaticResource ExitStyle}" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"  Height="50" Width="125" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="35,0,0,0" Click="Principal"/>
+        <!--Botones X-->
         <Button Content="X" Style="{StaticResource XStyle}"  Grid.Row="0" Grid.Column="4" Height="45" Width="45" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="X_Click" TabIndex="6"/>
 
         <!--Texto de volumnes e imagenes-->

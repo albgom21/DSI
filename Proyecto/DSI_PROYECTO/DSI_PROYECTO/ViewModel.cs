@@ -58,6 +58,8 @@ namespace DSI_PROYECTO
             Tipo = cart.Tipo;
             Name = cart.Name;
             Img = new Image();
+            Id = cart.Id;
+
             string s = System.IO.Directory.GetCurrentDirectory() + "\\" + cart.Imagen;
             Img.Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new Uri(s));                     
         }

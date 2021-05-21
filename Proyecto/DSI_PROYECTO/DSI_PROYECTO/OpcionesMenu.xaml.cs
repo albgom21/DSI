@@ -112,7 +112,7 @@ namespace DSI_PROYECTO
                 Windows.Globalization.ApplicationLanguages.PrimaryLanguageOverride = tag;
 
                 Frame.BackStack.Clear();
-                Frame.Navigate(typeof(OpcionesMenu));
+                Frame.Navigate(typeof(PantallaPrincipal));
             }
         }
 
@@ -149,7 +149,7 @@ namespace DSI_PROYECTO
         private void X_Click(object sender, RoutedEventArgs e)
         {
             if (this.Frame.CanGoBack)
-                this.Frame.GoBack();
+                this.Frame.GoBack();          
         }                
     }
 }

@@ -19,6 +19,7 @@ namespace DSI_PROYECTO
         public string Name { get; set; }
         public string Imagen { get; set; }
         public char Tipo { get; set; }
+        public int Id { get; set; }
 
         public Cartas_Grid() { }
     }
@@ -132,7 +133,8 @@ namespace DSI_PROYECTO
             {
                 Name = "TANQUE",
                 Imagen = "Assets\\carta3.png",
-                Tipo = 'c'
+                Tipo = 'c',
+                Id = 1
             },
 
             new Cartas_Grid()
@@ -153,7 +155,8 @@ namespace DSI_PROYECTO
             {
                 Name = "ESBIRRO",
                 Imagen = "Assets\\carta3.png",
-                Tipo = 'c'
+                Tipo = 'c',
+                Id = 2
             },
 
             new Cartas_Grid()
@@ -174,7 +177,8 @@ namespace DSI_PROYECTO
             {
                 Name = "CABALLERO",
                 Imagen = "Assets\\carta3.png",
-                Tipo = 'c'
+                Tipo = 'c',
+                Id = 3
             },
 
             new Cartas_Grid()
@@ -195,7 +199,8 @@ namespace DSI_PROYECTO
             {
                 Name = "ARIETE",
                 Imagen = "Assets\\carta3.png",
-                Tipo = 'c'
+                Tipo = 'c',
+                Id = 3
             },
 
             new Cartas_Grid()
@@ -216,7 +221,8 @@ namespace DSI_PROYECTO
             {
                 Name = "DRAGÓN",
                 Imagen = "Assets\\carta3.png",
-                Tipo = 'c'
+                Tipo = 'c',
+                Id = 4
             },
 
             new Cartas_Grid()
@@ -237,7 +243,8 @@ namespace DSI_PROYECTO
             {
                 Name = "CAZADOR",
                 Imagen = "Assets\\carta3.png",
-                Tipo = 'c'
+                Tipo = 'c',
+                Id = 5
             },
 
             new Cartas_Grid()
@@ -258,7 +265,8 @@ namespace DSI_PROYECTO
             {
                 Name = "MAGO",
                 Imagen = "Assets\\carta3.png",
-                Tipo = 'c'
+                Tipo = 'c',
+                Id = 6
             }
         };
 
@@ -427,7 +435,6 @@ namespace DSI_PROYECTO
                 Imagen = "Assets\\mazo4.png",
                 Cartas = createCartas()
             },
-
         };
 
         public static List<Cartas> createCartas()
@@ -486,6 +493,14 @@ namespace DSI_PROYECTO
         public static IList<Mazos_Grid> GetAllMazos_Grid()
         {
             return mazos_grid_;
+        }
+
+        public static Cartas_Grid GetCartaById(int id)
+        {
+            int cont = 0;
+            while (cont < cartas_grid_.Count && cartas_grid_[cont].Id != id)
+                cont++;
+            return cartas_grid_[cont];
         }
     }
 }
