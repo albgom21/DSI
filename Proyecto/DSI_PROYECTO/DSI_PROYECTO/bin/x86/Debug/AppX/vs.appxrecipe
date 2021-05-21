@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-21T10:22:40.198</Modified>
+      <Modified>2021-05-21T10:49:22.523</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\DSI_PROYECTO.exe">
       <PackagePath>entrypoint\DSI_PROYECTO.exe</PackagePath>
-      <Modified>2021-05-21T10:22:39.740</Modified>
+      <Modified>2021-05-21T10:49:22.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -518,51 +518,51 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-05-21T10:20:23.459</Modified>
+      <Modified>2021-05-21T10:49:21.861</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\ColeccionCartas.xbf">
       <PackagePath>ColeccionCartas.xbf</PackagePath>
-      <Modified>2021-05-21T10:20:23.220</Modified>
+      <Modified>2021-05-21T10:49:21.610</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\GaleriaDeMazos.xbf">
       <PackagePath>GaleriaDeMazos.xbf</PackagePath>
-      <Modified>2021-05-21T10:20:23.272</Modified>
+      <Modified>2021-05-21T10:49:21.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\InGame.xbf">
       <PackagePath>InGame.xbf</PackagePath>
-      <Modified>2021-05-21T10:20:23.280</Modified>
+      <Modified>2021-05-21T10:49:21.672</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-05-21T10:20:23.460</Modified>
+      <Modified>2021-05-21T10:49:21.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\ModosDeJuego.xbf">
       <PackagePath>ModosDeJuego.xbf</PackagePath>
-      <Modified>2021-05-21T10:20:23.331</Modified>
+      <Modified>2021-05-21T10:49:21.727</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Opciones.xbf">
       <PackagePath>Opciones.xbf</PackagePath>
-      <Modified>2021-05-21T10:20:23.356</Modified>
+      <Modified>2021-05-21T10:49:21.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\OpcionesMenu.xbf">
       <PackagePath>OpcionesMenu.xbf</PackagePath>
-      <Modified>2021-05-21T10:20:23.381</Modified>
+      <Modified>2021-05-21T10:49:21.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaLogros.xbf">
       <PackagePath>PantallaLogros.xbf</PackagePath>
-      <Modified>2021-05-21T10:20:23.397</Modified>
+      <Modified>2021-05-21T10:49:21.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaPrincipal.xbf">
       <PackagePath>PantallaPrincipal.xbf</PackagePath>
-      <Modified>2021-05-21T10:20:23.420</Modified>
+      <Modified>2021-05-21T10:49:21.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\PantallaRanking.xbf">
       <PackagePath>PantallaRanking.xbf</PackagePath>
-      <Modified>2021-05-21T10:20:23.439</Modified>
+      <Modified>2021-05-21T10:49:21.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Tienda.xbf">
       <PackagePath>Tienda.xbf</PackagePath>
-      <Modified>2021-05-21T10:20:23.459</Modified>
+      <Modified>2021-05-21T10:49:21.861</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -574,7 +574,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\alber\Desktop\DSI PROYECTO\Proyecto\DSI_PROYECTO\DSI_PROYECTO\bin\x86\Debug\Core\DSI_PROYECTO.exe">
       <PackagePath>DSI_PROYECTO.exe</PackagePath>
-      <Modified>2021-05-21T10:22:40.193</Modified>
+      <Modified>2021-05-21T10:49:22.517</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

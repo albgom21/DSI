@@ -111,5 +111,10 @@ namespace DSI_PROYECTO
                 i++;
             }
         }
+
+        private void B3_Unchecked(object sender, RoutedEventArgs e)
+        {           
+           B3.IsChecked = true;            
+        }
     }
 }

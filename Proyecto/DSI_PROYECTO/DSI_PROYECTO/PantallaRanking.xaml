@@ -239,7 +239,7 @@
                     <KeyboardAccelerator Key="P" Modifiers="Control" />
                 </ToggleButton.KeyboardAccelerators>
             </ToggleButton>
-            <ToggleButton x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"  IsChecked="True">
+            <ToggleButton x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"  IsChecked="True" Unchecked="B4_Unchecked">
                 <Image Source="/Assets/trophy.png" Width="50" Height="40"  UseLayoutRounding="False" d:LayoutRounding="Auto" />
             </ToggleButton>
             <ToggleButton x:Name="B5" Style="{StaticResource MenuStyle}" VerticalAlignment="Top" Click="Opciones_Click">

@@ -272,7 +272,7 @@
                     <KeyboardAccelerator Key="G" Modifiers="Control" />
                 </ToggleButton.KeyboardAccelerators>
             </ToggleButton>
-            <ToggleButton x:ConnectionId='38' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True">
+            <ToggleButton x:ConnectionId='38' x:Name="B3"  Style="{StaticResource MenuStyle}" VerticalAlignment="Top" IsChecked="True"                         >
                 <Image Source="/Assets/brawl.png" Width="100" Height="40" UseLayoutRounding="False" VerticalAlignment="Top"/>
             </ToggleButton>
             <ToggleButton x:ConnectionId='39' x:Name="B4" Style="{StaticResource MenuStyle}" VerticalAlignment="Top"                        >

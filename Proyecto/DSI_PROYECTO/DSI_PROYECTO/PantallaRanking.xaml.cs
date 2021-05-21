@@ -79,5 +79,10 @@ namespace DSI_PROYECTO
                 }
             base.OnNavigatedTo(e);
         }
+
+        private void B4_Unchecked(object sender, RoutedEventArgs e)
+        {
+            B4.IsChecked = true;
+        }
     }
 }
